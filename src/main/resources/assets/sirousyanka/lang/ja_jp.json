@@ -6,6 +6,7 @@
   "item.sirousyanka.raw_usyalium" : "ウシャリウムの原石",
   "item.sirousyanka.advanced_usyalium_ingot" : "高度なウシャリウムインゴット",
   "block.sirousyanka.usyalium_ore_block" : "ウシャリウム鉱石",
+  "block.sirousyanka.usyalium_block" : "ウシャリウムブロック",
   "block.sirousyanka.deepslate_usyalium_ore_block" : "深層岩ウシャリウム鉱石",
   "block.sirousyanka.advanced_usyalium_block" : "高度なウシャリウムブロック"
 }
