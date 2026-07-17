@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.main.Sirousyanka;
 
 import java.util.function.Supplier;
@@ -21,10 +22,14 @@ public class CreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.USYALIUM_INGOT.get()))
 
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.USYALIUM_INGOT);
-                        output.accept(ModItems.USYALIUM_NUGGET);
-                        output.accept(ModItems.RAW_USYALIUM);
-                        output.accept(ModItems.ADVANCED_USYALIUM_INGOT);
+                        output.accept(ModItems.USYALIUM_INGOT.get());
+                        output.accept(ModItems.USYALIUM_NUGGET.get());
+                        output.accept(ModItems.RAW_USYALIUM.get());
+                        output.accept(ModItems.ADVANCED_USYALIUM_INGOT.get());
+                        output.accept(ModBlocks.USYALIUM_ORE_BLOCK.get());
+                        output.accept(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get());
+                        output.accept(ModBlocks.USYALIUM_BLOCK.get());
+                        output.accept(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
                     })
                     .build());
 

@@ -3,6 +3,7 @@ package net.ocoserver.main;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.CreativeModeTabs;
 import net.ocoserver.items.ModItems;
 
@@ -13,7 +14,7 @@ public class Sirousyanka {
 
     public Sirousyanka(IEventBus eventBus, ModContainer container) {
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
         CreativeModeTabs.register(eventBus);
     }
-
 }
