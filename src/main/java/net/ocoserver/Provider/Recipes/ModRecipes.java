@@ -1,4 +1,4 @@
-package net.ocoserver.Provider;
+package net.ocoserver.Provider.Recipes;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -50,6 +50,9 @@ public class ModRecipes extends RecipeProvider {
 
         //高度なウシャリウム <-> 高度なウシャリウムブロック
         nineBlockStorageRecipes(output, RecipeCategory.MISC, ModItems.ADVANCED_USYALIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
+
+
+
     }
 
 }

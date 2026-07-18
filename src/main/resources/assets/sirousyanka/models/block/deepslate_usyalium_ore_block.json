@@ -1,24 +1,8 @@
 {
-	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
-	"parent": "minecraft:block/cube_all",
-	"textures": {
-		"1": "sirousyanka:block/deepslate_usyalium_ore_block",
-		"2": "sirousyanka:block/deepslate_usyalium_ore_block_top",
-		"particle": "sirousyanka:block/deepslate_usyalium_ore_block"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
-			}
-		}
-	]
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "sirousyanka:block/deepslate_usyalium_ore_block_top",
+    "side": "sirousyanka:block/deepslate_usyalium_ore_block",
+    "top": "sirousyanka:block/deepslate_usyalium_ore_block_top"
+  }
 }

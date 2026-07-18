@@ -30,6 +30,18 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get());
                         output.accept(ModBlocks.USYALIUM_BLOCK.get());
                         output.accept(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
+                        output.accept(ModBlocks.FROZEN_SPRUCE_LOG.get());
+                        output.accept(ModBlocks.ABYSS_STONE.get());
+                        output.accept(ModBlocks.ABYSS_ICE.get());
+                        output.accept(ModBlocks.ABYSS_PACKED_ICE.get());
+                        output.accept(ModBlocks.FROZEN_GRASS_BLOCK.get());
+                        output.accept(ModBlocks.FROZEN_STONE.get());
+                        output.accept(ModBlocks.ABYSS_OBSIDIAN.get());
+                        output.accept(ModBlocks.FROZEN_STONE_BRICKS.get());
+                        output.accept(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
+                        output.accept(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get());
+
+
                     })
                     .build());
 

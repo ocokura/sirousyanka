@@ -6,8 +6,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.ocoserver.Provider.Blocks.*;
+import net.ocoserver.Provider.LootTables.LootProvider;
+import net.ocoserver.Provider.Tags.BlockTag;
 import net.ocoserver.dimension.ModPortal;
-import net.ocoserver.Provider.ModRecipes;
+import net.ocoserver.Provider.Recipes.ModRecipes;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class CommonEvent {
@@ -23,6 +25,16 @@ public class CommonEvent {
                 event.includeClient(),
                 (DataProvider.Factory<BlockProvider>) output -> new BlockProvider(output, event.getExistingFileHelper())
         );
+
+        event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<LootProvider>) output -> new LootProvider(output, event.getLookupProvider()));
+
+        event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<BlockTag>) output -> new BlockTag(output, event.getLookupProvider(), event.getExistingFileHelper()));
+
+
     }
 
     @SubscribeEvent
