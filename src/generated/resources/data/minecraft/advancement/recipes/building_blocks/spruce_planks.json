@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nugget": {
+    "has_log": {
       "conditions": {
         "items": [
           {
-            "items": "sirousyanka:usyalium_nugget"
+            "items": "#sirousyanka:frozen_spruce_log"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:usyalium_ingot_from_nugget"
+        "recipe": "minecraft:spruce_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nugget"
+      "has_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:usyalium_ingot_from_nugget"
+      "minecraft:spruce_planks"
     ]
   }
 }
