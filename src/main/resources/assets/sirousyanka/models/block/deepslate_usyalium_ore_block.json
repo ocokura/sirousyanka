@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"1": "sirousyanka:block/deepslate_usyalium_ore_block_side",
+		"1": "sirousyanka:block/deepslate_usyalium_ore_block",
 		"2": "sirousyanka:block/deepslate_usyalium_ore_block_top",
-		"particle": "sirousyanka:block/deepslate_usyalium_ore_block_side"
+		"particle": "sirousyanka:block/deepslate_usyalium_ore_block"
 	},
 	"elements": [
 		{

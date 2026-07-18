@@ -1,4 +1,4 @@
-package net.ocoserver.recipe;
+package net.ocoserver.Provider;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

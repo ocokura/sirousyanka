@@ -19,7 +19,7 @@ public class CreativeModeTabs {
     public static final Supplier<CreativeModeTab> SIROUSYANKA_ITEMS_TAB =
             CREATIVE_MODE_TAB.register("sirousyanka_item_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("sirousyanka_gui_creativeTab_title"))
-                    .icon(() -> new ItemStack(ModItems.USYALIUM_INGOT.get()))
+                    .icon(() -> new ItemStack(ModItems.RAW_USYALIUM.get()))
 
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.USYALIUM_INGOT.get());
