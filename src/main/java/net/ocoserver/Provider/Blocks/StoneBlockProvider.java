@@ -1,8 +1,10 @@
 package net.ocoserver.Provider.Blocks;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.ocoserver.blocks.ModBlocks;
+import org.jetbrains.annotations.Nullable;
 
 public class StoneBlockProvider {
 
@@ -13,29 +15,81 @@ public class StoneBlockProvider {
         provider.simpleBlockWithItem(ModBlocks.ABYSS_OBSIDIAN.get(), provider.cubeAll(ModBlocks.ABYSS_OBSIDIAN.get()));
 
         //ABYSS_STONE
-        provider.simpleBlockWithItem(ModBlocks.ABYSS_STONE.get(), provider.cubeAll(ModBlocks.ABYSS_STONE.get()));
-        registerStair(ModBlocks.ABYSS_STONE_STAIR.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone_stair");
-        registerSlab(ModBlocks.ABYSS_STONE_SLAB.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone_slab");
-        registerPressurePlate(ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone_pressure_plate");
-        registerButton(ModBlocks.ABYSS_STONE_BUTTON.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone_button");
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE.get(),
+                ModBlocks.ABYSS_STONE_STAIR.get(),
+                ModBlocks.ABYSS_STONE_SLAB.get(),
+                ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get(),
+                ModBlocks.ABYSS_STONE_BUTTON.get(),
+                null,
+                null,
+                null
+        );
+
         //ABYSS_COBLE
-        provider.simpleBlock(ModBlocks.ABYSS_COBBLE_STONE.get(), provider.cubeAll(ModBlocks.ABYSS_COBBLE_STONE.get()));
-        registerStair(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_stair");
-        registerSlab(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_slab");
-        registerWallBlock(ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_wall_block");
+        registerStoneFamily(
+                ModBlocks.ABYSS_COBBLE_STONE.get(),
+                ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(),
+                ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
         //FROZEN_STONE
-        provider.simpleBlockWithItem(ModBlocks.FROZEN_STONE.get(), provider.cubeAll(ModBlocks.FROZEN_STONE.get()));
-        registerStair(ModBlocks.FROZEN_STONE_STAIR.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone_stair");
-        registerSlab(ModBlocks.FROZEN_STONE_SLAB.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone_slab");
-        registerPressurePlate(ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone_pressure_plate");
-        registerButton(ModBlocks.FROZEN_STONE_BUTTON.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone_button");
+        registerStoneFamily(ModBlocks.FROZEN_STONE.get(),
+                ModBlocks.FROZEN_STONE_STAIR.get(),
+                ModBlocks.FROZEN_STONE_SLAB.get(),
+                ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get(),
+                ModBlocks.FROZEN_STONE_BUTTON.get(),
+                null,
+                null,
+                null
+                );
+
         //FROZEN_STONE_BRICKS
-        provider.simpleBlockWithItem(ModBlocks.FROZEN_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_STONE_BRICKS.get()));
-        registerStair(ModBlocks.FROZEN_STONE_BRICKS_STAIR.get(), ModBlocks.FROZEN_STONE_BRICKS.get(), "frozen_stone_bricks_stair");
-        registerSlab(ModBlocks.FROZEN_STONE_BRICKS_SLAB.get(), ModBlocks.FROZEN_STONE_BRICKS.get(), "frozen_stone_bricks_slab");
-        registerWallBlock(ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get(), ModBlocks.FROZEN_STONE_BRICKS.get(), "frozen_stone_bricks_wall_block");
-        provider.simpleBlockWithItem(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()));
-        provider.simpleBlockWithItem(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get()));
+        registerStoneFamily(
+                ModBlocks.FROZEN_STONE_BRICKS.get(),
+                ModBlocks.FROZEN_STONE_BRICKS_STAIR.get(),
+                ModBlocks.FROZEN_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(),
+                ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
+                );
+    }
+
+    private static void registerStoneFamily(
+                                            Block baseBlock,
+                                            StairBlock stairBlock,
+                                            SlabBlock slabBlock,
+                                            @Nullable PressurePlateBlock pressurePlateBlock,
+                                            @Nullable ButtonBlock buttonBlock,
+                                            @Nullable WallBlock wallBlock,
+                                            @Nullable Block chiseledBlock,
+                                            @Nullable Block crackedBlock
+    ) {
+        provider.simpleBlockWithItem(baseBlock, provider.cubeAll(baseBlock));
+        registerStair(stairBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(stairBlock).getPath());
+        registerSlab(slabBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(slabBlock).getPath());
+        if (pressurePlateBlock != null) {
+            registerPressurePlate(pressurePlateBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(pressurePlateBlock).getPath());
+        }
+        if (buttonBlock != null) {
+            registerButton(buttonBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(buttonBlock).getPath());
+        }
+        if (wallBlock != null) {
+            registerWallBlock(wallBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(wallBlock).getPath());
+        }
+        if (chiseledBlock != null) {
+            provider.simpleBlockWithItem(chiseledBlock, provider.cubeAll(chiseledBlock));
+        }
+        if (crackedBlock != null) {
+            provider.simpleBlockWithItem(crackedBlock, provider.cubeAll(crackedBlock));
+        }
     }
 
     private static void registerStair(StairBlock stairBlock, Block baseBlock, String name) {

@@ -1,6 +1,7 @@
 package net.ocoserver.Provider.Recipes;
 
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
 import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.ModItems;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -56,35 +58,87 @@ public class ModRecipes extends RecipeProvider {
         nineBlockStorageRecipes(output, RecipeCategory.MISC, ModItems.ADVANCED_USYALIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
         //Abyss Stone系
-        registerStairRecipe(ModBlocks.ABYSS_STONE_STAIR.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone");
-        slab(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSS_STONE_SLAB.get(), ModBlocks.ABYSS_STONE.get());
-        pressurePlate(output, ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get(), ModBlocks.ABYSS_STONE.get());
-        registerButtonRecipe(ModBlocks.ABYSS_STONE_BUTTON.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone");
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE.get(),
+                ModBlocks.ABYSS_STONE_STAIR.get(),
+                ModBlocks.ABYSS_STONE_SLAB.get(),
+                ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get(),
+                ModBlocks.ABYSS_STONE_BUTTON.get(),
+                null,
+                null,
+                null
+        );
+
         //Abyss Cobble
-        registerStairRecipe(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone");
-        slab(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(), ModBlocks.ABYSS_COBBLE_STONE.get());
-        wall(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get(), ModBlocks.ABYSS_COBBLE_STONE);
+        registerStoneFamily(
+                ModBlocks.ABYSS_COBBLE_STONE.get(),
+                ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(),
+                ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
         //FROZEN_STONE
-        registerStairRecipe(ModBlocks.FROZEN_STONE_STAIR.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone");
-        slab(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROZEN_STONE_SLAB.get(), ModBlocks.FROZEN_STONE.get());
-        pressurePlate(output, ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get(), ModBlocks.FROZEN_STONE.get());
-        registerButtonRecipe(ModBlocks.FROZEN_STONE_BUTTON.get(), ModBlocks.FROZEN_STONE.get(), "frozen_stone");
+        registerStoneFamily(
+                ModBlocks.FROZEN_STONE.get(),
+                 ModBlocks.FROZEN_STONE_STAIR.get(),
+                ModBlocks.FROZEN_STONE_SLAB.get(),
+                ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get(),
+                ModBlocks.FROZEN_STONE_BUTTON.get(),
+                null,
+                null,
+                null
+        );
+
         //FROZEN_STONE_BRICKS
-        registerStairRecipe(ModBlocks.FROZEN_STONE_BRICKS_STAIR.get(), ModBlocks.FROZEN_STONE_BRICKS.get(), "frozen_stone_bricks");
-        slab(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROZEN_STONE_BRICKS_SLAB.get(), ModBlocks.FROZEN_STONE_BRICKS.get());
-        wall(output, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get(), ModBlocks.FROZEN_STONE_BRICKS.get());
-
-        chiseledBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(), Ingredient.of(ModBlocks.FROZEN_STONE_BRICKS_SLAB.get()))
-                .unlockedBy("has_frozen_stone_bricks", has(ModBlocks.FROZEN_STONE_BRICKS.get()))
-                .save(output);
-
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.FROZEN_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS,
-                ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get(), 0.1f, 200)
-                .unlockedBy("has_frozen_stone_bricks", has(ModBlocks.FROZEN_STONE_BRICKS.get()))
-                .save(output);
+        registerStoneFamily(
+                ModBlocks.FROZEN_STONE_BRICKS.get(),
+                ModBlocks.FROZEN_STONE_BRICKS_STAIR.get(),
+                ModBlocks.FROZEN_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(),
+                ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
+        );
     }
 
-
+    private static void registerStoneFamily(
+            Block baseBlock,
+            StairBlock stairBlock,
+            SlabBlock slabBlock,
+            @Nullable PressurePlateBlock pressurePlateBlock,
+            @Nullable ButtonBlock buttonBlock,
+            @Nullable WallBlock wallBlock,
+            @Nullable Block chiseledBlock,
+            @Nullable Block crackedBlock
+    ) {
+        registerStairRecipe(stairBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(baseBlock).getPath());
+        slab(output, RecipeCategory.BUILDING_BLOCKS, slabBlock, baseBlock);
+        if (pressurePlateBlock != null) {
+            pressurePlate(output, pressurePlateBlock, baseBlock);
+        }
+        if (buttonBlock != null) {
+            registerButtonRecipe(buttonBlock, baseBlock, BuiltInRegistries.BLOCK.getKey(baseBlock).getPath());
+        }
+        if (wallBlock != null) {
+            wall(output, RecipeCategory.BUILDING_BLOCKS, wallBlock, baseBlock);
+        }
+        if (chiseledBlock != null) {
+            chiseledBuilder(RecipeCategory.BUILDING_BLOCKS, chiseledBlock, Ingredient.of(slabBlock))
+                    .unlockedBy("has_" + BuiltInRegistries.BLOCK.getKey(baseBlock).getPath(), has(baseBlock))
+                    .save(output);
+        }
+        if (crackedBlock != null) {
+            SimpleCookingRecipeBuilder.smelting(Ingredient.of(baseBlock), RecipeCategory.BUILDING_BLOCKS,
+                            crackedBlock, 0.1f, 200)
+                    .unlockedBy("has_" + BuiltInRegistries.BLOCK.getKey(baseBlock).getPath(), has(baseBlock))
+                    .save(output);
+        }
+    }
 
     private static void registerStairRecipe(StairBlock stairBlock, Block ingredientBlock, String name) {
         stairBuilder(stairBlock, Ingredient.of(ingredientBlock)).unlockedBy("has_" + name, has(ingredientBlock))
