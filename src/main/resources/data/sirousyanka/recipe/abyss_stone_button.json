@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "sirousyanka:abyss_stone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sirousyanka:abyss_stone_button"
+  }
+}

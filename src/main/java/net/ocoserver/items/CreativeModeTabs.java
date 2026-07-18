@@ -26,22 +26,45 @@ public class CreativeModeTabs {
                         output.accept(ModItems.USYALIUM_NUGGET.get());
                         output.accept(ModItems.RAW_USYALIUM.get());
                         output.accept(ModItems.ADVANCED_USYALIUM_INGOT.get());
+
                         output.accept(ModBlocks.USYALIUM_ORE_BLOCK.get());
                         output.accept(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get());
                         output.accept(ModBlocks.USYALIUM_BLOCK.get());
                         output.accept(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
+
                         output.accept(ModBlocks.FROZEN_SPRUCE_LOG.get());
+
+                        // ABYSS
                         output.accept(ModBlocks.ABYSS_STONE.get());
+                        output.accept(ModBlocks.ABYSS_STONE_STAIR.get());
+                        output.accept(ModBlocks.ABYSS_STONE_SLAB.get());
+                        output.accept(ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.ABYSS_STONE_BUTTON.get());
+
+                        output.accept(ModBlocks.ABYSS_COBBLE_STONE.get());
+                        output.accept(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get());
+                        output.accept(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get());
+                        output.accept(ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get());
+
                         output.accept(ModBlocks.ABYSS_ICE.get());
                         output.accept(ModBlocks.ABYSS_PACKED_ICE.get());
+                        output.accept(ModBlocks.ABYSS_OBSIDIAN.get());
+
+                        // FROZEN
                         output.accept(ModBlocks.FROZEN_GRASS_BLOCK.get());
                         output.accept(ModBlocks.FROZEN_STONE.get());
-                        output.accept(ModBlocks.ABYSS_OBSIDIAN.get());
+                        output.accept(ModBlocks.FROZEN_STONE_STAIR.get());
+                        output.accept(ModBlocks.FROZEN_STONE_SLAB.get());
+                        output.accept(ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.FROZEN_STONE_BUTTON.get());
+
+                        // FROZEN STONE BRICKS
                         output.accept(ModBlocks.FROZEN_STONE_BRICKS.get());
+                        output.accept(ModBlocks.FROZEN_STONE_BRICKS_STAIR.get());
+                        output.accept(ModBlocks.FROZEN_STONE_BRICKS_SLAB.get());
+                        output.accept(ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get());
                         output.accept(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
                         output.accept(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get());
-
-
                     })
                     .build());
 

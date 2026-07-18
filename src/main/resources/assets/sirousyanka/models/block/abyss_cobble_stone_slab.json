@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sirousyanka:block/abyss_cobble_stone",
+    "side": "sirousyanka:block/abyss_cobble_stone",
+    "top": "sirousyanka:block/abyss_cobble_stone"
+  }
+}

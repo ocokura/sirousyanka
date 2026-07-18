@@ -20,8 +20,8 @@ public class StoneBlockProvider {
         registerButton(ModBlocks.ABYSS_STONE_BUTTON.get(), ModBlocks.ABYSS_STONE.get(), "abyss_stone_button");
         //ABYSS_COBLE
         provider.simpleBlock(ModBlocks.ABYSS_COBBLE_STONE.get(), provider.cubeAll(ModBlocks.ABYSS_COBBLE_STONE.get()));
-        registerStair(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone");
-        registerSlab(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone");
+        registerStair(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_stair");
+        registerSlab(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_slab");
         registerWallBlock(ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get(), ModBlocks.ABYSS_COBBLE_STONE.get(), "abyss_cobble_stone_wall_block");
         //FROZEN_STONE
         provider.simpleBlockWithItem(ModBlocks.FROZEN_STONE.get(), provider.cubeAll(ModBlocks.FROZEN_STONE.get()));
@@ -60,7 +60,8 @@ public class StoneBlockProvider {
 
     private static void registerWallBlock(WallBlock wallBlock, Block baseBlock, String name) {
         provider.wallBlock(wallBlock, provider.blockTexture(baseBlock));
-        registerBlockItem(name, wallBlock);
+        provider.itemModels().withExistingParent(name, "minecraft:block/wall_inventory")
+                .texture("wall", provider.blockTexture(baseBlock));
     }
 
     private static void registerBlockItem(String name, Block block) {

@@ -1,8 +1,23 @@
 {
   "values": [
     "sirousyanka:abyss_stone",
+    "sirousyanka:abyss_stone_stair",
+    "sirousyanka:abyss_stone_slab",
+    "sirousyanka:abyss_stone_pressure_plate",
+    "sirousyanka:abyss_stone_button",
+    "sirousyanka:abyss_cobble_stone",
+    "sirousyanka:abyss_cobble_stone_stair",
+    "sirousyanka:abyss_cobble_stone_slab",
+    "sirousyanka:abyss_cobble_stone_wall_block",
     "sirousyanka:frozen_stone",
+    "sirousyanka:frozen_stone_stair",
+    "sirousyanka:frozen_stone_slab",
+    "sirousyanka:frozen_stone_pressure_plate",
+    "sirousyanka:frozen_stone_button",
     "sirousyanka:frozen_stone_bricks",
+    "sirousyanka:frozen_stone_bricks_stair",
+    "sirousyanka:frozen_stone_bricks_slab",
+    "sirousyanka:frozen_stone_bricks_wall_block",
     "sirousyanka:frozen_cracked_stone_bricks",
     "sirousyanka:frozen_chiseled_stone_bricks"
   ]

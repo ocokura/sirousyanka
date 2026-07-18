@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/abyss_cobble_stone_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/abyss_cobble_stone"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/abyss_cobble_stone_slab_top"
+    }
+  }
+}

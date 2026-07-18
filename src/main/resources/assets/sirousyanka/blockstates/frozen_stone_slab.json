@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/frozen_stone_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/frozen_stone"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/frozen_stone_slab_top"
+    }
+  }
+}

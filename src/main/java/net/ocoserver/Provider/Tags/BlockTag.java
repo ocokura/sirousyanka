@@ -41,9 +41,17 @@ public class BlockTag extends BlockTagsProvider {
             .add(ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get())
             .add(ModBlocks.FROZEN_STONE_BUTTON.get())
 
+            //FROZEN_BRICKS
             .add(ModBlocks.FROZEN_STONE_BRICKS.get())
+            .add(ModBlocks.FROZEN_STONE_BRICKS_STAIR.get())
+            .add(ModBlocks.FROZEN_STONE_BRICKS_SLAB.get())
+            .add(ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get())
             .add(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get())
             .add(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
+
+        tag(BlockTags.WALLS)
+            .add(ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get())
+            .add(ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get());
 
         tag(ModTags.Blocks.USYALIUM)
             .add(ModBlocks.USYALIUM_ORE_BLOCK.get())

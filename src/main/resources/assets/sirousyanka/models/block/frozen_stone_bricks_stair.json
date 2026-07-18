@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "sirousyanka:block/frozen_stone_bricks",
+    "side": "sirousyanka:block/frozen_stone_bricks",
+    "top": "sirousyanka:block/frozen_stone_bricks"
+  }
+}
