@@ -1,31 +1,22 @@
 package net.ocoserver.Provider.Blocks;
-
-import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.blocks.ModBlocks;
-import net.ocoserver.main.Sirousyanka;
 
-public class OreBlockProvider extends BlockStateProvider {
+public class OreBlockProvider {
 
-    public OreBlockProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, Sirousyanka.MODID, exFileHelper);
-    }
+    protected static void registerStatesAndModels(BlockStateProvider provider) {
+        provider.simpleBlockWithItem(ModBlocks.USYALIUM_BLOCK.get(), provider.cubeAll(ModBlocks.USYALIUM_BLOCK.get()));
 
-    @Override
-    public void registerStatesAndModels() {
-        simpleBlockWithItem(ModBlocks.USYALIUM_BLOCK.get(), cubeAll(ModBlocks.USYALIUM_BLOCK.get()));
+        provider.simpleBlockWithItem(ModBlocks.ADVANCED_USYALIUM_BLOCK.get(), provider.cubeAll(ModBlocks.ADVANCED_USYALIUM_BLOCK.get()));
 
-        simpleBlockWithItem(ModBlocks.ADVANCED_USYALIUM_BLOCK.get(), cubeAll(ModBlocks.ADVANCED_USYALIUM_BLOCK.get()));
-
-        simpleBlockWithItem(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get(), models().cubeBottomTop(
+        provider.simpleBlockWithItem(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get(), provider.models().cubeBottomTop(
                 "deepslate_usyalium_ore_block",
-                modLoc("block/deepslate_usyalium_ore_block"),
-                modLoc("block/deepslate_usyalium_ore_block_top"),
-                modLoc("block/deepslate_usyalium_ore_block_top")
+                provider.modLoc("block/deepslate_usyalium_ore_block"),
+                provider.modLoc("block/deepslate_usyalium_ore_block_top"),
+                provider.modLoc("block/deepslate_usyalium_ore_block_top")
         ));
 
-        simpleBlockWithItem(ModBlocks.USYALIUM_ORE_BLOCK.get(), cubeAll(ModBlocks.USYALIUM_ORE_BLOCK.get()));
+        provider.simpleBlockWithItem(ModBlocks.USYALIUM_ORE_BLOCK.get(), provider.cubeAll(ModBlocks.USYALIUM_ORE_BLOCK.get()));
     }
 
 }

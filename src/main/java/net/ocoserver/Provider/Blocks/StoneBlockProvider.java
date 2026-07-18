@@ -1,25 +1,16 @@
 package net.ocoserver.Provider.Blocks;
 
-import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.blocks.ModBlocks;
-import net.ocoserver.main.Sirousyanka;
 
-public class StoneBlockProvider extends BlockStateProvider {
+public class StoneBlockProvider {
 
-    public StoneBlockProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, Sirousyanka.MODID, exFileHelper);
+    protected static void registerStatesAndModels(BlockStateProvider provider) {
+        provider.simpleBlockWithItem(ModBlocks.FROZEN_STONE.get(), provider.cubeAll(ModBlocks.FROZEN_STONE.get()));
+        provider.simpleBlockWithItem(ModBlocks.ABYSS_STONE.get(), provider.cubeAll(ModBlocks.ABYSS_STONE.get()));
+        provider.simpleBlockWithItem(ModBlocks.ABYSS_OBSIDIAN.get(), provider.cubeAll(ModBlocks.ABYSS_OBSIDIAN.get()));
+        provider.simpleBlockWithItem(ModBlocks.FROZEN_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_STONE_BRICKS.get()));
+        provider.simpleBlockWithItem(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()));
+        provider.simpleBlockWithItem(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(), provider.cubeAll(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get()));
     }
-
-    @Override
-    public void registerStatesAndModels() {
-        simpleBlockWithItem(ModBlocks.FROZEN_STONE.get(), cubeAll(ModBlocks.FROZEN_STONE.get()));
-        simpleBlockWithItem(ModBlocks.ABYSS_STONE.get(), cubeAll(ModBlocks.ABYSS_STONE.get()));
-        simpleBlockWithItem(ModBlocks.ABYSS_OBSIDIAN.get(), cubeAll(ModBlocks.ABYSS_OBSIDIAN.get()));
-        simpleBlockWithItem(ModBlocks.FROZEN_STONE_BRICKS.get(), cubeAll(ModBlocks.FROZEN_STONE_BRICKS.get()));
-        simpleBlockWithItem(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get(), cubeAll(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()));
-        simpleBlockWithItem(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(), cubeAll(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get()));
-    }
-
 }
