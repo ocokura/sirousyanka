@@ -8,6 +8,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.ocoserver.Provider.Blocks.*;
 import net.ocoserver.Provider.LootTables.LootProvider;
 import net.ocoserver.Provider.Tags.BlockTag;
+import net.ocoserver.Provider.Tags.ItemTag;
 import net.ocoserver.dimension.ModPortal;
 import net.ocoserver.Provider.Recipes.ModRecipes;
 
@@ -32,9 +33,15 @@ public class CommonEvent {
                 event.includeServer(),
                 (DataProvider.Factory<LootProvider>) output -> new LootProvider(output, event.getLookupProvider()));
 
+        BlockTag blockTagProvider = event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<BlockTag>) output -> new BlockTag(output, event.getLookupProvider(), event.getExistingFileHelper())
+        );
+
         event.getGenerator().addProvider(
                 event.includeServer(),
-                (DataProvider.Factory<BlockTag>) output -> new BlockTag(output, event.getLookupProvider(), event.getExistingFileHelper()));
+                (DataProvider.Factory<ItemTag>) output -> new ItemTag(output, event.getLookupProvider(), blockTagProvider.contentsGetter(), event.getExistingFileHelper())
+        );
 
 
     }

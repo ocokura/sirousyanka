@@ -71,8 +71,6 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
         );
 
-
-
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())

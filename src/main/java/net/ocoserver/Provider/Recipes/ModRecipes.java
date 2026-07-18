@@ -7,6 +7,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
+import net.ocoserver.Tags.ModTags;
 import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -56,6 +57,8 @@ public class ModRecipes extends RecipeProvider {
 
         //高度なウシャリウム <-> 高度なウシャリウムブロック
         nineBlockStorageRecipes(output, RecipeCategory.MISC, ModItems.ADVANCED_USYALIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
+
+        planksFromLog(output, Blocks.SPRUCE_PLANKS, ModTags.Items.FROZEN_SPRUCE_LOG, 4);
 
         //Abyss Stone系
         registerStoneFamily(

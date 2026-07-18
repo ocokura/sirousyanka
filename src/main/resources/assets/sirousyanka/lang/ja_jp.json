@@ -8,5 +8,35 @@
   "block.sirousyanka.usyalium_ore_block" : "ウシャリウム鉱石",
   "block.sirousyanka.usyalium_block" : "ウシャリウムブロック",
   "block.sirousyanka.deepslate_usyalium_ore_block" : "深層岩ウシャリウム鉱石",
-  "block.sirousyanka.advanced_usyalium_block" : "高度なウシャリウムブロック"
+  "block.sirousyanka.advanced_usyalium_block" : "高度なウシャリウムブロック",
+
+  "block.sirousyanka.frozen_spruce_log" : "凍った松の原木",
+  "block.sirousyanka.abyss_ice" : "深淵の氷",
+  "block.sirousyanka.abyss_packed_ice" : "深淵の氷塊",
+  "block.sirousyanka.frozen_grass_block" : "凍った草ブロック",
+  "block.sirousyanka.abyss_obsidian" : "深淵の黒曜石",
+
+  "block.sirousyanka.abyss_stone" : "深淵の石",
+  "block.sirousyanka.abyss_stone_stair" : "深淵の石の階段",
+  "block.sirousyanka.abyss_stone_slab" : "深淵の石のハーフブロック",
+  "block.sirousyanka.abyss_stone_pressure_plate" : "深淵の石の感圧板",
+  "block.sirousyanka.abyss_stone_button" : "深淵の石のボタン",
+
+  "block.sirousyanka.abyss_cobble_stone" : "深淵の丸石",
+  "block.sirousyanka.abyss_cobble_stone_stair" : "深淵の丸石の階段",
+  "block.sirousyanka.abyss_cobble_stone_slab" : "深淵の丸石のハーフブロック",
+  "block.sirousyanka.abyss_cobble_stone_wall_block" : "深淵の丸石の塀",
+
+  "block.sirousyanka.frozen_stone" : "凍った石",
+  "block.sirousyanka.frozen_stone_stair" : "凍った石の階段",
+  "block.sirousyanka.frozen_stone_slab" : "凍った石のハーフブロック",
+  "block.sirousyanka.frozen_stone_pressure_plate" : "凍った石の感圧板",
+  "block.sirousyanka.frozen_stone_button" : "凍った石のボタン",
+
+  "block.sirousyanka.frozen_stone_bricks" : "凍った石レンガ",
+  "block.sirousyanka.frozen_stone_bricks_stair" : "凍った石レンガの階段",
+  "block.sirousyanka.frozen_stone_bricks_slab" : "凍った石レンガのハーフブロック",
+  "block.sirousyanka.frozen_stone_bricks_wall_block" : "凍った石レンガの塀",
+  "block.sirousyanka.frozen_chiseled_stone_bricks" : "凍った模様付きの石レンガ",
+  "block.sirousyanka.frozen_cracked_stone_bricks" : "凍ったひび割れた石レンガ"
 }
