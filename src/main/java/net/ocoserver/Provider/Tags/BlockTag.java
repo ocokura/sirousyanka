@@ -3,6 +3,7 @@ package net.ocoserver.Provider.Tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.Tags.ModTags;
@@ -21,8 +22,25 @@ public class BlockTag extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         tag(ModTags.Blocks.STONES)
+            //Abyss系
             .add(ModBlocks.ABYSS_STONE.get())
+            .add(ModBlocks.ABYSS_STONE_STAIR.get())
+            .add(ModBlocks.ABYSS_STONE_SLAB.get())
+            .add(ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get())
+            .add(ModBlocks.ABYSS_STONE_BUTTON.get())
+            //Abyss Cobble
+            .add(ModBlocks.ABYSS_COBBLE_STONE.get())
+            .add(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get())
+            .add(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get())
+            .add(ModBlocks.ABYSS_COBBLE_STONE_WALL_BLOCK.get())
+
+            //Frozen系
             .add(ModBlocks.FROZEN_STONE.get())
+            .add(ModBlocks.FROZEN_STONE_STAIR.get())
+            .add(ModBlocks.FROZEN_STONE_SLAB.get())
+            .add(ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get())
+            .add(ModBlocks.FROZEN_STONE_BUTTON.get())
+
             .add(ModBlocks.FROZEN_STONE_BRICKS.get())
             .add(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get())
             .add(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
@@ -32,6 +50,9 @@ public class BlockTag extends BlockTagsProvider {
             .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())
             .add(ModBlocks.USYALIUM_BLOCK.get())
             .add(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
+
+        tag(Tags.Blocks.COBBLESTONES)
+            .add(ModBlocks.ABYSS_COBBLE_STONE.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .addTag(ModTags.Blocks.STONES)

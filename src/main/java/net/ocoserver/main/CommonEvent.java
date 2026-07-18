@@ -14,6 +14,8 @@ import net.ocoserver.Provider.Recipes.ModRecipes;
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class CommonEvent {
 
+    //UseFulHud NullPointerException直す　Rendererにnullチェック追加
+
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         event.getGenerator().addProvider(

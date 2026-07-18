@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -42,8 +43,6 @@ public class ModBlocks {
 
     public static final DeferredBlock<RotatedPillarBlock> FROZEN_SPRUCE_LOG = registerBlock("frozen_spruce_log", 2.5f, false, SoundType.WOOD, 0.72f, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<Block> ABYSS_STONE = registerBlock("abyss_stone", 3f, true, SoundType.STONE, null, Block::new);
-
     public static final DeferredBlock<Block> ABYSS_ICE = registerBlock("abyss_ice", () -> new Block(BlockBehaviour.Properties.of()
             .strength(1f)
             .requiresCorrectToolForDrops()
@@ -56,28 +55,77 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block",1f, false, SoundType.GRASS, 0.72f, Block::new);
 
-    public static final DeferredBlock<Block> FROZEN_STONE = registerBlock("frozen_stone", 3f, true, SoundType.STONE, 0.72f, Block::new);
-
     public static final DeferredBlock<Block> ABYSS_OBSIDIAN = registerBlock("abyss_obsidian", 50f, true, SoundType.STONE, null, Block::new);
 
-    public static final DeferredBlock<Block> FROZEN_STONE_BRICKS = registerBlock("frozen_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+    //ABYSS_STONE
+    public static final DeferredBlock<Block> ABYSS_STONE = registerBlock("abyss_stone", 3f, true, SoundType.STONE, null, Block::new);
 
-    public static final DeferredBlock<Block> FROZEN_CHISELED_STONE_BRICKS = registerBlock("frozen_chiseled_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
-
-    public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
-
-    public static final DeferredBlock<StairBlock> ABYSS_STONE_STAIR = registerBlock("abyss_stone_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
+    public static final DeferredBlock<StairBlock> ABYSS_STONE_STAIR = registerBlock("abyss_stone_stair", () -> new StairBlock(ModBlocks.ABYSS_STONE.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
     ));
 
+    public static final DeferredBlock<SlabBlock> ABYSS_STONE_SLAB = registerBlock("abyss_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<PressurePlateBlock> ABYSS_STONE_PRESSURE_PLATE = registerBlock("abyss_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE,
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<ButtonBlock> ABYSS_STONE_BUTTON = registerBlock("abyss_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20,
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).noCollission()
+    ));
+
+    //ABYSS_COBBLE
+    public static final DeferredBlock<Block> ABYSS_COBBLE_STONE = registerBlock("abyss_cobble_stone", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> ABYSS_COBBLE_STONE_STAIR = registerBlock("abyss_cobble_stone_stair", () -> new StairBlock(ModBlocks.ABYSS_COBBLE_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> ABYSS_COBBLE_STONE_SLAB = registerBlock("abyss_cobble_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> ABYSS_COBBLE_STONE_WALL_BLOCK = registerBlock("abyss_cobble_stone_wall_block", 3f, true, SoundType.STONE, null, WallBlock::new);
+
+    //FROZEN_STONE
+    public static final DeferredBlock<Block> FROZEN_STONE = registerBlock("frozen_stone", 3f, true, SoundType.STONE, 0.72f, Block::new);
 
     public static final DeferredBlock<StairBlock> FROZEN_STONE_STAIR = registerBlock("frozen_stone_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f)
     ));
 
-    public static final DeferredBlock<StairBlock> FROZEN_STONE_BRICKS_STAIR = registerBlock("frozen_stone_bricks_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
+    public static final DeferredBlock<SlabBlock> FROZEN_STONE_SLAB = registerBlock("frozen_stone_slab", 3f, true, SoundType.STONE, 0.72f, SlabBlock::new);
+
+    public static final DeferredBlock<PressurePlateBlock> FROZEN_STONE_PRESSURE_PLATE = registerBlock("frozen_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE,
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f)
     ));
+
+    public static final DeferredBlock<ButtonBlock> FROZEN_STONE_BUTTON = registerBlock("frozen_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20,
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f).noCollission()
+    ));
+
+    //FROZEN_STONE_BRICKS
+
+    public static final DeferredBlock<Block> FROZEN_STONE_BRICKS = registerBlock("frozen_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<StairBlock> FROZEN_STONE_BRICKS_STAIR = registerBlock("frozen_stone_bricks_stair", () -> new StairBlock(
+            ModBlocks.FROZEN_STONE_BRICKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f)
+    ));
+
+    public static final DeferredBlock<SlabBlock> FROZEN_STONE_BRICKS_SLAB = registerBlock("frozen_stone_bricks_slab", 3f, true, SoundType.STONE, 0.72f, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> FROZEN_STONE_BRICKS_WALL_BLOCK = registerBlock("frozen_stone_bricks_wall_block", 3f, true, SoundType.STONE, 0.72f, WallBlock::new);
+
+    public static final DeferredBlock<Block> FROZEN_CHISELED_STONE_BRICKS = registerBlock("frozen_chiseled_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+
+
+
+
+    //--------------------------------ここからメソッド--------------------------------------------------------
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(
             String name,
