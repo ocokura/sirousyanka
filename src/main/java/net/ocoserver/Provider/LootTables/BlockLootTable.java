@@ -3,6 +3,7 @@ package net.ocoserver.Provider.LootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.ocoserver.blocks.ModBlocks;
@@ -17,13 +18,22 @@ public class BlockLootTable extends BlockLootSubProvider {
     }
 
     @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries()
+                .stream()
+                .map(e -> (Block) e.value())
+                .toList();
+    }
+
+    @Override
     protected void generate() {
-        createOreDrop(ModBlocks.USYALIUM_ORE_BLOCK.get(), ModItems.RAW_USYALIUM.get());
-        createOreDrop(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get(), ModItems.RAW_USYALIUM.get());
+        add(ModBlocks.USYALIUM_ORE_BLOCK.get(), createOreDrop(ModBlocks.USYALIUM_ORE_BLOCK.get(), ModItems.RAW_USYALIUM.get()));
+        add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get(), createOreDrop(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get(), ModItems.RAW_USYALIUM.get()));
 
         dropSelf(ModBlocks.USYALIUM_BLOCK.get());
         dropSelf(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
         dropSelf(ModBlocks.FROZEN_SPRUCE_LOG.get());
+        dropSelf(ModBlocks.ABYSS_STONE.get());
         add(ModBlocks.FROZEN_STONE.get(), createSilkTouchDispatchTable(ModBlocks.FROZEN_STONE.get(),
                 LootItem.lootTableItem(Blocks.COBBLESTONE)
         ));

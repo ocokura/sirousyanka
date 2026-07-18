@@ -1,9 +1,9 @@
 {
-  "replace": false,
   "values": [
-    "sirousyanka:usyalium_block",
-    "sirousyanka:advanced_usyalium_block",
-    "sirousyanka:usyalium_ore_block",
-    "sirousyanka:deepslate_usyalium_ore_block"
+    "#sirousyanka:stone",
+    "#sirousyanka:usyalium_block",
+    "sirousyanka:abyss_ice",
+    "sirousyanka:abyss_packed_ice",
+    "sirousyanka:abyss_obsidian"
   ]
 }

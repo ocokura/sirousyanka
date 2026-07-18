@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "sirousyanka:usyalium_block"
+          "name": "sirousyanka:frozen_cracked_stone_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "sirousyanka:blocks/usyalium_block"
+  "random_sequence": "sirousyanka:blocks/frozen_cracked_stone_bricks"
 }
