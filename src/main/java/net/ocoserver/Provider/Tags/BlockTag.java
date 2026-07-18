@@ -51,7 +51,7 @@ public class BlockTag extends BlockTagsProvider {
         registerStoneFamily(
                 ModBlocks.FROZEN_STONE.get(),
                 ModBlocks.FROZEN_STONE_STAIR.get(),
-                (ModBlocks.FROZEN_STONE_SLAB.get(),
+                ModBlocks.FROZEN_STONE_SLAB.get(),
                 ModBlocks.FROZEN_STONE_PRESSURE_PLATE.get(),
                 ModBlocks.FROZEN_STONE_BUTTON.get(),
                 null,
