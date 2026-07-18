@@ -2,17 +2,16 @@ package net.ocoserver.blocks;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StructureBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ocoserver.items.ModItems;
 import net.ocoserver.main.Sirousyanka;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -33,21 +32,17 @@ public class ModBlocks {
     * 凍った模様入り石レンガ k
     * 凍ったひび割れた石レンガ k
     * */
-    public static final DeferredBlock<Block> USYALIUM_ORE_BLOCK = registerSimpleBlock("usyalium_ore_block", 3f, true, SoundType.STONE);
+    public static final DeferredBlock<Block> USYALIUM_ORE_BLOCK = registerBlock("usyalium_ore_block", 3f, true, SoundType.STONE, null, Block::new);
 
-    public static final DeferredBlock<Block> DEEPSLATE_USYALIUM_ORE_BLOCK = registerSimpleBlock("deepslate_usyalium_ore_block", 4f, true, SoundType.DEEPSLATE);
+    public static final DeferredBlock<Block> DEEPSLATE_USYALIUM_ORE_BLOCK = registerBlock("deepslate_usyalium_ore_block", 4f, true, SoundType.DEEPSLATE, null, Block::new);
 
-    public static final DeferredBlock<Block> USYALIUM_BLOCK = registerSimpleBlock("usyalium_block", 4f, true, SoundType.STONE);
+    public static final DeferredBlock<Block> USYALIUM_BLOCK = registerBlock("usyalium_block", 4f, true, SoundType.STONE, null, Block::new);
 
-    public static final DeferredBlock<Block> ADVANCED_USYALIUM_BLOCK = registerSimpleBlock("advanced_usyalium_block", 5f, true, SoundType.AMETHYST);
+    public static final DeferredBlock<Block> ADVANCED_USYALIUM_BLOCK = registerBlock("advanced_usyalium_block", 5f, true, SoundType.AMETHYST, null, Block::new);
 
-    public static final DeferredBlock<RotatedPillarBlock> FROZEN_SPRUCE_LOG = registerBlock("frozen_spruce_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
-            .strength(2.5f)
-            .sound(SoundType.WOOD)
-            .friction(0.72F)
-    ));
+    public static final DeferredBlock<RotatedPillarBlock> FROZEN_SPRUCE_LOG = registerBlock("frozen_spruce_log", 2.5f, false, SoundType.WOOD, 0.72f, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<Block> ABYSS_STONE = registerSimpleBlock("abyss_stone", 3f, true, SoundType.STONE);
+    public static final DeferredBlock<Block> ABYSS_STONE = registerBlock("abyss_stone", 3f, true, SoundType.STONE, null, Block::new);
 
     public static final DeferredBlock<Block> ABYSS_ICE = registerBlock("abyss_ice", () -> new Block(BlockBehaviour.Properties.of()
             .strength(1f)
@@ -57,55 +52,52 @@ public class ModBlocks {
             .noOcclusion()
     ));
 
-    public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(1.5f)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.GLASS)
-            .friction(0.98F)
+    public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1.5f, true, SoundType.GLASS, 0.98f, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block",1f, false, SoundType.GRASS, 0.72f, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_STONE = registerBlock("frozen_stone", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<Block> ABYSS_OBSIDIAN = registerBlock("abyss_obsidian", 50f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_STONE_BRICKS = registerBlock("frozen_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_CHISELED_STONE_BRICKS = registerBlock("frozen_chiseled_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    public static final DeferredBlock<StairBlock> ABYSS_STONE_STAIR = registerBlock("abyss_stone_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
     ));
 
-    public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(0.6f)
-            .sound(SoundType.GRASS)
-            .friction(0.72F)
+
+    public static final DeferredBlock<StairBlock> FROZEN_STONE_STAIR = registerBlock("frozen_stone_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f)
     ));
 
-    public static final DeferredBlock<Block> FROZEN_STONE = registerBlock("frozen_stone", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(3f)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.STONE)
-            .friction(0.72F)
+    public static final DeferredBlock<StairBlock> FROZEN_STONE_BRICKS_STAIR = registerBlock("frozen_stone_bricks_stair", () -> new StairBlock(ModBlocks.FROZEN_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).friction(0.72f)
     ));
 
-    public static final DeferredBlock<Block> ABYSS_OBSIDIAN = registerSimpleBlock("abyss_obsidian", 50f, true, SoundType.STONE);
-
-    public static final DeferredBlock<Block> FROZEN_STONE_BRICKS = registerBlock("frozen_stone_bricks", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(3f)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.STONE)
-            .friction(0.72F)
-    ));
-
-    public static final DeferredBlock<Block> FROZEN_CHISELED_STONE_BRICKS = registerBlock("frozen_chiseled_stone_bricks", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(3f)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.STONE)
-            .friction(0.72F)
-    ));
-
-    public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(3f)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.STONE)
-            .friction(0.72F)
-    ));
-
-    private static DeferredBlock<Block> registerSimpleBlock(String name, float strength, boolean requiresCorrectTool, SoundType sound) {
+    private static <T extends Block> DeferredBlock<T> registerBlock(
+            String name,
+            float strength,
+            boolean requiresCorrectTool,
+            SoundType sound,
+            @Nullable Float friction,
+            Function<BlockBehaviour.Properties, T> function
+    ) {
         BlockBehaviour.Properties properties = BlockBehaviour.Properties.of().strength(strength).sound(sound);
+        if (friction == null) {
+            friction = 0.6f;
+        }
+        properties.friction(friction);
         if (requiresCorrectTool) {
             properties.requiresCorrectToolForDrops();
         }
-        return registerBlock(name, () -> new Block(properties));
+        DeferredBlock<T> result = BLOCKS.register(name, () -> function.apply(properties));
+        registerBlockItem(name, result);
+        return result;
     }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
