@@ -65,6 +65,25 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.FROZEN_STONE_BRICKS_WALL_BLOCK.get());
                         output.accept(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
                         output.accept(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get());
+
+                        //氷雪のカラマツ
+                        output.accept(ModBlocks.ICE_LARCH_LOG.get());
+                        output.accept(ModBlocks.ICE_LARCH_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_ICE_LARCH_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_STAIR.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_SLAB.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_FENCE.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_FENCE_GATE.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_DOOR.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_BUTTON.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_SIGN.get());
+                        output.accept(ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get());
+                        output.accept(ModBlocks.ICE_LARCH_LEAVES.get());
+                        output.accept(ModBlocks.ICE_LARCH_SAPLING.get());
                     })
                     .build());
 

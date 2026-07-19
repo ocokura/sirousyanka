@@ -107,6 +107,62 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(),
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
         );
+
+        //氷雪のカラマツ
+        registerWoodRecipeFamily(
+                ModBlocks.ICE_LARCH_LOG.get(),
+                ModBlocks.ICE_LARCH_WOOD.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_LOG.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
+                ModBlocks.ICE_LARCH_PLANKS.get(),
+                ModBlocks.ICE_LARCH_PLANKS_STAIR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SLAB.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE_GATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_BUTTON.get(),
+                ModBlocks.ICE_LARCH_PLANKS_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get()
+        );
+    }
+
+    private static void registerWoodRecipeFamily(
+            Block log,
+            Block wood,
+            Block strippedLog,
+            Block strippedWood,
+            Block planks,
+            Block stair,
+            Block slab,
+            Block fence,
+            Block fenceGate,
+            Block pressurePlate,
+            Block button,
+            Block door,
+            Block trapdoor,
+            Block sign,
+            Block ceilingSign
+    ) {
+        planksFromLog(output, planks, ModTags.Items.ICE_LARCH_LOG, 4);
+        woodFromLogs(output, wood, log);
+        woodFromLogs(output, strippedWood, strippedLog);
+
+        var ingredient = Ingredient.of(planks);
+
+        stairBuilder(stair, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        slab(output, RecipeCategory.BUILDING_BLOCKS, slab, planks);
+        fenceBuilder(fence, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        fenceGateBuilder(fenceGate, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        buttonBuilder(button, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        pressurePlate(output, pressurePlate, planks);
+
+        doorBuilder(door, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        trapdoorBuilder(trapdoor, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+
+        signBuilder(sign, ingredient).unlockedBy("has_planks", has(planks)).save(output);
+        hangingSign(output, ceilingSign, strippedLog);
     }
 
     private static void registerStoneFamily(

@@ -95,6 +95,81 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
                 );
 
+        //氷雪のカラマツ
+        registerWoodLootFamily(
+                ModBlocks.ICE_LARCH_LOG.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_LOG.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
+                ModBlocks.ICE_LARCH_PLANKS.get(),
+                ModBlocks.ICE_LARCH_PLANKS_STAIR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SLAB.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE_GATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_BUTTON.get(),
+                ModBlocks.ICE_LARCH_PLANKS_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.ICE_LARCH_SAPLING.get(),
+                ModBlocks.ICE_LARCH_LEAVES.get()
+        );
+
+    }
+
+    private void registerWoodLootFamily(
+            Block log,
+            Block wood,
+            Block strippedLog,
+            Block strippedWood,
+            Block planks,
+            Block stair,
+            Block slab,
+            Block fence,
+            Block fenceGate,
+            Block pressurePlate,
+            Block button,
+            Block door,
+            Block trapdoor,
+            Block sign,
+            Block wallSign,
+            Block ceilingSign,
+            Block wallSignHanging,
+            Block sapling,
+            Block leaves
+    ) {
+
+        dropSelf(log);
+        dropSelf(wood);
+        dropSelf(strippedLog);
+        dropSelf(strippedWood);
+        dropSelf(planks);
+        dropSelf(stair);
+        dropSelf(fence);
+        dropSelf(fenceGate);
+        dropSelf(pressurePlate);
+        dropSelf(button);
+        dropSelf(trapdoor);
+        dropSelf(sapling);
+
+        add(slab, block -> createSlabItemTable(slab));
+
+        add(door, block ->createDoorTable(door));
+
+        dropSelf(sign);
+        add(wallSign, block -> createSingleItemTable(sign));
+
+        dropSelf(ceilingSign);
+        add(wallSignHanging, block -> createSingleItemTable(ceilingSign));
+
+        add(leaves, block -> this.createLeavesDrops(
+                leaves,
+                sapling,
+                0.05F, 0.0625F, 0.083333336F, 0.1F
+        ));
     }
 
     private void registerStoneFamily(

@@ -1,10 +1,13 @@
 package net.ocoserver.blocks;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -12,6 +15,7 @@ import net.ocoserver.items.ModItems;
 import net.ocoserver.main.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 
+import java.lang.reflect.Type;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -119,6 +123,71 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
 
+
+
+    //氷雪のカラマツ
+    public static final DeferredBlock<RotatedPillarBlock> ICE_LARCH_LOG = registerBlock("ice_larch_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> ICE_LARCH_WOOD = registerBlock("ice_larch_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_ICE_LARCH_LOG = registerBlock("stripped_ice_larch_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_ICE_LARCH_WOOD = registerBlock("stripped_ice_larch_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<Block> ICE_LARCH_PLANKS = registerBlock("ice_larch_planks", 2.0f, false, SoundType.WOOD, null, Block::new); // 硬さはバニラ基準の2.0fに調整
+
+    public static final DeferredBlock<LeavesBlock> ICE_LARCH_LEAVES = registerBlock("ice_larch_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<StairBlock> ICE_LARCH_PLANKS_STAIR = registerBlock("ice_larch_planks_stair", () -> new StairBlock(ModBlocks.ICE_LARCH_PLANKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<SlabBlock> ICE_LARCH_PLANKS_SLAB = registerBlock("ice_larch_planks_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+
+    public static final DeferredBlock<PressurePlateBlock> ICE_LARCH_PLANKS_PRESSURE_PLATE = registerBlock("ice_larch_planks_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<ButtonBlock> ICE_LARCH_PLANKS_BUTTON = registerBlock("ice_larch_planks_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
+    ));
+
+    public static final DeferredBlock<FenceBlock> ICE_LARCH_PLANKS_FENCE = registerBlock("ice_larch_planks_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+
+    public static final DeferredBlock<FenceGateBlock> ICE_LARCH_PLANKS_FENCE_GATE = registerBlock("ice_larch_planks_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<DoorBlock> ICE_LARCH_PLANKS_DOOR = registerBlock("ice_larch_planks_door", () -> new DoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<TrapDoorBlock> ICE_LARCH_PLANKS_TRAP_DOOR = registerBlock("ice_larch_planks_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlock("ice_larch_planks_sign", () -> new StandingSignBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlock("ice_larch_planks_wall_sign", () -> new WallSignBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_SIGN)
+    ));
+
+    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlock("ice_larch_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlock("ice_larch_planks_wall_hanging_sign", () -> new WallHangingSignBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_CEILING_HANGING_SIGN)
+    ));
+
+    public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(null,
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
+    ));
 
 
 

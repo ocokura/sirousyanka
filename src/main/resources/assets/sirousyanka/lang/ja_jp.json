@@ -38,5 +38,25 @@
   "block.sirousyanka.frozen_stone_bricks_slab" : "凍った石レンガのハーフブロック",
   "block.sirousyanka.frozen_stone_bricks_wall_block" : "凍った石レンガの塀",
   "block.sirousyanka.frozen_chiseled_stone_bricks" : "凍った模様付きの石レンガ",
-  "block.sirousyanka.frozen_cracked_stone_bricks" : "凍ったひび割れた石レンガ"
+  "block.sirousyanka.frozen_cracked_stone_bricks" : "凍ったひび割れた石レンガ",
+
+  "block.sirousyanka.ice_larch_log" : "氷雪のカラマツの原木",
+  "block.sirousyanka.ice_larch_wood" : "氷雪のカラマツの木",
+  "block.sirousyanka.stripped_ice_larch_log" : "樹皮を剥いだ氷雪のカラマツの原木",
+  "block.sirousyanka.stripped_ice_larch_wood" : "樹皮を剥いだ氷雪のカラマツの木",
+  "block.sirousyanka.ice_larch_planks" : "氷雪のカラマツの板材",
+  "block.sirousyanka.ice_larch_planks_stair" : "氷雪のカラマツの階段",
+  "block.sirousyanka.ice_larch_planks_slab" : "氷雪のカラマツのハーフブロック",
+  "block.sirousyanka.ice_larch_planks_fence" : "氷雪のカラマツのフェンス",
+  "block.sirousyanka.ice_larch_planks_fence_gate" : "氷雪のカラマツのフェンスゲート",
+  "block.sirousyanka.ice_larch_planks_door" : "氷雪のカラマツのドア",
+  "block.sirousyanka.ice_larch_planks_trap_door" : "氷雪のカラマツのトラップドア",
+  "block.sirousyanka.ice_larch_planks_pressure_plate" : "氷雪のカラマツの感圧版",
+  "block.sirousyanka.ice_larch_planks_button" : "氷雪のカラマツのボタン",
+  "block.sirousyanka.ice_larch_planks_sign" : "氷雪のカラマツの看板",
+  "block.sirousyanka.ice_larch_planks_wall_sign" : "氷雪のカラマツの看板",
+  "block.sirousyanka.ice_larch_planks_ceiling_hanging_sign" : "氷雪のカラマツの吊り看板",
+  "block.sirousyanka.ice_larch_planks_wall_hanging_sign" : "氷雪のカラマツの吊り看板",
+  "block.sirousyanka.ice_larch_leaves" : "氷雪のカラマツの葉",
+  "block.sirousyanka.ice_larch_sapling" : "氷雪のカラマツの苗木"
 }

@@ -27,6 +27,12 @@ public class ItemTag extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.FROZEN_SPRUCE_LOG)
                 .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());
+
+        tag(ModTags.Items.ICE_LARCH_LOG)
+                .add(ModBlocks.ICE_LARCH_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ICE_LARCH_LOG.get().asItem())
+                .add(ModBlocks.ICE_LARCH_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get().asItem());
     }
 
 }

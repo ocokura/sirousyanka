@@ -71,6 +71,29 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
         );
 
+        //氷雪のカラマツブロック
+        registerWoodBlockTags(
+                ModBlocks.ICE_LARCH_LOG.get(),
+                ModBlocks.ICE_LARCH_WOOD.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_LOG.get(),
+                ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
+                ModBlocks.ICE_LARCH_PLANKS.get(),
+                ModBlocks.ICE_LARCH_PLANKS_STAIR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SLAB.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_FENCE_GATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.ICE_LARCH_PLANKS_BUTTON.get(),
+                ModBlocks.ICE_LARCH_PLANKS_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.ICE_LARCH_LEAVES.get(),
+                ModBlocks.ICE_LARCH_SAPLING.get()
+        );
+
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())
@@ -99,6 +122,57 @@ public class BlockTag extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(ModTags.Blocks.USYALIUM);
 
+    }
+
+    private void registerWoodBlockTags(
+            Block log,
+            Block wood,
+            Block strippedLog,
+            Block strippedWood,
+            Block planks,
+            Block stair,
+            Block slab,
+            Block fence,
+            Block fenceGate,
+            Block pressurePlate,
+            Block button,
+            Block door,
+            Block trapdoor,
+            Block sign,
+            Block wallSign,
+            Block ceilingSign,
+            Block wallSignHanging,
+            Block leaves,
+            Block sapling
+    ) {
+        tag(BlockTags.PLANKS).add(planks);
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(log)
+                .add(strippedLog)
+                .add(wood)
+                .add(strippedWood);
+
+        tag(BlockTags.STAIRS).add(stair);
+        tag(BlockTags.SLABS).add(slab);
+        tag(BlockTags.FENCES).add(fence);
+        tag(BlockTags.FENCE_GATES).add(fenceGate);
+        tag(BlockTags.PRESSURE_PLATES).add(pressurePlate);
+        tag(BlockTags.BUTTONS).add(button);
+        tag(BlockTags.DOORS).add(door);
+        tag(BlockTags.TRAPDOORS).add(trapdoor);
+        tag(BlockTags.LEAVES).add(leaves);
+        tag(BlockTags.SAPLINGS).add(sapling);
+
+        tag(BlockTags.STANDING_SIGNS).add(sign);
+        tag(BlockTags.WALL_SIGNS).add(wallSign);
+        tag(BlockTags.CEILING_HANGING_SIGNS).add(ceilingSign);
+        tag(BlockTags.WALL_HANGING_SIGNS).add(wallSignHanging);
+
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(log).add(strippedLog).add(planks).add(stair).add(slab)
+                .add(fence).add(fenceGate).add(pressurePlate).add(button)
+                .add(door).add(trapdoor).add(sign).add(wallSign)
+                .add(ceilingSign).add(wallSignHanging);
     }
 
     private void registerStoneFamily(

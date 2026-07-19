@@ -25,6 +25,10 @@ public class ModTags {
                 TagKey.create(Registries.ITEM,
                         ResourceLocation.fromNamespaceAndPath("sirousyanka", "frozen_spruce_log")
                 );
+        public static final TagKey<Item> ICE_LARCH_LOG =
+                TagKey.create(Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "ice_larch_log")
+                );
     }
 
 }
