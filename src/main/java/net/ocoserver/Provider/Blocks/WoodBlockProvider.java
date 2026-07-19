@@ -111,20 +111,15 @@ public class WoodBlockProvider {
         //トラップドア
         provider.trapdoorBlockWithRenderType(trapdoor, provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(trapdoor).getPath()), true, "cutout");
         provider.simpleBlockItem(trapdoor, new ModelFile.UncheckedModelFile(provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(trapdoor).getPath() + "_bottom")));
+        //看板
         provider.signBlock(sign, wallSign, planksTex);
-        provider.itemModels().withExistingParent(
-                BuiltInRegistries.BLOCK.getKey(sign).getPath(),
-                "item/generated"
-        ).texture("layer0", provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(sign).getPath()));
+        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(sign).getPath(), "item/generated")
+                .texture("layer0", provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(sign).getPath()));
 
         // 吊り看板
-        // 修正点: こちらも planksTex をそのまま渡します
         provider.hangingSignBlock(ceilingSign, wallSignHanging, planksTex);
-
-        provider.itemModels().withExistingParent(
-                BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath(),
-                "item/generated"
-        ).texture("layer0", provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath()));
+        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath(), "item/generated")
+                .texture("layer0", provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath()));
         //苗木
         var saplingModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath())
         );
