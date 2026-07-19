@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sirousyanka:ice_larch_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sirousyanka:ice_larch_planks"
+  }
+}

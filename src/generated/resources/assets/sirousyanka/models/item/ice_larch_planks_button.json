@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "sirousyanka:block/ice_larch_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sirousyanka:block/ice_larch_planks",
+    "side": "sirousyanka:block/ice_larch_planks",
+    "top": "sirousyanka:block/ice_larch_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sirousyanka:block/ice_larch_log_top",
+    "side": "sirousyanka:block/ice_larch_log"
+  }
+}

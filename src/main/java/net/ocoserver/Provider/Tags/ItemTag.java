@@ -3,6 +3,8 @@ package net.ocoserver.Provider.Tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.Tags.ModTags;
@@ -25,6 +27,7 @@ public class ItemTag extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        copy(BlockTags.PLANKS, ItemTags.PLANKS);
         tag(ModTags.Items.FROZEN_SPRUCE_LOG)
                 .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());
 

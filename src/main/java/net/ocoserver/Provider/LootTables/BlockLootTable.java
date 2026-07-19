@@ -98,7 +98,7 @@ public class BlockLootTable extends BlockLootSubProvider {
         //氷雪のカラマツ
         registerWoodLootFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),
-                ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
+                ModBlocks.ICE_LARCH_WOOD.get(),
                 ModBlocks.STRIPPED_ICE_LARCH_LOG.get(),
                 ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
                 ModBlocks.ICE_LARCH_PLANKS.get(),

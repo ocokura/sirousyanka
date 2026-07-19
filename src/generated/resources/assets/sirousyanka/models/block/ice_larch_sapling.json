@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sirousyanka:block/ice_larch_sapling"
+  }
+}

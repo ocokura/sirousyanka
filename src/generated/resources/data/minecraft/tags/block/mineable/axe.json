@@ -1,5 +1,20 @@
 {
   "values": [
+    "sirousyanka:ice_larch_log",
+    "sirousyanka:stripped_ice_larch_log",
+    "sirousyanka:ice_larch_planks",
+    "sirousyanka:ice_larch_planks_stair",
+    "sirousyanka:ice_larch_planks_slab",
+    "sirousyanka:ice_larch_planks_fence",
+    "sirousyanka:ice_larch_planks_fence_gate",
+    "sirousyanka:ice_larch_planks_pressure_plate",
+    "sirousyanka:ice_larch_planks_button",
+    "sirousyanka:ice_larch_planks_door",
+    "sirousyanka:ice_larch_planks_trap_door",
+    "sirousyanka:ice_larch_planks_sign",
+    "sirousyanka:ice_larch_planks_wall_sign",
+    "sirousyanka:ice_larch_planks_ceiling_hanging_sign",
+    "sirousyanka:ice_larch_planks_wall_hanging_sign",
     "sirousyanka:frozen_spruce_log"
   ]
 }

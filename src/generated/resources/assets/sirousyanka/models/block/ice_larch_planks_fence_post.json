@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "sirousyanka:block/ice_larch_planks"
+  }
+}

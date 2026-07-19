@@ -171,17 +171,17 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlock("ice_larch_planks_sign", () -> new StandingSignBlock(WoodType.ACACIA,
+    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlock("ice_larch_planks_sign", () -> new StandingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlock("ice_larch_planks_wall_sign", () -> new WallSignBlock(WoodType.ACACIA,
+    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlock("ice_larch_planks_wall_sign", () -> new WallSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlock("ice_larch_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(WoodType.ACACIA,
+    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlock("ice_larch_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlock("ice_larch_planks_wall_hanging_sign", () -> new WallHangingSignBlock(WoodType.ACACIA,
+    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlock("ice_larch_planks_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_CEILING_HANGING_SIGN)
     ));
 

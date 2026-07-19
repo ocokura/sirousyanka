@@ -4,6 +4,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.ocoserver.blocks.ModBlocks;
 
 public class WoodBlockProvider {
@@ -65,76 +66,61 @@ public class WoodBlockProvider {
             SaplingBlock sapling,
             Block leaves
     ) {
+        //原木登録
         provider.logBlock(log);
+        provider.simpleBlockItem(log, provider.models().getExistingFile(provider.modLoc(BuiltInRegistries.BLOCK.getKey(log).getPath())));
+        //木を登録
         provider.simpleBlockWithItem(log_wood, provider.cubeAll(log_wood));
+        //樹皮を剥いだ原木
         provider.logBlock(stripped_log);
+        provider.simpleBlockItem(stripped_log, provider.models().getExistingFile(provider.modLoc(BuiltInRegistries.BLOCK.getKey(stripped_log).getPath())));
+        //樹皮を剥いだ木
         provider.simpleBlockWithItem(stripped_log_wood, provider.cubeAll(stripped_log_wood));
+        //板材
         provider.simpleBlockWithItem(planks, provider.cubeAll(planks));
+        //葉っぱ
         provider.simpleBlockWithItem(leaves, provider.cubeAll(leaves));
 
         ResourceLocation planksTex = provider.blockTexture(planks);
 
+        //階段
         provider.stairsBlock(stair, planksTex);
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(stair).getPath(), provider.blockTexture(stair));
-
+        provider.itemModels().stairs(BuiltInRegistries.BLOCK.getKey(stair).getPath(), provider.blockTexture(planks), provider.blockTexture(planks), provider.blockTexture(planks));
+        //ハーフブロック
         provider.slabBlock(slab, planksTex, planksTex);
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(slab).getPath(), provider.blockTexture(slab));
-
+        provider.itemModels().slab(BuiltInRegistries.BLOCK.getKey(slab).getPath(), provider.blockTexture(planks), provider.blockTexture(planks), provider.blockTexture(planks));
+        //フェンスブロック
         provider.fenceBlock(fence, planksTex);
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(fence).getPath(), provider.blockTexture(fence));
-
+        provider.itemModels().fenceInventory(BuiltInRegistries.BLOCK.getKey(fence).getPath(), planksTex);
+        //フェンスゲート
         provider.fenceGateBlock(fenceGate, planksTex);
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(fenceGate).getPath(), provider.blockTexture(fenceGate));
-
+        provider.itemModels().fenceGate(BuiltInRegistries.BLOCK.getKey(fenceGate).getPath(), provider.blockTexture(planks));
+        //ボタン
         provider.buttonBlock(button, planksTex);
         provider.itemModels().buttonInventory(BuiltInRegistries.BLOCK.getKey(button).getPath(), planksTex);
-
+        //感圧板
         provider.pressurePlateBlock(pressurePlate, planksTex);
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(pressurePlate).getPath(), provider.blockTexture(pressurePlate));
-
-        String doorPath = BuiltInRegistries.BLOCK.getKey(door).getPath();
-        provider.doorBlockWithRenderType(
-                door,
-                provider.modLoc("block/" + doorPath + "_bottom"),
-                provider.modLoc("block/" + doorPath + "_top"),
+        provider.itemModels().pressurePlate(BuiltInRegistries.BLOCK.getKey(pressurePlate).getPath(), provider.blockTexture(planks));
+        //ドア
+        provider.doorBlockWithRenderType(door,
+                provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(door).getPath() + "_bottom"),
+                provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(door).getPath() + "_top"),
                 "cutout"
         );
-
-        String trapdoorPath = BuiltInRegistries.BLOCK.getKey(trapdoor).getPath();
-        provider.trapdoorBlockWithRenderType(
-                trapdoor,
-                provider.modLoc("block/" + trapdoorPath),
-                true,
-                "cutout"
+        provider.itemModels().basicItem(door.asItem());
+        //トラップドア
+        provider.trapdoorBlockWithRenderType(trapdoor, provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(trapdoor).getPath()), true, "cutout");
+        provider.simpleBlockItem(trapdoor, new ModelFile.UncheckedModelFile(provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(trapdoor).getPath() + "_bottom")));
+        //看板
+        provider.signBlock(sign, wallSign, provider.modLoc("entity/" + BuiltInRegistries.BLOCK.getKey(sign).getPath()));
+        provider.itemModels().sign(BuiltInRegistries.BLOCK.getKey(sign).getPath(), provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(sign).getPath()));
+        //吊り看板
+        provider.hangingSignBlock(ceilingSign, wallSignHanging, provider.modLoc("entity/" + BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath()));
+        provider.itemModels().basicItem(provider.modLoc(BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath()));
+        //苗木
+        var saplingModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath())
         );
-
-        provider.signBlock(
-                sign,
-                wallSign,
-                planksTex
-        );
-
-        String signPath = BuiltInRegistries.BLOCK.getKey(sign).getPath();
-        provider.itemModels().withExistingParent(signPath, provider.mcLoc("item/generated"))
-                .texture("layer0", provider.modLoc("item/" + signPath));
-
-        provider.hangingSignBlock(
-                ceilingSign,
-                wallSignHanging,
-                planksTex
-        );
-
-        String ceilingSignPath = BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath();
-        String itemSignName = ceilingSignPath.replace("_ceiling", "");
-        provider.itemModels().withExistingParent(itemSignName, provider.mcLoc("item/generated"))
-                .texture("layer0", provider.modLoc("item/" + itemSignName));
-
-
-        var saplingModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath()));
-        provider.simpleBlock(sapling, saplingModel);
-
-        provider.itemModels().withExistingParent(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.mcLoc("item/generated"))
-                .texture("layer0", provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath()));
+        provider.simpleBlockItem(sapling, saplingModel);
     }
 
 }

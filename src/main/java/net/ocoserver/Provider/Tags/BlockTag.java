@@ -145,7 +145,8 @@ public class BlockTag extends BlockTagsProvider {
             Block leaves,
             Block sapling
     ) {
-        tag(BlockTags.PLANKS).add(planks);
+        tag(BlockTags.PLANKS)
+            .add(planks);
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(log)
                 .add(strippedLog)

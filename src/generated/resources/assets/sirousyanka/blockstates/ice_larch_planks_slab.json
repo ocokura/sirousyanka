@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/ice_larch_planks_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/ice_larch_planks"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/ice_larch_planks_slab_top"
+    }
+  }
+}
