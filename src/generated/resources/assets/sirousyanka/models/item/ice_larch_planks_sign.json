@@ -1,5 +1,6 @@
 {
+  "parent": "minecraft:item/generated",
   "textures": {
-    "particle": "sirousyanka:item/ice_larch_planks_sign"
+    "layer0": "sirousyanka:item/ice_larch_planks_sign"
   }
 }

@@ -1,11 +1,9 @@
 package net.ocoserver.blocks;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -15,7 +13,6 @@ import net.ocoserver.items.ModItems;
 import net.ocoserver.main.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 
-import java.lang.reflect.Type;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -171,17 +168,17 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlock("ice_larch_planks_sign", () -> new StandingSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlockWithoutItem("ice_larch_planks_sign", () -> new StandingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlock("ice_larch_planks_wall_sign", () -> new WallSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlockWithoutItem("ice_larch_planks_wall_sign", () -> new WallSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlock("ice_larch_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlockWithoutItem("ice_larch_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlock("ice_larch_planks_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlockWithoutItem("ice_larch_planks_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_CEILING_HANGING_SIGN)
     ));
 
@@ -215,6 +212,10 @@ public class ModBlocks {
         DeferredBlock<T> result = BLOCKS.register(name, () -> function.apply(properties));
         registerBlockItem(name, result);
         return result;
+    }
+
+    private static <T extends Block> DeferredBlock<T> registerBlockWithoutItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
