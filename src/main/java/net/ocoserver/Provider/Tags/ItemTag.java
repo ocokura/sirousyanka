@@ -46,7 +46,7 @@ public class ItemTag extends ItemTagsProvider {
                 .add(ModBlocks.KEUTI_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_KEUTI_WOOD.get().asItem());
 
-        //紅結晶の板材が作れるように
+        //紅晶樹の板材が作れるように
         tag(ModTags.Items.CRAFTABLE_TO_CRIMSON_CRYSTAL_PLANKS)
                 .add(ModBlocks.CRIMSON_CRYSTAL_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get().asItem())

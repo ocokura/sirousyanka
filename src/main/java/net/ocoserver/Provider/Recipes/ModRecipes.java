@@ -146,7 +146,7 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get()
         );
 
-        //紅結晶
+        //紅晶樹
         registerWoodRecipeFamily(
                 ModBlocks.CRIMSON_CRYSTAL_LOG.get(),
                 ModBlocks.CRIMSON_CRYSTAL_WOOD.get(),

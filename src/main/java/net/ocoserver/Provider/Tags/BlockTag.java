@@ -119,7 +119,7 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.KEUTI_SAPLING.get()
         );
 
-        //紅結晶
+        //紅晶樹
         registerWoodBlockTags(
                 ModBlocks.CRIMSON_CRYSTAL_LOG.get(),
                 ModBlocks.CRIMSON_CRYSTAL_WOOD.get(),

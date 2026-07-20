@@ -141,7 +141,7 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.KEUTI_LEAVES.get()
         );
 
-        //紅結晶
+        //紅晶樹
         registerWoodLootFamily(
                 ModBlocks.CRIMSON_CRYSTAL_LOG.get(),
                 ModBlocks.CRIMSON_CRYSTAL_WOOD.get(),
