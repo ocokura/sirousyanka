@@ -70,12 +70,14 @@ public class WoodBlockProvider {
         provider.logBlock(log);
         provider.simpleBlockItem(log, provider.models().getExistingFile(provider.modLoc(BuiltInRegistries.BLOCK.getKey(log).getPath())));
         //木を登録
-        provider.simpleBlockWithItem(log_wood, provider.cubeAll(log_wood));
+        provider.axisBlock(log_wood, provider.blockTexture(log), provider.blockTexture(log));
+        provider.simpleBlockItem(log_wood, new ModelFile.UncheckedModelFile("sirousyanka:block/" + BuiltInRegistries.BLOCK.getKey(log_wood).getPath()));
         //樹皮を剥いだ原木
         provider.logBlock(stripped_log);
         provider.simpleBlockItem(stripped_log, provider.models().getExistingFile(provider.modLoc(BuiltInRegistries.BLOCK.getKey(stripped_log).getPath())));
         //樹皮を剥いだ木
-        provider.simpleBlockWithItem(stripped_log_wood, provider.cubeAll(stripped_log_wood));
+        provider.axisBlock(stripped_log_wood, provider.blockTexture(stripped_log), provider.blockTexture(stripped_log));
+        provider.simpleBlockItem(stripped_log_wood, new ModelFile.UncheckedModelFile("sirousyanka:block/" + BuiltInRegistries.BLOCK.getKey(stripped_log_wood).getPath()));
         //板材
         provider.simpleBlockWithItem(planks, provider.cubeAll(planks));
         //葉っぱ
@@ -122,9 +124,8 @@ public class WoodBlockProvider {
                 .texture("layer0", provider.modLoc("item/" + BuiltInRegistries.BLOCK.getKey(ceilingSign).getPath()));
         //苗木
         var saplingModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath())
-        );
+        ).renderType("minecraft:cutout");
         provider.simpleBlock(sapling, saplingModel);
         provider.simpleBlockItem(sapling, saplingModel);
     }
-
 }

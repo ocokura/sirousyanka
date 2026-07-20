@@ -165,7 +165,7 @@ public class BlockLootTable extends BlockLootSubProvider {
         dropSelf(ceilingSign);
         add(wallSignHanging, block -> createSingleItemTable(ceilingSign));
 
-        add(leaves, block -> this.createLeavesDrops(
+        add(leaves, block -> createLeavesDrops(
                 leaves,
                 sapling,
                 0.05F, 0.0625F, 0.083333336F, 0.1F

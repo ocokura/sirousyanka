@@ -28,6 +28,8 @@ public class ItemTag extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         copy(BlockTags.PLANKS, ItemTags.PLANKS);
+        copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
+
         tag(ModTags.Items.FROZEN_SPRUCE_LOG)
                 .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());
 

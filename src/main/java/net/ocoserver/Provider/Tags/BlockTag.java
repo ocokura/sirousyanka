@@ -147,6 +147,9 @@ public class BlockTag extends BlockTagsProvider {
     ) {
         tag(BlockTags.PLANKS)
             .add(planks);
+        tag(BlockTags.LOGS)
+                .add(log)
+                .add(strippedLog);
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(log)
                 .add(strippedLog)
