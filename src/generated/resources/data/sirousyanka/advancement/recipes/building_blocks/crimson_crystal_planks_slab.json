@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_crystal_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sirousyanka:crimson_crystal_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sirousyanka:crimson_crystal_planks_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_crystal_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sirousyanka:crimson_crystal_planks_slab"
+    ]
+  }
+}

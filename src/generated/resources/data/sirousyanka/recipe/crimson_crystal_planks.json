@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sirousyanka:craftable_to_ice_larch_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sirousyanka:crimson_crystal_planks"
+  }
+}

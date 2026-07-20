@@ -119,6 +119,29 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.KEUTI_SAPLING.get()
         );
 
+        //紅結晶
+        registerWoodBlockTags(
+                ModBlocks.CRIMSON_CRYSTAL_LOG.get(),
+                ModBlocks.CRIMSON_CRYSTAL_WOOD.get(),
+                ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get(),
+                ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_STAIR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SLAB.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE_GATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_BUTTON.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_LEAVES.get(),
+                ModBlocks.CRIMSON_CRYSTAL_SAPLING.get()
+        );
+
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())

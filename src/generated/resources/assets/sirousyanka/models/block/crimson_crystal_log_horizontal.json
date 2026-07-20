@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sirousyanka:block/crimson_crystal_log_top",
+    "side": "sirousyanka:block/crimson_crystal_log"
+  }
+}

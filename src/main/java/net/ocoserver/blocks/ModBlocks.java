@@ -255,6 +255,70 @@ public class ModBlocks {
 
 
 
+    //紅晶樹
+    public static final DeferredBlock<RotatedPillarBlock> CRIMSON_CRYSTAL_LOG = registerBlock("crimson_crystal_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> CRIMSON_CRYSTAL_WOOD = registerBlock("crimson_crystal_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_CRIMSON_CRYSTAL_LOG = registerBlock("stripped_crimson_crystal_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_CRIMSON_CRYSTAL_WOOD = registerBlock("stripped_crimson_crystal_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<Block> CRIMSON_CRYSTAL_PLANKS = registerBlock("crimson_crystal_planks", 2.0f, false, SoundType.WOOD, null, Block::new);
+
+    public static final DeferredBlock<LeavesBlock> CRIMSON_CRYSTAL_LEAVES = registerBlock("crimson_crystal_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<StairBlock> CRIMSON_CRYSTAL_PLANKS_STAIR = registerBlock("crimson_crystal_planks_stair", () -> new StairBlock(ModBlocks.CRIMSON_CRYSTAL_PLANKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<SlabBlock> CRIMSON_CRYSTAL_PLANKS_SLAB = registerBlock("crimson_crystal_planks_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+
+    public static final DeferredBlock<PressurePlateBlock> CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE = registerBlock("crimson_crystal_planks_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<ButtonBlock> CRIMSON_CRYSTAL_PLANKS_BUTTON = registerBlock("crimson_crystal_planks_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
+    ));
+
+    public static final DeferredBlock<FenceBlock> CRIMSON_CRYSTAL_PLANKS_FENCE = registerBlock("crimson_crystal_planks_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+
+    public static final DeferredBlock<FenceGateBlock> CRIMSON_CRYSTAL_PLANKS_FENCE_GATE = registerBlock("crimson_crystal_planks_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<DoorBlock> CRIMSON_CRYSTAL_PLANKS_DOOR = registerBlock("crimson_crystal_planks_door", () -> new DoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<TrapDoorBlock> CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR = registerBlock("crimson_crystal_planks_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<StandingSignBlock> CRIMSON_CRYSTAL_PLANKS_SIGN = registerBlockWithoutItem("crimson_crystal_planks_sign", () -> new StandingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+    public static final DeferredBlock<WallSignBlock> CRIMSON_CRYSTAL_PLANKS_WALL_SIGN = registerBlockWithoutItem("crimson_crystal_planks_wall_sign", () -> new WallSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_PLANKS_SIGN)
+    ));
+
+    public static final DeferredBlock<CeilingHangingSignBlock> CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_planks_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+    public static final DeferredBlock<WallHangingSignBlock> CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_planks_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN)
+    ));
+
+    public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(null,
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
+    ));
+
 
     //--------------------------------ここからメソッド--------------------------------------------------------
 

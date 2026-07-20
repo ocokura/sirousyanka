@@ -78,5 +78,25 @@
   "block.sirousyanka.keuti_planks_ceiling_hanging_sign" : "ケウチの吊り看板",
   "block.sirousyanka.keuti_planks_wall_hanging_sign" : "ケウチの吊り看板",
   "block.sirousyanka.keuti_leaves" : "ケウチの葉",
-  "block.sirousyanka.keuti_sapling" : "ケウチの苗木"
+  "block.sirousyanka.keuti_sapling" : "ケウチの苗木",
+
+  "block.sirousyanka.crimson_crystal_log" : "紅晶樹の原木",
+  "block.sirousyanka.crimson_crystal_wood" : "紅晶樹の木",
+  "block.sirousyanka.stripped_crimson_crystal_log" : "樹皮を剥いだ紅晶樹の原木",
+  "block.sirousyanka.stripped_crimson_crystal_wood" : "樹皮を剥いだ紅晶樹の木",
+  "block.sirousyanka.crimson_crystal_planks" : "紅晶樹の板材",
+  "block.sirousyanka.crimson_crystal_planks_stair" : "紅晶樹の階段",
+  "block.sirousyanka.crimson_crystal_planks_slab" : "紅晶樹のハーフブロック",
+  "block.sirousyanka.crimson_crystal_planks_fence" : "紅晶樹のフェンス",
+  "block.sirousyanka.crimson_crystal_planks_fence_gate" : "紅晶樹のフェンスゲート",
+  "block.sirousyanka.crimson_crystal_planks_door" : "紅晶樹のドア",
+  "block.sirousyanka.crimson_crystal_planks_trap_door" : "紅晶樹のトラップドア",
+  "block.sirousyanka.crimson_crystal_planks_pressure_plate" : "紅晶樹の感圧板",
+  "block.sirousyanka.crimson_crystal_planks_button" : "紅晶樹のボタン",
+  "block.sirousyanka.crimson_crystal_planks_sign" : "紅晶樹の看板",
+  "block.sirousyanka.crimson_crystal_planks_wall_sign" : "紅晶樹の看板",
+  "block.sirousyanka.crimson_crystal_planks_ceiling_hanging_sign" : "紅晶樹の吊り看板",
+  "block.sirousyanka.crimson_crystal_planks_wall_hanging_sign" : "紅晶樹の吊り看板",
+  "block.sirousyanka.crimson_crystal_leaves" : "紅晶樹の葉",
+  "block.sirousyanka.crimson_crystal_sapling" : "紅晶樹の苗木"
 }

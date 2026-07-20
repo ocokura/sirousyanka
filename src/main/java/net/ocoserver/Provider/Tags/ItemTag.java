@@ -7,6 +7,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.Tags.ModTags;
@@ -44,6 +45,13 @@ public class ItemTag extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_KEUTI_LOG.get().asItem())
                 .add(ModBlocks.KEUTI_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_KEUTI_WOOD.get().asItem());
+
+        //紅結晶の板材が作れるように
+        tag(ModTags.Items.CRAFTABLE_TO_CRIMSON_CRYSTAL_PLANKS)
+                .add(ModBlocks.CRIMSON_CRYSTAL_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get().asItem())
+                .add(ModBlocks.CRIMSON_CRYSTAL_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get().asItem());
 
         //アイテムにもタグを紐づけ
         copy(BlockTags.PLANKS, ItemTags.PLANKS);

@@ -9,4 +9,5 @@ public class ModWoodTypes {
 
     public static final WoodType KEUTI = WoodType.register(new WoodType("sirousyanka:keuti", BlockSetType.OAK));
 
+    public static final WoodType CRIMSON_CRYSTAL = WoodType.register(new WoodType("sirousyanka:crimson_crystal", BlockSetType.OAK));
 }

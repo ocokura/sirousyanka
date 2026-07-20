@@ -103,6 +103,25 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get());
                         output.accept(ModBlocks.KEUTI_LEAVES.get());
                         output.accept(ModBlocks.KEUTI_SAPLING.get());
+
+                        //紅結晶
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_LOG.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_STAIR.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_SLAB.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE_GATE.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_DOOR.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_BUTTON.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get());
+                        output.accept(ModBlocks.CRIMSON_CRYSTAL_SAPLING.get());
                     })
                     .build());
 

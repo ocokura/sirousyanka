@@ -33,6 +33,12 @@ public class WoodEvent {
             } else if (originalState.is(ModBlocks.KEUTI_WOOD.get())) {
                 strippedState = ModBlocks.STRIPPED_KEUTI_WOOD.get().defaultBlockState()
                         .setValue(RotatedPillarBlock.AXIS, originalState.getValue(RotatedPillarBlock.AXIS));
+            } else if (originalState.is(ModBlocks.CRIMSON_CRYSTAL_LOG.get())) {
+                strippedState = ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get().defaultBlockState()
+                        .setValue(RotatedPillarBlock.AXIS, originalState.getValue(RotatedPillarBlock.AXIS));
+            } else if (originalState.is(ModBlocks.CRIMSON_CRYSTAL_WOOD.get())) {
+                strippedState = ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get().defaultBlockState()
+                        .setValue(RotatedPillarBlock.AXIS, originalState.getValue(RotatedPillarBlock.AXIS));
             }
             event.setFinalState(strippedState);
         }
@@ -52,14 +58,20 @@ public class WoodEvent {
                 ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
                 ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get(),
                 ModBlocks.KEUTI_PLANKS_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_WALL_SIGN.get()
+                ModBlocks.KEUTI_PLANKS_WALL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get()
+
         );
         event.modify(
                 BlockEntityType.HANGING_SIGN,
                 ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(),
                 ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(),
                 ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get()
+                ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get()
+
         );
     }
 

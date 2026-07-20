@@ -141,6 +141,29 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.KEUTI_LEAVES.get()
         );
 
+        //紅結晶
+        registerWoodLootFamily(
+                ModBlocks.CRIMSON_CRYSTAL_LOG.get(),
+                ModBlocks.CRIMSON_CRYSTAL_WOOD.get(),
+                ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get(),
+                ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_STAIR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SLAB.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE_GATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_BUTTON.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_SAPLING.get(),
+                ModBlocks.CRIMSON_CRYSTAL_LEAVES.get()
+        );
+
     }
 
     private void registerWoodLootFamily(

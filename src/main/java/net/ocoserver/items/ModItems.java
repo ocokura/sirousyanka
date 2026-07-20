@@ -35,6 +35,14 @@ public class ModItems {
             ITEMS.register("keuti_planks_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
+    //紅結晶
+    public static final DeferredItem<Item> CRIMSON_CRYSTAL_PLANKS_SIGN = ITEMS.register("crimson_crystal_planks_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get()));
+
+    public static final DeferredItem<Item> CRIMSON_CRYSTAL_CEILING_HANGING_SIGN =
+            ITEMS.register("crimson_crystal_planks_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

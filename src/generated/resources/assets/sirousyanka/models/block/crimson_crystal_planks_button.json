@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "sirousyanka:block/crimson_crystal_planks"
+  }
+}
