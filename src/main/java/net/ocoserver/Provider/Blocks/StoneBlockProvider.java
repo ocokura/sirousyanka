@@ -72,6 +72,30 @@ public class StoneBlockProvider {
                 ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get(),
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
                 );
+
+        //AZURE_STONE
+        registerStoneFamily(
+                ModBlocks.AZURE_STONE.get(),
+                ModBlocks.AZURE_STONE_STAIR.get(),
+                ModBlocks.AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.AZURE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
+        //POLISHED_AZURE_STONE_BRICKS
+        registerStoneFamily(
+                ModBlocks.POLISHED_AZURE_STONE.get(),
+                ModBlocks.POLISHED_AZURE_STONE_STAIR.get(),
+                ModBlocks.POLISHED_AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
     }
 
     private static void registerStoneFamily(

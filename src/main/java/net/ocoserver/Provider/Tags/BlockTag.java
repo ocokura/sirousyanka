@@ -84,6 +84,30 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
         );
 
+        //AZURE STONE
+        registerStoneFamily(
+                ModBlocks.AZURE_STONE.get(),
+                ModBlocks.AZURE_STONE_STAIR.get(),
+                ModBlocks.AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.AZURE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
+        //POLISHED AZURE STONE
+        registerStoneFamily(
+                ModBlocks.POLISHED_AZURE_STONE.get(),
+                ModBlocks.POLISHED_AZURE_STONE_STAIR.get(),
+                ModBlocks.POLISHED_AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
         //氷雪のカラマツブロック
         registerWoodBlockTags(
                 ModBlocks.ICE_LARCH_LOG.get(),

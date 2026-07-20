@@ -136,6 +136,36 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
         );
 
+        //AZURE STONE
+        registerStoneFamily(
+                ModBlocks.AZURE_STONE.get(),
+                ModBlocks.AZURE_STONE_STAIR.get(),
+                ModBlocks.AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.AZURE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
+        //POLISHED_AZURE STONE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_AZURE_STONE.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.AZURE_STONE.get())
+                .unlockedBy("has_azure_stone", has(ModBlocks.AZURE_STONE.get()))
+                .save(output, "polished_azure_stone_from_azure_stone");
+        registerStoneFamily(
+                ModBlocks.POLISHED_AZURE_STONE.get(),
+                ModBlocks.POLISHED_AZURE_STONE_STAIR.get(),
+                ModBlocks.POLISHED_AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
         //氷雪のカラマツ
         registerWoodRecipeFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),

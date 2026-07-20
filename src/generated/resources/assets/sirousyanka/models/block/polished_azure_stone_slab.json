@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sirousyanka:block/polished_azure_stone",
+    "side": "sirousyanka:block/polished_azure_stone",
+    "top": "sirousyanka:block/polished_azure_stone"
+  }
+}

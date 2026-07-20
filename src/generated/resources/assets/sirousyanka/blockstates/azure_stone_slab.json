@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/azure_stone_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/azure_stone"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/azure_stone_slab_top"
+    }
+  }
+}

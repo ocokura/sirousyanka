@@ -25,6 +25,13 @@
     "sirousyanka:frozen_stone_bricks_slab",
     "sirousyanka:frozen_stone_bricks_wall_block",
     "sirousyanka:frozen_chiseled_stone_bricks",
-    "sirousyanka:frozen_cracked_stone_bricks"
+    "sirousyanka:frozen_cracked_stone_bricks",
+    "sirousyanka:azure_stone",
+    "sirousyanka:azure_stone_stair",
+    "sirousyanka:azure_stone_slab",
+    "sirousyanka:azure_stone_wall_block",
+    "sirousyanka:polished_azure_stone",
+    "sirousyanka:polished_azure_stone_stair",
+    "sirousyanka:polished_azure_stone_slab"
   ]
 }

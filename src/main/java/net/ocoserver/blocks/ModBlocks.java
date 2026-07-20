@@ -45,15 +45,14 @@ public class ModBlocks {
 
     public static final DeferredBlock<RotatedPillarBlock> FROZEN_SPRUCE_LOG = registerBlock("frozen_spruce_log", 2.5f, false, SoundType.WOOD, 0.72f, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<Block> ABYSS_ICE = registerBlock("abyss_ice", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(1f)
-            .requiresCorrectToolForDrops()
+    public static final DeferredBlock<IceBlock> ABYSS_ICE = registerBlock("abyss_ice", () -> new IceBlock(BlockBehaviour.Properties.of()
+            .strength(0.5f)
             .sound(SoundType.GLASS)
             .friction(0.98F)
             .noOcclusion()
     ));
 
-    public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1.5f, true, SoundType.GLASS, 0.98f, Block::new);
+    public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1f, true, SoundType.GLASS, 0.98f, Block::new);
 
     public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block",1f, false, SoundType.GRASS, 0.72f, Block::new);
 
@@ -136,6 +135,27 @@ public class ModBlocks {
     public static final DeferredBlock<Block> FROZEN_CHISELED_STONE_BRICKS = registerBlock("frozen_chiseled_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
 
     public static final DeferredBlock<Block> FROZEN_CRACKED_STONE_BRICKS = registerBlock("frozen_cracked_stone_bricks", 3f, true, SoundType.STONE, 0.72f, Block::new);
+
+    // AZURE_STONE
+    public static final DeferredBlock<Block> AZURE_STONE = registerBlock("azure_stone", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> AZURE_STONE_STAIR = registerBlock("azure_stone_stair", () -> new StairBlock(ModBlocks.AZURE_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> AZURE_STONE_SLAB = registerBlock("azure_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> AZURE_STONE_WALL_BLOCK = registerBlock("azure_stone_wall_block", 3f, true, SoundType.STONE, null, WallBlock::new);
+
+    //POLISHED_AZURE_STONE
+    public static final DeferredBlock<Block> POLISHED_AZURE_STONE = registerBlock("polished_azure_stone", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> POLISHED_AZURE_STONE_STAIR = registerBlock("polished_azure_stone_stair", () -> new StairBlock(
+            ModBlocks.FROZEN_STONE_BRICKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> POLISHED_AZURE_STONE_SLAB = registerBlock("polished_azure_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
 
 
 

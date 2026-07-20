@@ -75,6 +75,17 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.FROZEN_CHISELED_STONE_BRICKS.get());
                         output.accept(ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get());
 
+                        // AZURE_STONE
+                        output.accept(ModBlocks.AZURE_STONE.get());
+                        output.accept(ModBlocks.AZURE_STONE_STAIR.get());
+                        output.accept(ModBlocks.AZURE_STONE_SLAB.get());
+                        output.accept(ModBlocks.AZURE_STONE_WALL_BLOCK.get());
+
+                        // POLISHED_AZURE_STONE
+                        output.accept(ModBlocks.POLISHED_AZURE_STONE.get());
+                        output.accept(ModBlocks.POLISHED_AZURE_STONE_STAIR.get());
+                        output.accept(ModBlocks.POLISHED_AZURE_STONE_SLAB.get());
+
                         //氷雪のカラマツ
                         output.accept(ModBlocks.ICE_LARCH_LOG.get());
                         output.accept(ModBlocks.ICE_LARCH_WOOD.get());

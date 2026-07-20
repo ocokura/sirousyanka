@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_azure_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sirousyanka:polished_azure_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sirousyanka:polished_azure_stone_stair"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_polished_azure_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sirousyanka:polished_azure_stone_stair"
+    ]
+  }
+}

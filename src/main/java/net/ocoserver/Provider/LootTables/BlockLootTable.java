@@ -107,6 +107,30 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.FROZEN_CRACKED_STONE_BRICKS.get()
                 );
 
+        //AZURE_STONE
+        dropSelf(ModBlocks.AZURE_STONE.get());
+        registerStoneFamily(
+                ModBlocks.AZURE_STONE_STAIR.get(),
+                ModBlocks.AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.AZURE_STONE_WALL_BLOCK.get(),
+                null,
+                null
+        );
+
+        //POLISHED_AZURE_STONE
+        dropSelf(ModBlocks.POLISHED_AZURE_STONE.get());
+        registerStoneFamily(
+                ModBlocks.POLISHED_AZURE_STONE_STAIR.get(),
+                ModBlocks.POLISHED_AZURE_STONE_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
         //氷雪のカラマツ
         registerWoodLootFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),
