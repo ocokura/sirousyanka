@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#sirousyanka:frozen_spruce_log"
+            "items": "#sirousyanka:craftable_to_spruce_planks"
           }
         ]
       },

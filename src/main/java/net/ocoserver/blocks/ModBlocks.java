@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ocoserver.blocks.wood.ModWoodTypes;
 import net.ocoserver.items.ModItems;
 import net.ocoserver.main.Sirousyanka;
 import org.jetbrains.annotations.Nullable;

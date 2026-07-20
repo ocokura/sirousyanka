@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "sirousyanka:frozen_spruce_log"
+      "tag": "sirousyanka:craftable_to_spruce_planks"
     }
   ],
   "result": {

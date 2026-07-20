@@ -17,17 +17,32 @@ public class ModTags {
                 TagKey.create(Registries.BLOCK,
                         ResourceLocation.fromNamespaceAndPath("sirousyanka", "usyalium_block")
                 );
-
+        public static final TagKey<Block> BURN_IN_FURNACE_PLANKS_BLOCK =
+                TagKey.create(Registries.BLOCK,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_planks_block")
+                );
+        public static final TagKey<Block> BURN_IN_FURNACE_SHORT_BLOCK =
+                TagKey.create(Registries.BLOCK,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_short_block")
+                );
     }
 
     public static class Items {
-        public static final TagKey<Item> FROZEN_SPRUCE_LOG =
+        public static final TagKey<Item> CRAFTABLE_TO_SPRUCE_PLANKS =
                 TagKey.create(Registries.ITEM,
-                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "frozen_spruce_log")
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "craftable_to_spruce_planks")
                 );
-        public static final TagKey<Item> ICE_LARCH_LOG =
+        public static final TagKey<Item> CRAFTABLE_TO_ICE_LARCH_PLANKS =
                 TagKey.create(Registries.ITEM,
-                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "ice_larch_log")
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "craftable_to_ice_larch_planks")
+                );
+        public static final TagKey<Item> BURN_IN_FURNACE_PLANKS =
+                TagKey.create(Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_planks")
+                );
+        public static final TagKey<Item> BURN_IN_FURNACE_SHORT =
+                TagKey.create(Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_short")
                 );
     }
 

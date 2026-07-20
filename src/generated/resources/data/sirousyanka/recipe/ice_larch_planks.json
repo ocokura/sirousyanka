@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "sirousyanka:ice_larch_log"
+      "tag": "sirousyanka:craftable_to_ice_larch_planks"
     }
   ],
   "result": {

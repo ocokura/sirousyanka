@@ -6,6 +6,7 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.Tags.ModTags;
 import net.ocoserver.blocks.ModBlocks;
@@ -27,17 +28,40 @@ public class ItemTag extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        //木材系
+        tag(ModTags.Items.CRAFTABLE_TO_ICE_LARCH_PLANKS)
+            .add(ModBlocks.ICE_LARCH_LOG.get().asItem())
+            .add(ModBlocks.STRIPPED_ICE_LARCH_LOG.get().asItem())
+            .add(ModBlocks.ICE_LARCH_WOOD.get().asItem())
+            .add(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get().asItem());
+
+        //アイテムにもタグを紐づけ
         copy(BlockTags.PLANKS, ItemTags.PLANKS);
+        copy(BlockTags.LOGS, ItemTags.LOGS);
+        copy(BlockTags.STAIRS, ItemTags.STAIRS);
+        copy(BlockTags.SLABS, ItemTags.SLABS);
+        copy(BlockTags.BUTTONS, ItemTags.BUTTONS);
+        copy(BlockTags.FENCES, ItemTags.FENCES);
+        copy(BlockTags.FENCE_GATES, ItemTags.FENCE_GATES);
+        copy(BlockTags.DOORS, ItemTags.DOORS);
+        copy(BlockTags.TRAPDOORS, ItemTags.TRAPDOORS);
+        copy(BlockTags.LEAVES, ItemTags.LEAVES);
+        copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
+        copy(BlockTags.STANDING_SIGNS, ItemTags.SIGNS);
+        copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
+
+        //かまどで燃えるように指定
         copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
+        copy(ModTags.Blocks.BURN_IN_FURNACE_PLANKS_BLOCK, ModTags.Items.BURN_IN_FURNACE_PLANKS);
+        copy(ModTags.Blocks.BURN_IN_FURNACE_SHORT_BLOCK, ModTags.Items.BURN_IN_FURNACE_SHORT);
 
-        tag(ModTags.Items.FROZEN_SPRUCE_LOG)
-                .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());
+        //石系
+        copy(Tags.Blocks.STONES, Tags.Items.STONES);
+        copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
 
-        tag(ModTags.Items.ICE_LARCH_LOG)
-                .add(ModBlocks.ICE_LARCH_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_ICE_LARCH_LOG.get().asItem())
-                .add(ModBlocks.ICE_LARCH_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get().asItem());
+
+        tag(ModTags.Items.CRAFTABLE_TO_SPRUCE_PLANKS)
+            .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());
     }
 
 }

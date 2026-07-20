@@ -58,7 +58,7 @@ public class ModRecipes extends RecipeProvider {
         //高度なウシャリウム <-> 高度なウシャリウムブロック
         nineBlockStorageRecipes(output, RecipeCategory.MISC, ModItems.ADVANCED_USYALIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
-        planksFromLog(output, Blocks.SPRUCE_PLANKS, ModTags.Items.FROZEN_SPRUCE_LOG, 4);
+        planksFromLog(output, Blocks.SPRUCE_PLANKS, ModTags.Items.CRAFTABLE_TO_SPRUCE_PLANKS, 4);
 
         //Abyss Stone系
         registerStoneFamily(
@@ -145,7 +145,7 @@ public class ModRecipes extends RecipeProvider {
             Block sign,
             Block ceilingSign
     ) {
-        planksFromLog(output, planks, ModTags.Items.ICE_LARCH_LOG, 4);
+        planksFromLog(output, planks, ModTags.Items.CRAFTABLE_TO_ICE_LARCH_PLANKS, 4);
         woodFromLogs(output, wood, log);
         woodFromLogs(output, strippedWood, strippedLog);
 

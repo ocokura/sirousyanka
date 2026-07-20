@@ -24,6 +24,8 @@ public class BlockTag extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         //Abyss Stone系
+        tag(Tags.Blocks.STONES)
+            .add(ModBlocks.ABYSS_STONE.get());
         registerStoneFamily(
                 ModBlocks.ABYSS_STONE.get(),
                 ModBlocks.ABYSS_STONE_STAIR.get(),
@@ -36,6 +38,8 @@ public class BlockTag extends BlockTagsProvider {
         );
 
         //Abyss Cobble
+        tag(Tags.Blocks.COBBLESTONES)
+            .add(ModBlocks.ABYSS_COBBLE_STONE.get());
         registerStoneFamily(
                 ModBlocks.ABYSS_COBBLE_STONE.get(),
                 ModBlocks.ABYSS_COBBLE_STONE_STAIR.get(),
@@ -48,6 +52,8 @@ public class BlockTag extends BlockTagsProvider {
         );
 
         //Frozen Stone
+        tag(Tags.Blocks.STONES)
+            .add(ModBlocks.FROZEN_STONE.get());
         registerStoneFamily(
                 ModBlocks.FROZEN_STONE.get(),
                 ModBlocks.FROZEN_STONE_STAIR.get(),
@@ -145,6 +151,8 @@ public class BlockTag extends BlockTagsProvider {
             Block leaves,
             Block sapling
     ) {
+
+        //各アイテムを各カテゴリーのタグに登録
         tag(BlockTags.PLANKS)
             .add(planks);
         tag(BlockTags.LOGS)
@@ -155,7 +163,6 @@ public class BlockTag extends BlockTagsProvider {
                 .add(strippedLog)
                 .add(wood)
                 .add(strippedWood);
-
         tag(BlockTags.STAIRS).add(stair);
         tag(BlockTags.SLABS).add(slab);
         tag(BlockTags.FENCES).add(fence);
@@ -166,17 +173,32 @@ public class BlockTag extends BlockTagsProvider {
         tag(BlockTags.TRAPDOORS).add(trapdoor);
         tag(BlockTags.LEAVES).add(leaves);
         tag(BlockTags.SAPLINGS).add(sapling);
-
         tag(BlockTags.STANDING_SIGNS).add(sign);
         tag(BlockTags.WALL_SIGNS).add(wallSign);
         tag(BlockTags.CEILING_HANGING_SIGNS).add(ceilingSign);
         tag(BlockTags.WALL_HANGING_SIGNS).add(wallSignHanging);
 
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(log).add(strippedLog).add(planks).add(stair).add(slab)
-                .add(fence).add(fenceGate).add(pressurePlate).add(button)
+                .add(log).add(strippedLog).add(wood).add(strippedWood)
+                .add(planks).add(stair).add(slab).add(fence).add(fenceGate)
+                .add(pressurePlate).add(button)
                 .add(door).add(trapdoor).add(sign).add(wallSign)
                 .add(ceilingSign).add(wallSignHanging);
+
+        tag(ModTags.Blocks.BURN_IN_FURNACE_PLANKS_BLOCK)
+                .add(slab)
+                .add(stair)
+                .add(fence)
+                .add(fenceGate)
+                .add(door)
+                .add(trapdoor)
+                .add(sign)
+                .add(ceilingSign);
+
+        tag(ModTags.Blocks.BURN_IN_FURNACE_SHORT_BLOCK)
+                .add(pressurePlate)
+                .add(button)
+                .add(sapling);
     }
 
     private void registerStoneFamily(
@@ -193,14 +215,27 @@ public class BlockTag extends BlockTagsProvider {
             .add(baseBlock)
             .add(stairBlock)
             .add(slabBlock);
+        //階段
+        tag(BlockTags.STAIRS)
+            .add(stairBlock);
+        //ハーフ
+        tag(BlockTags.SLABS)
+            .add(slabBlock);
+        //感圧板
         if (pressurePlateBlock != null) {
             tag(ModTags.Blocks.STONES)
                 .add(pressurePlateBlock);
+            tag(BlockTags.PRESSURE_PLATES)
+                .add(pressurePlateBlock);
         }
+        //ボタン
         if (buttonBlock != null) {
             tag(ModTags.Blocks.STONES)
                 .add(buttonBlock);
+            tag(BlockTags.BUTTONS)
+                    .add(buttonBlock);
         }
+        //壁
         if (wallBlock != null) {
             tag(ModTags.Blocks.STONES)
                 .add(wallBlock);

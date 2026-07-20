@@ -1,22 +1,23 @@
-package net.ocoserver.main;
+package net.ocoserver.Provider;
 
 import net.minecraft.data.DataProvider;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.ocoserver.Provider.Blocks.*;
 import net.ocoserver.Provider.Items.ItemProvider;
 import net.ocoserver.Provider.LootTables.LootProvider;
 import net.ocoserver.Provider.Tags.BlockTag;
 import net.ocoserver.Provider.Tags.ItemTag;
+import net.ocoserver.Provider.datamap.ModDataMapProvider;
 import net.ocoserver.dimension.ModPortal;
 import net.ocoserver.Provider.Recipes.ModRecipes;
+import net.ocoserver.main.Sirousyanka;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
-public class CommonEvent {
-
-    //UseFulHud NullPointerException直す　Rendererにnullチェック追加
+public class GatherEvent {
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -47,6 +48,11 @@ public class CommonEvent {
         event.getGenerator().addProvider(
                 event.includeServer(),
                 (DataProvider.Factory<ItemTag>) output -> new ItemTag(output, event.getLookupProvider(), blockTagProvider.contentsGetter(), event.getExistingFileHelper())
+        );
+
+        event.getGenerator().addProvider(
+                event.includeServer(),
+                (DataProvider.Factory<ModDataMapProvider>) output -> new ModDataMapProvider(output, event.getLookupProvider())
         );
 
 
