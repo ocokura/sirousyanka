@@ -24,8 +24,6 @@ public class BlockTag extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         //Abyss Stone系
-        tag(Tags.Blocks.STONES)
-            .add(ModBlocks.ABYSS_STONE.get());
         registerStoneFamily(
                 ModBlocks.ABYSS_STONE.get(),
                 ModBlocks.ABYSS_STONE_STAIR.get(),
@@ -38,7 +36,7 @@ public class BlockTag extends BlockTagsProvider {
         );
 
         //Abyss Cobble
-        tag(Tags.Blocks.COBBLESTONES)
+        tag(ModTags.Blocks.STONE_TOOL_MATERIAL)
             .add(ModBlocks.ABYSS_COBBLE_STONE.get());
         registerStoneFamily(
                 ModBlocks.ABYSS_COBBLE_STONE.get(),
@@ -52,8 +50,6 @@ public class BlockTag extends BlockTagsProvider {
         );
 
         //Frozen Stone
-        tag(Tags.Blocks.STONES)
-            .add(ModBlocks.FROZEN_STONE.get());
         registerStoneFamily(
                 ModBlocks.FROZEN_STONE.get(),
                 ModBlocks.FROZEN_STONE_STAIR.get(),
@@ -106,9 +102,7 @@ public class BlockTag extends BlockTagsProvider {
                 .add(ModBlocks.USYALIUM_BLOCK.get())
                 .add(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
-        tag(Tags.Blocks.COBBLESTONES)
-                .add(ModBlocks.ABYSS_COBBLE_STONE.get());
-
+        //ツールが必要か
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(ModTags.Blocks.STONES)
                 .addTag(ModTags.Blocks.USYALIUM)

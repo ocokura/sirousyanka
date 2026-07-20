@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -56,9 +57,10 @@ public class ItemTag extends ItemTagsProvider {
         copy(ModTags.Blocks.BURN_IN_FURNACE_SHORT_BLOCK, ModTags.Items.BURN_IN_FURNACE_SHORT);
 
         //石系
-        copy(Tags.Blocks.STONES, Tags.Items.STONES);
-        copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
+        copy(ModTags.Blocks.STONE_TOOL_MATERIAL, ItemTags.STONE_TOOL_MATERIALS);
 
+        //石のツールを作れるようにするにはめんどくさいがここでcopyじゃなくてaddしないといけない
+        tag(ItemTags.STONE_TOOL_MATERIALS).add(ModBlocks.ABYSS_COBBLE_STONE.asItem());
 
         tag(ModTags.Items.CRAFTABLE_TO_SPRUCE_PLANKS)
             .add(ModBlocks.FROZEN_SPRUCE_LOG.get().asItem());

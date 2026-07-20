@@ -25,6 +25,10 @@ public class ModTags {
                 TagKey.create(Registries.BLOCK,
                         ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_short_block")
                 );
+        public static final TagKey<Block> STONE_TOOL_MATERIAL =
+                TagKey.create(Registries.BLOCK,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "stone_tool_material")
+                );
     }
 
     public static class Items {
