@@ -14,6 +14,8 @@ public class ModFlammable {
 
     @SubscribeEvent
     public static void setFlammable(FMLCommonSetupEvent event) {
+
+        //氷雪のカラマツ
         setFlammable(
                 ModBlocks.ICE_LARCH_LOG.get(),
                 ModBlocks.ICE_LARCH_WOOD.get(),
@@ -30,6 +32,25 @@ public class ModFlammable {
                 ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get(),
                 ModBlocks.ICE_LARCH_LEAVES.get(),
                 ModBlocks.ICE_LARCH_SAPLING.get()
+        );
+
+        //ケウチ
+        setFlammable(
+                ModBlocks.KEUTI_LOG.get(),
+                ModBlocks.KEUTI_WOOD.get(),
+                ModBlocks.STRIPPED_KEUTI_LOG.get(),
+                ModBlocks.STRIPPED_KEUTI_WOOD.get(),
+                ModBlocks.KEUTI_PLANKS.get(),
+                ModBlocks.KEUTI_PLANKS_STAIR.get(),
+                ModBlocks.KEUTI_PLANKS_SLAB.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE_GATE.get(),
+                ModBlocks.KEUTI_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.KEUTI_PLANKS_BUTTON.get(),
+                ModBlocks.KEUTI_PLANKS_DOOR.get(),
+                ModBlocks.KEUTI_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.KEUTI_SAPLING.get(),
+                ModBlocks.KEUTI_LEAVES.get()
         );
     }
 

@@ -96,6 +96,29 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.ICE_LARCH_SAPLING.get()
         );
 
+        //ケウチ
+        registerWoodBlockTags(
+                ModBlocks.KEUTI_LOG.get(),
+                ModBlocks.KEUTI_WOOD.get(),
+                ModBlocks.STRIPPED_KEUTI_LOG.get(),
+                ModBlocks.STRIPPED_KEUTI_WOOD.get(),
+                ModBlocks.KEUTI_PLANKS.get(),
+                ModBlocks.KEUTI_PLANKS_STAIR.get(),
+                ModBlocks.KEUTI_PLANKS_SLAB.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE_GATE.get(),
+                ModBlocks.KEUTI_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.KEUTI_PLANKS_BUTTON.get(),
+                ModBlocks.KEUTI_PLANKS_DOOR.get(),
+                ModBlocks.KEUTI_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.KEUTI_PLANKS_SIGN.get(),
+                ModBlocks.KEUTI_PLANKS_WALL_SIGN.get(),
+                ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(),
+                ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(),
+                ModBlocks.KEUTI_LEAVES.get(),
+                ModBlocks.KEUTI_SAPLING.get()
+        );
+
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())

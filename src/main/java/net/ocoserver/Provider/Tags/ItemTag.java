@@ -30,11 +30,20 @@ public class ItemTag extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         //木材系
+
+        //氷雪のカラマツが板材つくれるように
         tag(ModTags.Items.CRAFTABLE_TO_ICE_LARCH_PLANKS)
             .add(ModBlocks.ICE_LARCH_LOG.get().asItem())
             .add(ModBlocks.STRIPPED_ICE_LARCH_LOG.get().asItem())
             .add(ModBlocks.ICE_LARCH_WOOD.get().asItem())
             .add(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get().asItem());
+
+        //ケウチが板材作れるように
+        tag(ModTags.Items.CRAFTABLE_TO_KEUTI_PLANKS)
+                .add(ModBlocks.KEUTI_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_KEUTI_LOG.get().asItem())
+                .add(ModBlocks.KEUTI_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_KEUTI_WOOD.get().asItem());
 
         //アイテムにもタグを紐づけ
         copy(BlockTags.PLANKS, ItemTags.PLANKS);

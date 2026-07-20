@@ -58,5 +58,25 @@
   "block.sirousyanka.ice_larch_planks_ceiling_hanging_sign" : "氷雪のカラマツの吊り看板",
   "block.sirousyanka.ice_larch_planks_wall_hanging_sign" : "氷雪のカラマツの吊り看板",
   "block.sirousyanka.ice_larch_leaves" : "氷雪のカラマツの葉",
-  "block.sirousyanka.ice_larch_sapling" : "氷雪のカラマツの苗木"
+  "block.sirousyanka.ice_larch_sapling" : "氷雪のカラマツの苗木",
+
+  "block.sirousyanka.keuti_log" : "ケウチの原木",
+  "block.sirousyanka.keuti_wood" : "ケウチの木",
+  "block.sirousyanka.stripped_keuti_log" : "樹皮を剥いだケウチの原木",
+  "block.sirousyanka.stripped_keuti_wood" : "樹皮を剥いだケウチの木",
+  "block.sirousyanka.keuti_planks" : "ケウチの板材",
+  "block.sirousyanka.keuti_planks_stair" : "ケウチの階段",
+  "block.sirousyanka.keuti_planks_slab" : "ケウチのハーフブロック",
+  "block.sirousyanka.keuti_planks_fence" : "ケウチのフェンス",
+  "block.sirousyanka.keuti_planks_fence_gate" : "ケウチのフェンスゲート",
+  "block.sirousyanka.keuti_planks_door" : "ケウチのドア",
+  "block.sirousyanka.keuti_planks_trap_door" : "ケウチのトラップドア",
+  "block.sirousyanka.keuti_planks_pressure_plate" : "ケウチの感圧版",
+  "block.sirousyanka.keuti_planks_button" : "ケウチのボタン",
+  "block.sirousyanka.keuti_planks_sign" : "ケウチの看板",
+  "block.sirousyanka.keuti_planks_wall_sign" : "ケウチの看板",
+  "block.sirousyanka.keuti_planks_ceiling_hanging_sign" : "ケウチの吊り看板",
+  "block.sirousyanka.keuti_planks_wall_hanging_sign" : "ケウチの吊り看板",
+  "block.sirousyanka.keuti_leaves" : "ケウチの葉",
+  "block.sirousyanka.keuti_sapling" : "ケウチの苗木"
 }

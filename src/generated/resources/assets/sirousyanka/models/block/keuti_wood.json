@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sirousyanka:block/keuti_log",
+    "side": "sirousyanka:block/keuti_log"
+  }
+}

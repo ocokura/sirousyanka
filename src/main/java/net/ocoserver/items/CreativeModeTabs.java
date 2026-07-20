@@ -84,6 +84,25 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get());
                         output.accept(ModBlocks.ICE_LARCH_LEAVES.get());
                         output.accept(ModBlocks.ICE_LARCH_SAPLING.get());
+
+                        //ケウチ
+                        output.accept(ModBlocks.KEUTI_LOG.get());
+                        output.accept(ModBlocks.KEUTI_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_KEUTI_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_KEUTI_WOOD.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_STAIR.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_SLAB.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_FENCE.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_FENCE_GATE.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_DOOR.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_TRAP_DOOR.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_BUTTON.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_SIGN.get());
+                        output.accept(ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get());
+                        output.accept(ModBlocks.KEUTI_LEAVES.get());
+                        output.accept(ModBlocks.KEUTI_SAPLING.get());
                     })
                     .build());
 

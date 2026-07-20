@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "sirousyanka:block/keuti_planks_pressure_plate"
+    },
+    "powered=true": {
+      "model": "sirousyanka:block/keuti_planks_pressure_plate_down"
+    }
+  }
+}

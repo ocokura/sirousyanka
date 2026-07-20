@@ -126,6 +126,25 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
                 ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get()
         );
+
+        //ケウチ
+        registerWoodRecipeFamily(
+                ModBlocks.KEUTI_LOG.get(),
+                ModBlocks.KEUTI_WOOD.get(),
+                ModBlocks.STRIPPED_KEUTI_LOG.get(),
+                ModBlocks.STRIPPED_KEUTI_WOOD.get(),
+                ModBlocks.KEUTI_PLANKS.get(),
+                ModBlocks.KEUTI_PLANKS_STAIR.get(),
+                ModBlocks.KEUTI_PLANKS_SLAB.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE.get(),
+                ModBlocks.KEUTI_PLANKS_FENCE_GATE.get(),
+                ModBlocks.KEUTI_PLANKS_PRESSURE_PLATE.get(),
+                ModBlocks.KEUTI_PLANKS_BUTTON.get(),
+                ModBlocks.KEUTI_PLANKS_DOOR.get(),
+                ModBlocks.KEUTI_PLANKS_TRAP_DOOR.get(),
+                ModBlocks.KEUTI_PLANKS_SIGN.get(),
+                ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get()
+        );
     }
 
     private static void registerWoodRecipeFamily(

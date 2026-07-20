@@ -3,6 +3,10 @@
     {
       "type": "single",
       "resource": "sirousyanka:entity/signs/ice_larch_planks_sign"
+    },
+    {
+      "type": "single",
+      "resource": "sirousyanka:entity/signs/keuti_planks_sign"
     }
   ]
 }
