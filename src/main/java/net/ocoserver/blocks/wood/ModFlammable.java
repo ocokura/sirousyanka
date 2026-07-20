@@ -3,17 +3,11 @@ package net.ocoserver.blocks.wood;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.ocoserver.blocks.ModBlocks;
-import net.ocoserver.main.Sirousyanka;
 
-@EventBusSubscriber(modid = Sirousyanka.MODID)
 public class ModFlammable {
 
-    @SubscribeEvent
-    public static void setFlammable(FMLCommonSetupEvent event) {
+    public static void setFlammable() {
 
         //氷雪のカラマツ
         setFlammable(

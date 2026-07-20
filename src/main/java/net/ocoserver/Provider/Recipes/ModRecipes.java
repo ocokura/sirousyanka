@@ -7,7 +7,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
-import net.ocoserver.Tags.ModTags;
+import net.ocoserver.Provider.ModTags;
 import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.ModItems;
 import org.jetbrains.annotations.Nullable;

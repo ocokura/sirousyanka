@@ -1,12 +1,10 @@
 package net.ocoserver.blocks.wood;
 
-import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
@@ -42,13 +40,6 @@ public class WoodEvent {
             }
             event.setFinalState(strippedState);
         }
-    }
-
-    @SubscribeEvent
-    public static void commonSetup(FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            Sheets.addWoodType(ModWoodTypes.ICE_LARCH);
-        });
     }
 
     @SubscribeEvent

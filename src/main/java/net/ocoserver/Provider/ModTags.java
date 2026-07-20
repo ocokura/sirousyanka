@@ -1,4 +1,4 @@
-package net.ocoserver.Tags;
+package net.ocoserver.Provider;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
