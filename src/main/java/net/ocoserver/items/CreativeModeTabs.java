@@ -41,6 +41,15 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.ABYSS_STONE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.ABYSS_STONE_BUTTON.get());
 
+                        //ABYSS STONE BRICKS
+                        output.accept(ModBlocks.ABYSS_STONE_BRICKS.get());
+                        output.accept(ModBlocks.ABYSS_STONE_BRICKS_STAIR.get());
+                        output.accept(ModBlocks.ABYSS_STONE_BRICKS_SLAB.get());
+                        output.accept(ModBlocks.ABYSS_STONE_BRICKS_WALL_BLOCK.get());
+                        output.accept(ModBlocks.CHISELED_ABYSS_STONE_BRICKS.get());
+                        output.accept(ModBlocks.CRACKED_ABYSS_STONE_BRICKS.get());
+
+                        //ABYSS COBBLE STONE
                         output.accept(ModBlocks.ABYSS_COBBLE_STONE.get());
                         output.accept(ModBlocks.ABYSS_COBBLE_STONE_STAIR.get());
                         output.accept(ModBlocks.ABYSS_COBBLE_STONE_SLAB.get());

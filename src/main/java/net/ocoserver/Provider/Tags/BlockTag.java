@@ -35,6 +35,18 @@ public class BlockTag extends BlockTagsProvider {
                 null
         );
 
+        //ABYSS STONE BRICKS
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE.get(),
+                ModBlocks.ABYSS_STONE_STAIR.get(),
+                ModBlocks.ABYSS_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.CHISELED_ABYSS_STONE_BRICKS.get(),
+                ModBlocks.CRACKED_ABYSS_STONE_BRICKS.get()
+        );
+
         //Abyss Cobble
         tag(ModTags.Blocks.STONE_TOOL_MATERIAL)
             .add(ModBlocks.ABYSS_COBBLE_STONE.get());

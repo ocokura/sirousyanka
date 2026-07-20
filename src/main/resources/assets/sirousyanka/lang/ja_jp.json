@@ -21,6 +21,12 @@
   "block.sirousyanka.abyss_stone_slab" : "深淵の石のハーフブロック",
   "block.sirousyanka.abyss_stone_pressure_plate" : "深淵の石の感圧板",
   "block.sirousyanka.abyss_stone_button" : "深淵の石のボタン",
+  "block.sirousyanka.abyss_stone_bricks" : "深淵の石レンガ",
+  "block.sirousyanka.abyss_stone_bricks_stair" : "深淵の石レンガの階段",
+  "block.sirousyanka.abyss_stone_bricks_slab" : "深淵の石レンガのハーフブロック",
+  "block.sirousyanka.abyss_stone_bricks_wall_block" : "深淵の石レンガの塀",
+  "block.sirousyanka.chiseled_abyss_stone_bricks" : "深淵の模様付きの石レンガ",
+  "block.sirousyanka.cracked_abyss_stone_bricks" : "深淵のひび割れた石レンガ",
 
   "block.sirousyanka.abyss_cobble_stone" : "深淵の丸石",
   "block.sirousyanka.abyss_cobble_stone_stair" : "深淵の丸石の階段",

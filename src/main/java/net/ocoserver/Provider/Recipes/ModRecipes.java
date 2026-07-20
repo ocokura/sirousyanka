@@ -58,7 +58,17 @@ public class ModRecipes extends RecipeProvider {
         //高度なウシャリウム <-> 高度なウシャリウムブロック
         nineBlockStorageRecipes(output, RecipeCategory.MISC, ModItems.ADVANCED_USYALIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
+        //凍った松の原木 -> 松の板材
         planksFromLog(output, Blocks.SPRUCE_PLANKS, ModTags.Items.CRAFTABLE_TO_SPRUCE_PLANKS, 4);
+
+        //深淵の氷 -> 深淵の氷塊
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ABYSS_PACKED_ICE.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.ABYSS_ICE.get())
+                .unlockedBy("has_abyss_ice", has(ModBlocks.ABYSS_ICE.get()))
+                .save(output, "abyss_packed_ice_from_abyss_ice");
 
         //Abyss Stone系
         registerStoneFamily(
@@ -70,6 +80,24 @@ public class ModRecipes extends RecipeProvider {
                 null,
                 null,
                 null
+        );
+
+        //ABYSS STONE BRICKS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ABYSS_STONE_BRICKS.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.ABYSS_STONE.get())
+                .unlockedBy("has_abyss_stone", has(ModBlocks.ABYSS_STONE.get()))
+                .save(output, "abyss_stone_bricks_from_abyss_stone");
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE_BRICKS.get(),
+                ModBlocks.ABYSS_STONE_BRICKS_STAIR.get(),
+                ModBlocks.ABYSS_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.CHISELED_ABYSS_STONE_BRICKS.get(),
+                ModBlocks.CRACKED_ABYSS_STONE_BRICKS.get()
         );
 
         //Abyss Cobble

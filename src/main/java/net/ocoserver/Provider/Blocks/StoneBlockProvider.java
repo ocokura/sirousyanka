@@ -26,6 +26,18 @@ public class StoneBlockProvider {
                 null
         );
 
+        //ABYSS_STONE_BRICKS
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE_BRICKS.get(),
+                ModBlocks.ABYSS_STONE_BRICKS_STAIR.get(),
+                ModBlocks.ABYSS_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.CHISELED_ABYSS_STONE_BRICKS.get(),
+                ModBlocks.CRACKED_ABYSS_STONE_BRICKS.get()
+        );
+
         //ABYSS_COBLE
         registerStoneFamily(
                 ModBlocks.ABYSS_COBBLE_STONE.get(),

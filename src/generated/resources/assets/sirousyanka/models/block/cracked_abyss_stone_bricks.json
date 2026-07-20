@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sirousyanka:block/cracked_abyss_stone_bricks"
+  }
+}

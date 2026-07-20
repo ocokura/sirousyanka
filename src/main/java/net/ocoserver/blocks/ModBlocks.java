@@ -76,6 +76,22 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).noCollission()
     ));
 
+    //ABYSS_STONE_BRICKS
+    public static final DeferredBlock<Block> ABYSS_STONE_BRICKS = registerBlock("abyss_stone_bricks", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> ABYSS_STONE_BRICKS_STAIR = registerBlock("abyss_stone_bricks_stair", () -> new StairBlock(
+            ModBlocks.ABYSS_STONE_BRICKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> ABYSS_STONE_BRICKS_SLAB = registerBlock("abyss_stone_bricks_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> ABYSS_STONE_BRICKS_WALL_BLOCK = registerBlock("abyss_stone_bricks_wall_block", 3f, true, SoundType.STONE, null, WallBlock::new);
+
+    public static final DeferredBlock<Block> CHISELED_ABYSS_STONE_BRICKS = registerBlock("chiseled_abyss_stone_bricks", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<Block> CRACKED_ABYSS_STONE_BRICKS = registerBlock("cracked_abyss_stone_bricks", 3f, true, SoundType.STONE, null, Block::new);
+
     //ABYSS_COBBLE
     public static final DeferredBlock<Block> ABYSS_COBBLE_STONE = registerBlock("abyss_cobble_stone", 3f, true, SoundType.STONE, null, Block::new);
 

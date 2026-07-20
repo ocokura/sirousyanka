@@ -57,6 +57,18 @@ public class BlockLootTable extends BlockLootSubProvider {
                 null
         );
 
+        //ABYSS STONE BRICKS
+        dropSelf(ModBlocks.ABYSS_STONE_BRICKS.get());
+        registerStoneFamily(
+                ModBlocks.ABYSS_STONE_BRICKS_STAIR.get(),
+                ModBlocks.ABYSS_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.ABYSS_STONE_BRICKS_WALL_BLOCK.get(),
+                ModBlocks.CHISELED_ABYSS_STONE_BRICKS.get(),
+                ModBlocks.CRACKED_ABYSS_STONE_BRICKS.get()
+        );
+
         //ABYSS_COBLE
         dropSelf(ModBlocks.ABYSS_COBBLE_STONE.get());
         registerStoneFamily(
