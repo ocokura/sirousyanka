@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sirousyanka:block/lime_stone",
+    "side": "sirousyanka:block/lime_stone",
+    "top": "sirousyanka:block/lime_stone"
+  }
+}

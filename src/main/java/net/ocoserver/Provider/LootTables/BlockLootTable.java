@@ -131,6 +131,30 @@ public class BlockLootTable extends BlockLootSubProvider {
                 null
         );
 
+        //LIME_STONE
+        dropSelf(ModBlocks.LIME_STONE.get());
+        registerStoneFamily(
+                ModBlocks.LIME_STONE_STAIR.get(),
+                ModBlocks.LIME_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.LIME_STONE_WALL.get(),
+                null,
+                null
+        );
+
+        //LIME_STONE_BRICKS
+        dropSelf(ModBlocks.LIME_STONE_BRICKS.get());
+        registerStoneFamily(
+                ModBlocks.LIME_STONE_BRICKS_STAIR.get(),
+                ModBlocks.LIME_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
         //氷雪のカラマツ
         registerWoodLootFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),

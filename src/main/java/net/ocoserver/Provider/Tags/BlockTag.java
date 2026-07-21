@@ -108,6 +108,30 @@ public class BlockTag extends BlockTagsProvider {
                 null
         );
 
+        //LIME STONE
+        registerStoneFamily(
+                ModBlocks.LIME_STONE.get(),
+                ModBlocks.LIME_STONE_STAIR.get(),
+                ModBlocks.LIME_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.LIME_STONE_WALL.get(),
+                null,
+                null
+        );
+
+        //LIME STONE BRICKS
+        registerStoneFamily(
+                ModBlocks.LIME_STONE_BRICKS.get(),
+                ModBlocks.LIME_STONE_BRICKS_STAIR.get(),
+                ModBlocks.LIME_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
         //氷雪のカラマツブロック
         registerWoodBlockTags(
                 ModBlocks.ICE_LARCH_LOG.get(),

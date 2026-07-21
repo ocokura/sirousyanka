@@ -151,11 +151,33 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POLISHED_AZURE_STONE = registerBlock("polished_azure_stone", 3f, true, SoundType.STONE, null, Block::new);
 
     public static final DeferredBlock<StairBlock> POLISHED_AZURE_STONE_STAIR = registerBlock("polished_azure_stone_stair", () -> new StairBlock(
-            ModBlocks.FROZEN_STONE_BRICKS.get().defaultBlockState(),
+            ModBlocks.POLISHED_AZURE_STONE.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
     ));
 
     public static final DeferredBlock<SlabBlock> POLISHED_AZURE_STONE_SLAB = registerBlock("polished_azure_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    //LIME_STONE
+    public static final DeferredBlock<Block> LIME_STONE = registerBlock("lime_stone", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> LIME_STONE_STAIR = registerBlock("lime_stone_stair", () -> new StairBlock(
+            ModBlocks.LIME_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> LIME_STONE_SLAB = registerBlock("lime_stone_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> LIME_STONE_WALL = registerBlock("lime_stone_wall", 3f, true, SoundType.STONE, null, WallBlock::new);
+
+    //LIME_STONE BRICKS
+    public static final DeferredBlock<Block> LIME_STONE_BRICKS = registerBlock("lime_stone_bricks", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> LIME_STONE_BRICKS_STAIR = registerBlock("lime_stone_bricks_stair", () -> new StairBlock(
+            ModBlocks.LIME_STONE_BRICKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> LIME_STONE_BRICKS_SLAB = registerBlock("lime_stone_bricks_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
 
 
 

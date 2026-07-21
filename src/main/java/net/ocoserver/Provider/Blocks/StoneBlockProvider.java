@@ -96,6 +96,30 @@ public class StoneBlockProvider {
                 null,
                 null
         );
+
+        //LIME_STONE
+        registerStoneFamily(
+                ModBlocks.LIME_STONE.get(),
+                ModBlocks.LIME_STONE_STAIR.get(),
+                ModBlocks.LIME_STONE_SLAB.get(),
+                null,
+                null,
+                ModBlocks.LIME_STONE_WALL.get(),
+                null,
+                null
+        );
+
+        //LIME_STONE_BRICKS
+        registerStoneFamily(
+                ModBlocks.LIME_STONE_BRICKS.get(),
+                ModBlocks.LIME_STONE_BRICKS_STAIR.get(),
+                ModBlocks.LIME_STONE_BRICKS_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
     }
 
     private static void registerStoneFamily(

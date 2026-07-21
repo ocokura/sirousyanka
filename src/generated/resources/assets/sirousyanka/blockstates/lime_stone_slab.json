@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/lime_stone_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/lime_stone"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/lime_stone_slab_top"
+    }
+  }
+}
