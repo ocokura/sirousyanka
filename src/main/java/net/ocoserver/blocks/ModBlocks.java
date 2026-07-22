@@ -1,5 +1,8 @@
 package net.ocoserver.blocks;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -375,6 +378,21 @@ public class ModBlocks {
 
     public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(null,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
+    ));
+
+
+
+    //植物など
+    public static final DeferredBlock<TallGrassBlock> FROZEN_GRASS = registerBlock("frozen_grass", () -> new TallGrassBlock(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<FlowerBlock> FROZEN_POPPY = registerBlock("frozen_poppy", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5,
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<FlowerBlock> BERRY_GRASS = registerBlock("berry_grass", () -> new FlowerBlock(MobEffects.DAMAGE_BOOST, 5,
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
 

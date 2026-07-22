@@ -120,5 +120,10 @@
   "block.sirousyanka.crimson_crystal_planks_ceiling_hanging_sign" : "紅晶樹の吊り看板",
   "block.sirousyanka.crimson_crystal_planks_wall_hanging_sign" : "紅晶樹の吊り看板",
   "block.sirousyanka.crimson_crystal_leaves" : "紅晶樹の葉",
-  "block.sirousyanka.crimson_crystal_sapling" : "紅晶樹の苗木"
+  "block.sirousyanka.crimson_crystal_sapling" : "紅晶樹の苗木",
+
+  "block.sirousyanka.frozen_grass" : "凍った草",
+  "block.sirousyanka.frozen_poppy" : "凍ったポピー",
+  "block.sirousyanka.berry_grass" : "実のついた草",
+  "block.sirousyanka.abyss_stone_grass" : "深淵の石草"
 }

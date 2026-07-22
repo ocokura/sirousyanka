@@ -153,6 +153,11 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_SAPLING.get());
+
+                        //植物
+                        output.accept(ModBlocks.FROZEN_GRASS.get());
+                        output.accept(ModBlocks.FROZEN_POPPY.get());
+                        output.accept(ModBlocks.BERRY_GRASS.get());
                     })
                     .build());
 

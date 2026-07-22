@@ -1,11 +1,18 @@
 package net.ocoserver.Provider.Blocks;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.ocoserver.blocks.ModBlocks;
 
 public class DecoBlockProvider {
 
-    protected static void registerStatesAndModels(BlockStateProvider provider) {
+    private static BlockStateProvider provider;
+
+    protected static void registerStatesAndModels(BlockStateProvider blockStateProvider) {
+        provider = blockStateProvider;
         provider.simpleBlock(ModBlocks.ABYSS_ICE.get(), provider.models()
                         .cubeAll("abyss_ice", provider.modLoc("block/abyss_ice"))
                         .renderType("minecraft:translucent")
@@ -22,6 +29,34 @@ public class DecoBlockProvider {
                     provider.modLoc("block/frozen_dirt"),
                     provider.modLoc("block/frozen_grass_block_top")
                 ));
+
+        //植物など
+        registerPlant(ModBlocks.FROZEN_GRASS.get());
+        registerPlant(ModBlocks.FROZEN_POPPY.get());
+        registerPlant(ModBlocks.BERRY_GRASS.get());
+
     }
 
+    private static void registerTallPlant(Block block) {
+        var plantModelTop = provider.models().cross(BuiltInRegistries.BLOCK.getKey(block).getPath() + "_top", provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(block).getPath() + "_top")
+        ).renderType("minecraft:cutout");
+
+        var plantModelBottom = provider.models().cross(BuiltInRegistries.BLOCK.getKey(block).getPath() + "_bottom", provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(block).getPath() + "_bottom")
+        ).renderType("minecraft:cutout");
+
+        provider.getVariantBuilder(block)
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
+                .modelForState().modelFile(plantModelTop).addModel()
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                .modelForState().modelFile(plantModelBottom).addModel();
+
+        provider.itemModels().basicItem(block.asItem());
+    }
+
+    private static void registerPlant(Block block) {
+        var plantModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(block).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(block).getPath())
+        ).renderType("minecraft:cutout");
+        provider.simpleBlock(block, plantModel);
+        provider.itemModels().basicItem(block.asItem());
+    }
 }

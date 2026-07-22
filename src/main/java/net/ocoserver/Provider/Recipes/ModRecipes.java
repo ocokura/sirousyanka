@@ -253,6 +253,9 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get()
         );
+
+        //植物
+        oneToOneConversionRecipe(output, Items.LIGHT_BLUE_DYE, ModBlocks.FROZEN_POPPY.get(),"");
     }
 
     private static void registerWoodRecipeFamily(

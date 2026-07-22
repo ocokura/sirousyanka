@@ -1,10 +1,18 @@
 package net.ocoserver.Provider.LootTables;
 
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -224,6 +232,15 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.CRIMSON_CRYSTAL_LEAVES.get()
         );
 
+        //植物
+        registerGrass(ModBlocks.FROZEN_GRASS.get());
+        dropSelf(ModBlocks.FROZEN_POPPY.get());
+        registerGrass(ModBlocks.BERRY_GRASS.get());
+
+    }
+
+    private void registerGrass(Block block) {
+        add(block, createShearsDispatchTable(block, LootItem.lootTableItem(Items.WHEAT_SEEDS).when(LootItemRandomChanceCondition.randomChance(0.125F))));
     }
 
     private void registerWoodLootFamily(

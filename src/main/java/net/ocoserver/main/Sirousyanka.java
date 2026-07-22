@@ -13,6 +13,7 @@ public class Sirousyanka {
     public static final String MODID = "sirousyanka";
 
     public Sirousyanka(IEventBus eventBus, ModContainer container) {
+        System.out.println("[SIR] starting setup mod");
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         CreativeModeTabs.register(eventBus);
