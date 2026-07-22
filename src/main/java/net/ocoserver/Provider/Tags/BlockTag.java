@@ -22,6 +22,9 @@ public class BlockTag extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
+        tag(ModTags.Blocks.STONES)
+            .add(ModBlocks.SNOW_PILED_STONE.get());
+
         //Abyss Stone系
         registerStoneFamily(
                 ModBlocks.ABYSS_STONE.get(),

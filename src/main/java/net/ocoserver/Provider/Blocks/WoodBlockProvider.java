@@ -20,6 +20,8 @@ public class WoodBlockProvider {
                 )
         );
 
+        provider.simpleBlockWithItem(ModBlocks.FROZEN_SPRUCE_LEAVES.get(), provider.cubeAll(ModBlocks.FROZEN_SPRUCE_LEAVES.get()));
+
         //氷雪のカラマツ
         registerWoodFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),

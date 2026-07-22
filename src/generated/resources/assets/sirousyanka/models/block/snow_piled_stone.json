@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "sirousyanka:block/snow_piled_stone_bottom",
+    "side": "sirousyanka:block/snow_piled_stone",
+    "top": "sirousyanka:block/snow_piled_stone_top"
+  }
+}

@@ -10,7 +10,9 @@
   "block.sirousyanka.deepslate_usyalium_ore_block" : "深層岩ウシャリウム鉱石",
   "block.sirousyanka.advanced_usyalium_block" : "高度なウシャリウムブロック",
 
+  "block.sirousyanka.snow_piled_stone" : "雪が積もった石",
   "block.sirousyanka.frozen_spruce_log" : "凍った松の原木",
+  "block.sirousyanka.frozen_spruce_leaves" : "凍った松の葉",
   "block.sirousyanka.abyss_ice" : "深淵の氷",
   "block.sirousyanka.abyss_packed_ice" : "深淵の氷塊",
   "block.sirousyanka.frozen_grass_block" : "凍った草ブロック",
@@ -125,5 +127,9 @@
   "block.sirousyanka.frozen_grass" : "凍った草",
   "block.sirousyanka.frozen_poppy" : "凍ったポピー",
   "block.sirousyanka.berry_grass" : "実のついた草",
-  "block.sirousyanka.abyss_stone_grass" : "深淵の石草"
+  "block.sirousyanka.abyss_stone_grass" : "深淵の石草",
+  "block.sirousyanka.iris_petal": "アイリスペタル",
+  "block.sirousyanka.frost_flare": "フロストフレア",
+  "block.sirousyanka.lit_abyss_stone_grass": "火のついた深淵の石草",
+  "block.sirousyanka.ice_bush": "氷の茂み"
 }

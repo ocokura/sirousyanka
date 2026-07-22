@@ -1,18 +1,12 @@
 package net.ocoserver.Provider.LootTables;
 
-import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
-import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.ocoserver.blocks.ModBlocks;
 import net.ocoserver.items.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -41,6 +35,11 @@ public class BlockLootTable extends BlockLootSubProvider {
         dropSelf(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
         dropSelf(ModBlocks.FROZEN_SPRUCE_LOG.get());
+        dropWhenSilkTouch(ModBlocks.FROZEN_SPRUCE_LEAVES.get());
+
+        add(ModBlocks.SNOW_PILED_STONE.get(), createSilkTouchDispatchTable(ModBlocks.SNOW_PILED_STONE.get(),
+                LootItem.lootTableItem(Blocks.COBBLESTONE)
+        ));
 
         add(ModBlocks.ABYSS_ICE.get(), createSilkTouchOnlyTable(ModBlocks.ABYSS_ICE.get()));
         add(ModBlocks.ABYSS_PACKED_ICE.get(), createSilkTouchOnlyTable(ModBlocks.ABYSS_PACKED_ICE.get()));
@@ -236,6 +235,11 @@ public class BlockLootTable extends BlockLootSubProvider {
         registerGrass(ModBlocks.FROZEN_GRASS.get());
         dropSelf(ModBlocks.FROZEN_POPPY.get());
         registerGrass(ModBlocks.BERRY_GRASS.get());
+        dropSelf(ModBlocks.IRIS_PETAL.get());
+        dropSelf(ModBlocks.FROST_FLARE.get());
+        dropWhenSilkTouch(ModBlocks.ABYSS_STONE_GRASS.get());
+        dropWhenSilkTouch(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
+        dropSelf(ModBlocks.ICE_BUSH.get());
 
     }
 

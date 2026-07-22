@@ -30,10 +30,21 @@ public class DecoBlockProvider {
                     provider.modLoc("block/frozen_grass_block_top")
                 ));
 
+        provider.simpleBlockWithItem(ModBlocks.SNOW_PILED_STONE.get(), provider.models().cubeBottomTop("snow_piled_stone",
+                provider.modLoc("block/snow_piled_stone"),
+                provider.modLoc("block/snow_piled_stone_bottom"),
+                provider.modLoc("block/snow_piled_stone_top")
+        ));
+
         //植物など
         registerPlant(ModBlocks.FROZEN_GRASS.get());
         registerPlant(ModBlocks.FROZEN_POPPY.get());
         registerPlant(ModBlocks.BERRY_GRASS.get());
+        registerPlant(ModBlocks.IRIS_PETAL.get());
+        registerPlant(ModBlocks.FROST_FLARE.get());
+        registerPlant(ModBlocks.ABYSS_STONE_GRASS.get());
+        registerPlant(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
+        registerTallPlant(ModBlocks.ICE_BUSH.get());
 
     }
 

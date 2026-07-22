@@ -33,6 +33,9 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.ADVANCED_USYALIUM_BLOCK.get());
 
                         output.accept(ModBlocks.FROZEN_SPRUCE_LOG.get());
+                        output.accept(ModBlocks.FROZEN_SPRUCE_LEAVES.get());
+
+                        output.accept(ModBlocks.SNOW_PILED_STONE.get());
 
                         // ABYSS
                         output.accept(ModBlocks.ABYSS_STONE.get());
@@ -158,6 +161,11 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.FROZEN_GRASS.get());
                         output.accept(ModBlocks.FROZEN_POPPY.get());
                         output.accept(ModBlocks.BERRY_GRASS.get());
+                        output.accept(ModBlocks.IRIS_PETAL.get());
+                        output.accept(ModBlocks.FROST_FLARE.get());
+                        output.accept(ModBlocks.ABYSS_STONE_GRASS.get());
+                        output.accept(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
+                        output.accept(ModBlocks.ICE_BUSH.get());
                     })
                     .build());
 

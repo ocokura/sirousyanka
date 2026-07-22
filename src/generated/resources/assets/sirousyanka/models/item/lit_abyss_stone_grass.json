@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sirousyanka:item/lit_abyss_stone_grass"
+  }
+}

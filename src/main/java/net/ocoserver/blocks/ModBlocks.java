@@ -1,7 +1,5 @@
 package net.ocoserver.blocks;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,6 +10,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ocoserver.blocks.plank.AbyssPlank;
+import net.ocoserver.blocks.plank.ModPlank;
 import net.ocoserver.blocks.wood.ModWoodTypes;
 import net.ocoserver.items.ModItems;
 import net.ocoserver.main.Sirousyanka;
@@ -54,6 +54,15 @@ public class ModBlocks {
             .friction(0.98F)
             .noOcclusion()
     ));
+
+    public static final DeferredBlock<Block> SNOW_PILED_STONE = registerBlock("snow_piled_stone", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<LeavesBlock> FROZEN_SPRUCE_LEAVES = registerBlock("frozen_spruce_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GLASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
 
     public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1f, true, SoundType.GLASS, 0.98f, Block::new);
 
@@ -383,7 +392,7 @@ public class ModBlocks {
 
 
     //植物など
-    public static final DeferredBlock<TallGrassBlock> FROZEN_GRASS = registerBlock("frozen_grass", () -> new TallGrassBlock(
+    public static final DeferredBlock<ModPlank> FROZEN_GRASS = registerBlock("frozen_grass", () -> new ModPlank(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
@@ -391,7 +400,27 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<FlowerBlock> BERRY_GRASS = registerBlock("berry_grass", () -> new FlowerBlock(MobEffects.DAMAGE_BOOST, 5,
+    public static final DeferredBlock<ModPlank> BERRY_GRASS = registerBlock("berry_grass", () -> new ModPlank(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<ModPlank> IRIS_PETAL = registerBlock("iris_petal", () -> new ModPlank(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<ModPlank> FROST_FLARE = registerBlock("frost_flare", () -> new ModPlank(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<AbyssPlank> ABYSS_STONE_GRASS = registerBlock("abyss_stone_grass", () -> new AbyssPlank(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<AbyssPlank> LIT_ABYSS_STONE_GRASS = registerBlock("lit_abyss_stone_grass", () -> new AbyssPlank(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<DoublePlantBlock> ICE_BUSH = registerBlock("ice_bush", () -> new DoublePlantBlock(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 

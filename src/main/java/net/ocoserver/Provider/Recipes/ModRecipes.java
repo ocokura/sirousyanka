@@ -256,6 +256,8 @@ public class ModRecipes extends RecipeProvider {
 
         //植物
         oneToOneConversionRecipe(output, Items.LIGHT_BLUE_DYE, ModBlocks.FROZEN_POPPY.get(),"");
+        oneToOneConversionRecipe(output, Items.PURPLE_DYE, ModBlocks.IRIS_PETAL.get(),"");
+        oneToOneConversionRecipe(output, Items.BLUE_DYE, ModBlocks.FROST_FLARE.get(),"");
     }
 
     private static void registerWoodRecipeFamily(
