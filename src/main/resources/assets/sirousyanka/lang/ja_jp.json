@@ -136,5 +136,9 @@
   "block.sirousyanka.heated_lava" : "高温の溶岩",
   "item.sirousyanka.heated_lava_bucket" : "高温の溶岩入りバケツ",
   "block.sirousyanka.liquid_nitrogen" : "液体窒素",
-  "item.sirousyanka.liquid_nitrogen_bucket" : "液体窒素入りバケツ"
+  "item.sirousyanka.liquid_nitrogen_bucket" : "液体窒素入りバケツ",
+
+  "death.attack.cold": "%1$sは凍った",
+
+  "effect.sirousyanka.cold" : "凍結"
 }

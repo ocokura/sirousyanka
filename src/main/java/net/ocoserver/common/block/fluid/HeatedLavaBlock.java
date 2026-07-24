@@ -3,8 +3,6 @@ package net.ocoserver.common.block.fluid;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
@@ -12,7 +10,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FlowingFluid;
-import net.ocoserver.common.damage.ModDamageSource;
 
 public class HeatedLavaBlock extends LiquidBlock {
 
@@ -25,7 +22,7 @@ public class HeatedLavaBlock extends LiquidBlock {
         if (level.isClientSide || entity.fireImmune()) {
             return;
         }
-        entity.hurt(ModDamageSource.cold(level), 8f);
+        entity.hurt(level.damageSources().lava(), 8f);
         entity.setRemainingFireTicks(500);
     }
 

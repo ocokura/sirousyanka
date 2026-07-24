@@ -41,7 +41,7 @@ public abstract class LiquidNitrogen extends BaseFlowingFluid {
                 level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
                 level.setBlock(targetPos, Blocks.OBSIDIAN.defaultBlockState(), 3);
             } else if (fluidState.is(Tags.Fluids.WATER)) {
-                level.setBlock(targetPos, Blocks.COBBLESTONE.defaultBlockState(), 3);
+                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
                 level.setBlock(targetPos, Blocks.ICE.defaultBlockState(), 3);
             }
         }

@@ -9,6 +9,5 @@ import net.ocoserver.init.Sirousyanka;
 public class ModDamageTypes {
 
     public static final ResourceKey<DamageType> COLD = ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.fromNamespaceAndPath(Sirousyanka.MODID, "cold"));
-    public static final ResourceKey<DamageType> STEAM_EXPLOSION = ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.fromNamespaceAndPath(Sirousyanka.MODID, "steam_explosion"));
 
 }

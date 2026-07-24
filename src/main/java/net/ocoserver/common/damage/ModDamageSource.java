@@ -6,10 +6,6 @@ import net.minecraft.world.level.Level;
 
 public class ModDamageSource {
 
-    public static DamageSource steamExplosion(Level level) {
-        return new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ModDamageTypes.STEAM_EXPLOSION));
-    }
-
     public static DamageSource cold(Level level) {
         return new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ModDamageTypes.COLD));
     }

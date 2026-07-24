@@ -6,6 +6,7 @@ import net.neoforged.fml.common.Mod;
 import net.ocoserver.common.block.ModBlocks;
 import net.ocoserver.common.block.fluid.ModFluidTypes;
 import net.ocoserver.common.block.fluid.ModFluids;
+import net.ocoserver.common.effect.ModEffects;
 import net.ocoserver.common.item.CreativeModeTabs;
 import net.ocoserver.common.item.ModItems;
 
@@ -21,5 +22,6 @@ public class Sirousyanka {
         CreativeModeTabs.register(eventBus);
         ModFluids.register(eventBus);
         ModFluidTypes.register(eventBus);
+        ModEffects.register(eventBus);
     }
 }
