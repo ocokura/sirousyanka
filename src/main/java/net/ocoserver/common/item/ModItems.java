@@ -1,0 +1,57 @@
+package net.ocoserver.common.item;
+
+import net.minecraft.world.item.*;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.block.fluid.ModFluids;
+import net.ocoserver.init.Sirousyanka;
+
+
+public class ModItems {
+
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Sirousyanka.MODID);
+
+    public static final DeferredItem<Item> USYALIUM_INGOT = ITEMS.registerSimpleItem("usyalium_ingot");
+    public static final DeferredItem<Item> USYALIUM_NUGGET = ITEMS.registerSimpleItem("usyalium_nugget");
+    public static final DeferredItem<Item> RAW_USYALIUM = ITEMS.registerSimpleItem("raw_usyalium");
+    public static final DeferredItem<Item> ADVANCED_USYALIUM_INGOT = ITEMS.registerSimpleItem("advanced_usyalium_ingot");
+
+    //氷雪のカラマツ
+    public static final DeferredItem<Item> ICE_LARCH_PLANKS_SIGN = ITEMS.register("ice_larch_planks_sign",
+                    () -> new SignItem(new Item.Properties(), ModBlocks.ICE_LARCH_PLANKS_SIGN.get(), ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get()));
+
+    public static final DeferredItem<Item> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN =
+            ITEMS.register("ice_larch_planks_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
+
+    //ケウチ
+    public static final DeferredItem<Item> KEUTI_PLANKS_SIGN = ITEMS.register("keuti_planks_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.KEUTI_PLANKS_SIGN.get(), ModBlocks.KEUTI_PLANKS_WALL_SIGN.get()));
+
+    public static final DeferredItem<Item> KEUTI_PLANKS_CEILING_HANGING_SIGN =
+            ITEMS.register("keuti_planks_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
+
+    //紅結晶
+    public static final DeferredItem<Item> CRIMSON_CRYSTAL_PLANKS_SIGN = ITEMS.register("crimson_crystal_planks_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get()));
+
+    public static final DeferredItem<Item> CRIMSON_CRYSTAL_CEILING_HANGING_SIGN =
+            ITEMS.register("crimson_crystal_planks_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
+
+    //高温溶岩バケツ
+    public static final DeferredItem<BucketItem> HEATED_LAVA_BUCKET = ITEMS.register("heated_lava_bucket",
+            () -> new BucketItem(ModFluids.HEATED_LAVA.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+
+    //液体窒素バケツ
+    public static final DeferredItem<BucketItem> LIQUID_NITROGEN_BUCKET = ITEMS.register("liquid_nitrogen_bucket",
+            () -> new BucketItem(ModFluids.LIQUID_NITROGEN.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
+
+}

@@ -131,5 +131,10 @@
   "block.sirousyanka.iris_petal": "アイリスペタル",
   "block.sirousyanka.frost_flare": "フロストフレア",
   "block.sirousyanka.lit_abyss_stone_grass": "火のついた深淵の石草",
-  "block.sirousyanka.ice_bush": "氷の茂み"
+  "block.sirousyanka.ice_bush": "氷の茂み",
+
+  "block.sirousyanka.heated_lava" : "高温の溶岩",
+  "item.sirousyanka.heated_lava_bucket" : "高温の溶岩入りバケツ",
+  "block.sirousyanka.liquid_nitrogen" : "液体窒素",
+  "item.sirousyanka.liquid_nitrogen_bucket" : "液体窒素入りバケツ"
 }
