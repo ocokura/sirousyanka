@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.wood;
+package net.ocoserver.common.block.custom.wood;
 
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;

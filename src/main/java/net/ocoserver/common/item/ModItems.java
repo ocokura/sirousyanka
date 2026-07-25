@@ -5,8 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.block.fluid.ModFluids;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.fluid.ModFluids;
+import net.ocoserver.common.init.Sirousyanka;
 
 
 public class ModItems {

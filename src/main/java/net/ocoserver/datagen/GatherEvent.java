@@ -13,7 +13,7 @@ import net.ocoserver.datagen.Tags.ItemTag;
 import net.ocoserver.datagen.datamap.ModDataMapProvider;
 import net.ocoserver.common.world.dimension.ModPortal;
 import net.ocoserver.datagen.Recipes.ModRecipes;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class GatherEvent {

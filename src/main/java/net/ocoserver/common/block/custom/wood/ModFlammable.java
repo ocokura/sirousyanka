@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.wood;
+package net.ocoserver.common.block.custom.wood;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;

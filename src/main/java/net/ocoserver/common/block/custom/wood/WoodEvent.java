@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.wood;
+package net.ocoserver.common.block.custom.wood;
 
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -9,7 +9,7 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class WoodEvent {

@@ -1,4 +1,4 @@
-package net.ocoserver.init;
+package net.ocoserver.common.init;
 
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -6,8 +6,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
-import net.ocoserver.common.block.wood.ModFlammable;
-import net.ocoserver.common.block.fluid.ModFluidTypes;
+import net.ocoserver.common.block.custom.wood.ModFlammable;
+import net.ocoserver.common.fluid.ModFluidTypes;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class SetupEvent {

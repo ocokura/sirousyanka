@@ -5,6 +5,9 @@
     },
     "#sirousyanka:burn_in_furnace_short": {
       "burn_time": 37
+    },
+    "sirousyanka:heated_lava_bucket": {
+      "burn_time": 40000
     }
   }
 }

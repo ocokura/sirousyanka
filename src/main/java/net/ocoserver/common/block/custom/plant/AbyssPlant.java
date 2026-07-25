@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.plank;
+package net.ocoserver.common.block.custom.plant;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -8,9 +8,9 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.ocoserver.common.block.ModBlocks;
 
-public class AbyssPlank extends TallGrassBlock {
+public class AbyssPlant extends TallGrassBlock {
 
-    public AbyssPlank(BlockBehaviour.Properties properties) {
+    public AbyssPlant(BlockBehaviour.Properties properties) {
         super(properties);
     }
 

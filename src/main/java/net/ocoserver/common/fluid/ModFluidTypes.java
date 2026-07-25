@@ -1,6 +1,5 @@
-package net.ocoserver.common.block.fluid;
+package net.ocoserver.common.fluid;
 
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.SoundActions;
@@ -8,7 +7,7 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 
 public class ModFluidTypes {
 

@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
+import net.ocoserver.common.item.ModItems;
 import net.ocoserver.datagen.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -19,6 +20,7 @@ public class ModDataMapProvider extends DataMapProvider {
     protected void gather(HolderLookup.Provider lookupProvider) {
         builder(NeoForgeDataMaps.FURNACE_FUELS)
                 .add(ModTags.Items.BURN_IN_FURNACE_PLANKS, new FurnaceFuel(75), false)
-                .add(ModTags.Items.BURN_IN_FURNACE_SHORT, new FurnaceFuel(37), false);
+                .add(ModTags.Items.BURN_IN_FURNACE_SHORT, new FurnaceFuel(37), false)
+                .add(ModItems.HEATED_LAVA_BUCKET, new FurnaceFuel(40000), false);
     }
 }

@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.fluid;
+package net.ocoserver.common.fluid.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.fluid.ModFluids;
 
 import java.util.Optional;
 

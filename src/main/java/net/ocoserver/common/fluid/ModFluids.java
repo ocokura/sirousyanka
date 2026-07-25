@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.fluid;
+package net.ocoserver.common.fluid;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.FlowingFluid;
@@ -8,8 +8,10 @@ import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.fluid.custom.HeatedLava;
+import net.ocoserver.common.fluid.custom.LiquidNitrogen;
 import net.ocoserver.common.item.ModItems;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 
 public class ModFluids {
 

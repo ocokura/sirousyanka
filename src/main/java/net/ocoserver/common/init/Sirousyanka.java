@@ -1,11 +1,11 @@
-package net.ocoserver.init;
+package net.ocoserver.common.init;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.block.fluid.ModFluidTypes;
-import net.ocoserver.common.block.fluid.ModFluids;
+import net.ocoserver.common.fluid.ModFluidTypes;
+import net.ocoserver.common.fluid.ModFluids;
 import net.ocoserver.common.effect.ModEffects;
 import net.ocoserver.common.item.CreativeModeTabs;
 import net.ocoserver.common.item.ModItems;

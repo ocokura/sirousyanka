@@ -8,7 +8,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.datagen.ModTags;
 import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

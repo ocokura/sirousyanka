@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.fluid;
+package net.ocoserver.common.fluid.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -12,6 +12,7 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
+import net.ocoserver.common.fluid.ModFluids;
 
 import java.util.Optional;
 
@@ -38,10 +39,10 @@ public abstract class LiquidNitrogen extends BaseFlowingFluid {
             BlockPos targetPos = pos.relative(direction);
             FluidState fluidState = level.getFluidState(targetPos);
             if (fluidState.is(ModFluids.HEATED_LAVA.get()) || fluidState.is(ModFluids.FLOWING_HEATED_LAVA.get())) {
-                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
+                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 0.5f, 1f);
                 level.setBlock(targetPos, Blocks.OBSIDIAN.defaultBlockState(), 3);
             } else if (fluidState.is(Tags.Fluids.WATER)) {
-                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
+                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 0.5f, 1f);
                 level.setBlock(targetPos, Blocks.ICE.defaultBlockState(), 3);
             }
         }

@@ -10,14 +10,14 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.ocoserver.common.block.fluid.HeatedLavaBlock;
-import net.ocoserver.common.block.fluid.LiquidNitrogenBlock;
-import net.ocoserver.common.block.plank.AbyssPlank;
-import net.ocoserver.common.block.plank.ModPlank;
-import net.ocoserver.common.block.wood.ModWoodTypes;
-import net.ocoserver.common.block.fluid.ModFluids;
+import net.ocoserver.common.fluid.custom.HeatedLavaBlock;
+import net.ocoserver.common.fluid.custom.LiquidNitrogenBlock;
+import net.ocoserver.common.block.custom.plant.AbyssPlant;
+import net.ocoserver.common.block.custom.plant.ModPlant;
+import net.ocoserver.common.block.custom.wood.ModWoodTypes;
+import net.ocoserver.common.fluid.ModFluids;
 import net.ocoserver.common.item.ModItems;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.init.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
@@ -395,7 +395,7 @@ public class ModBlocks {
 
 
     //植物など
-    public static final DeferredBlock<ModPlank> FROZEN_GRASS = registerBlock("frozen_grass", () -> new ModPlank(
+    public static final DeferredBlock<ModPlant> FROZEN_GRASS = registerBlock("frozen_grass", () -> new ModPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
@@ -403,23 +403,23 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<ModPlank> BERRY_GRASS = registerBlock("berry_grass", () -> new ModPlank(
+    public static final DeferredBlock<ModPlant> BERRY_GRASS = registerBlock("berry_grass", () -> new ModPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<ModPlank> IRIS_PETAL = registerBlock("iris_petal", () -> new ModPlank(
+    public static final DeferredBlock<ModPlant> IRIS_PETAL = registerBlock("iris_petal", () -> new ModPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<ModPlank> FROST_FLARE = registerBlock("frost_flare", () -> new ModPlank(
+    public static final DeferredBlock<ModPlant> FROST_FLARE = registerBlock("frost_flare", () -> new ModPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<AbyssPlank> ABYSS_STONE_GRASS = registerBlock("abyss_stone_grass", () -> new AbyssPlank(
+    public static final DeferredBlock<AbyssPlant> ABYSS_STONE_GRASS = registerBlock("abyss_stone_grass", () -> new AbyssPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
-    public static final DeferredBlock<AbyssPlank> LIT_ABYSS_STONE_GRASS = registerBlock("lit_abyss_stone_grass", () -> new AbyssPlank(
+    public static final DeferredBlock<AbyssPlant> LIT_ABYSS_STONE_GRASS = registerBlock("lit_abyss_stone_grass", () -> new AbyssPlant(
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 

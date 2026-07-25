@@ -1,8 +1,11 @@
-package net.ocoserver.common.block.fluid;
+package net.ocoserver.common.fluid.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
@@ -15,6 +18,22 @@ public class HeatedLavaBlock extends LiquidBlock {
 
     public HeatedLavaBlock(FlowingFluid fluid, Properties properties) {
         super(fluid, properties);
+    }
+
+    @Override
+    public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
+        //120分の1を引いたら環境音再生
+        if (random.nextInt(200) == 0) {
+            level.playLocalSound(pos, SoundEvents.LAVA_AMBIENT, SoundSource.BLOCKS, 0.2F, 0.9F + random.nextFloat() * 0.2F, false);
+        }
+        //80分の1を引いてかつ上が空気ならパーティクルを再生
+        if (random.nextInt(80) == 0 && level.getBlockState(pos.above()).isAir()) {
+            level.addParticle(ParticleTypes.LAVA, pos.getX() + random.nextDouble(), pos.getY() + 1.0, pos.getZ() + random.nextDouble(),
+                    (random.nextDouble() - 0.5) * 0.05,
+                    0.01 + random.nextDouble() * 0.03,
+                    (random.nextDouble() - 0.5) * 0.05
+            );
+        }
     }
 
     @Override

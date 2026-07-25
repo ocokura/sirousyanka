@@ -6,8 +6,8 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.ocoserver.common.effect.effects.ColdEffect;
-import net.ocoserver.init.Sirousyanka;
+import net.ocoserver.common.effect.custom.ColdEffect;
+import net.ocoserver.common.init.Sirousyanka;
 
 public class ModEffects {
 
