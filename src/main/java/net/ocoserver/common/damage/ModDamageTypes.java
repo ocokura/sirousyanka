@@ -4,7 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageType;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 public class ModDamageTypes {
 

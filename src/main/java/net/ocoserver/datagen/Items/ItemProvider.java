@@ -4,7 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.ocoserver.common.item.ModItems;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 public class ItemProvider extends ItemModelProvider {
 

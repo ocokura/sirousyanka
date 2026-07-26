@@ -9,7 +9,7 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class WoodEvent {

@@ -6,7 +6,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 
 public class ColdEffect extends MobEffect {

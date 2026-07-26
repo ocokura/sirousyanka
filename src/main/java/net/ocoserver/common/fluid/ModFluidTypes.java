@@ -7,7 +7,7 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 public class ModFluidTypes {
 

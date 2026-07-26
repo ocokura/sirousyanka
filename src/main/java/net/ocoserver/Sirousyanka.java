@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;

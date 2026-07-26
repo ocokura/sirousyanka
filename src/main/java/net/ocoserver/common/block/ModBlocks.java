@@ -17,7 +17,7 @@ import net.ocoserver.common.block.custom.plant.ModPlant;
 import net.ocoserver.common.block.custom.wood.ModWoodTypes;
 import net.ocoserver.common.fluid.ModFluids;
 import net.ocoserver.common.item.ModItems;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;

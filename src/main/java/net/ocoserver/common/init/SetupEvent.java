@@ -6,8 +6,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.block.custom.wood.ModFlammable;
 import net.ocoserver.common.fluid.ModFluidTypes;
+import net.ocoserver.common.worldgen.dimension.ModPortal;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class SetupEvent {
@@ -16,6 +18,11 @@ public class SetupEvent {
     public static void commonSetupEvent(FMLCommonSetupEvent event) {
         ModFlammable.setFlammable();
 
+    }
+
+    @SubscribeEvent
+    public static void FMLCommonSetupEvent(FMLCommonSetupEvent event) {
+        ModPortal.createPortal();
     }
 
     @SubscribeEvent

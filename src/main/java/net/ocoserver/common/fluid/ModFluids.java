@@ -11,7 +11,7 @@ import net.ocoserver.common.block.ModBlocks;
 import net.ocoserver.common.fluid.custom.HeatedLava;
 import net.ocoserver.common.fluid.custom.LiquidNitrogen;
 import net.ocoserver.common.item.ModItems;
-import net.ocoserver.common.init.Sirousyanka;
+import net.ocoserver.Sirousyanka;
 
 public class ModFluids {
 
