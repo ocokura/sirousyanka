@@ -1,4 +1,4 @@
-package net.ocoserver.common.worldgen;
+package net.ocoserver.common.worldgen.ore;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -16,20 +16,19 @@ import net.ocoserver.common.block.ModBlocks;
 
 import java.util.List;
 
-public class ModConfiguredFeatures {
+public class ModOreConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_USYALIUM_ORE_KEY = registerKey("overworld_usyalium_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
+        //USYALIUM ORE
         RuleTest stonePlaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslatePlaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-
         List<OreConfiguration.TargetBlockState> overworldUsyaliumOres = List.of(
                 OreConfiguration.target(stonePlaceable, ModBlocks.USYALIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslatePlaceable, ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get().defaultBlockState())
         );
-
         register(context, OVERWORLD_USYALIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUsyaliumOres, 4));
     }
 

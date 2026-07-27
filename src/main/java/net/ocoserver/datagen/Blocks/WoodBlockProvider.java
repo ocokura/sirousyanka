@@ -174,6 +174,6 @@ public class WoodBlockProvider {
         var saplingModel = provider.models().cross(BuiltInRegistries.BLOCK.getKey(sapling).getPath(), provider.modLoc("block/" + BuiltInRegistries.BLOCK.getKey(sapling).getPath())
         ).renderType("minecraft:cutout");
         provider.simpleBlock(sapling, saplingModel);
-        provider.simpleBlockItem(sapling, saplingModel);
+        provider.itemModels().basicItem(sapling.asItem());
     }
 }

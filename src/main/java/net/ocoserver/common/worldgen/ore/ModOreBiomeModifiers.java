@@ -1,4 +1,4 @@
-package net.ocoserver.common.worldgen;
+package net.ocoserver.common.worldgen.ore;
 
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -12,7 +12,7 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.ocoserver.Sirousyanka;
 
-public class ModBiomeModifiers {
+public class ModOreBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_USYALIUM_ORE = registerKey("add_usyalium_ore");
 
@@ -23,7 +23,7 @@ public class ModBiomeModifiers {
 
         context.register(ADD_USYALIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.USYALIUM_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModOrePlacedFeatures.USYALIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
 

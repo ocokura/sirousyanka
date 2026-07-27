@@ -18,6 +18,7 @@ import net.ocoserver.common.block.custom.wood.ModWoodTypes;
 import net.ocoserver.common.fluid.ModFluids;
 import net.ocoserver.common.item.ModItems;
 import net.ocoserver.Sirousyanka;
+import net.ocoserver.common.worldgen.tree.ModTreeGrowers;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
@@ -256,7 +257,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(null,
+    public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(ModTreeGrowers.ICE_LARCH_TREE,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 
@@ -322,7 +323,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_PLANKS_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(null,
+    public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(ModTreeGrowers.KEUTI_TREE,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 
@@ -388,7 +389,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(null,
+    public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(ModTreeGrowers.CRIMSON_CRYSTAL_TREE,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 

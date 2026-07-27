@@ -9,7 +9,7 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.block.custom.wood.ModFlammable;
 import net.ocoserver.common.fluid.ModFluidTypes;
-import net.ocoserver.common.worldgen.dimension.ModPortal;
+import net.ocoserver.common.dimension.ModPortal;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class SetupEvent {

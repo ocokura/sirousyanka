@@ -1,3 +1,6 @@
 {
-  "parent": "sirousyanka:block/ice_larch_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sirousyanka:item/ice_larch_sapling"
+  }
 }

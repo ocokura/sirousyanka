@@ -1,10 +1,10 @@
-package net.ocoserver.common.worldgen;
+package net.ocoserver.common.worldgen.ore;
 
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
-public class ModPlacementUtils {
+public class ModOrePlacementUtils {
 
     public static List<PlacementModifier> rareOrePlacement(int chance, PlacementModifier heightRange) {
         return orePlacement(RarityFilter.onAverageOnceEvery(chance), heightRange);

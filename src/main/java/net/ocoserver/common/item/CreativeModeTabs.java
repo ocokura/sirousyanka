@@ -157,7 +157,7 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_SAPLING.get());
 
-                        //植物
+                        //plant
                         output.accept(ModBlocks.FROZEN_GRASS.get());
                         output.accept(ModBlocks.FROZEN_POPPY.get());
                         output.accept(ModBlocks.BERRY_GRASS.get());
@@ -167,7 +167,7 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
                         output.accept(ModBlocks.ICE_BUSH.get());
 
-                        //流体
+                        //Fluid
                         output.accept(ModItems.HEATED_LAVA_BUCKET.get());
                         output.accept(ModItems.LIQUID_NITROGEN_BUCKET.get());
                     })

@@ -1,4 +1,4 @@
-package net.ocoserver.common.worldgen;
+package net.ocoserver.common.worldgen.ore;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -7,19 +7,21 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import net.ocoserver.Sirousyanka;
 
 import java.util.List;
 
-public class ModPlacedFeatures {
+public class ModOrePlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> USYALIUM_ORE_PLACED_KEY = registerKey("usyalium_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-        register(context, USYALIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_USYALIUM_ORE_KEY),
-            ModPlacementUtils.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-54), VerticalAnchor.absolute(20))));
+        register(context, USYALIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModOreConfiguredFeatures.OVERWORLD_USYALIUM_ORE_KEY),
+            ModOrePlacementUtils.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-54), VerticalAnchor.absolute(20))));
     }
 
 

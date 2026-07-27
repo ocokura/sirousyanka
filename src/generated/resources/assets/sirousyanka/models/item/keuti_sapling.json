@@ -1,3 +1,6 @@
 {
-  "parent": "sirousyanka:block/keuti_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sirousyanka:item/keuti_sapling"
+  }
 }

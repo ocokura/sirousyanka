@@ -1,4 +1,4 @@
-package net.ocoserver.common.worldgen.dimension;
+package net.ocoserver.common.dimension;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.resources.ResourceLocation;
