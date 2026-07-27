@@ -61,6 +61,8 @@ public abstract class HeatedLava extends BaseFlowingFluid {
             } else if (fluidState.is(Tags.Fluids.WATER)) {
                 level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
                 level.setBlock(targetPos, ModBlocks.ABYSS_STONE.get().defaultBlockState(), 3);
+                //level.setBlock(targetPos, Blocks.AIR.defaultBlockState(), 3);
+                //level.explode(null, level.damageSources().explosion(null), null, targetPos.getX(), targetPos.getY(), targetPos.getZ(), 5, false, Level.ExplosionInteraction.BLOCK);
             }
         }
         super.tick(level, pos, state);
