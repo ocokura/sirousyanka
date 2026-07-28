@@ -3,7 +3,7 @@ package net.ocoserver.datagen.Blocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 
 public class StoneBlockProvider {

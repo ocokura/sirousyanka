@@ -3,6 +3,7 @@ package net.ocoserver.common.damage;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.level.Level;
+import net.ocoserver.common.init.ModDamageTypes;
 
 public class ModDamageSource {
 

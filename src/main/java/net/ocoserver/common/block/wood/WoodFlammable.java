@@ -1,11 +1,11 @@
-package net.ocoserver.common.block.custom.wood;
+package net.ocoserver.common.block.wood;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModBlocks;
 
-public class ModFlammable {
+public class WoodFlammable {
 
     public static void setFlammable() {
 

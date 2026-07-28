@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModBlocks;
 
 public class DecoBlockProvider {
 

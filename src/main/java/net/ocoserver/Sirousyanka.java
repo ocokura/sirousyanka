@@ -3,12 +3,12 @@ package net.ocoserver;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.fluid.ModFluidTypes;
-import net.ocoserver.common.fluid.ModFluids;
-import net.ocoserver.common.effect.ModEffects;
-import net.ocoserver.common.item.CreativeModeTabs;
-import net.ocoserver.common.item.ModItems;
+import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.ModFluidTypes;
+import net.ocoserver.common.init.ModFluids;
+import net.ocoserver.common.init.ModEffects;
+import net.ocoserver.common.init.ModCreativeTabs;
+import net.ocoserver.common.init.ModItems;
 
 @Mod(Sirousyanka.MODID)
 public class Sirousyanka {
@@ -19,7 +19,7 @@ public class Sirousyanka {
         System.out.println("[SIR] starting setup mod");
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        CreativeModeTabs.register(eventBus);
+        ModCreativeTabs.register(eventBus);
         ModFluids.register(eventBus);
         ModFluidTypes.register(eventBus);
         ModEffects.register(eventBus);

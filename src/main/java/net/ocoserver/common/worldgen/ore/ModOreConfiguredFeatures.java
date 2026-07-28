@@ -1,5 +1,6 @@
 package net.ocoserver.common.worldgen.ore;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
@@ -8,14 +9,15 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.worldgen.ModFeatureUtils;
+import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.util.ModUtils;
+import net.ocoserver.common.util.WorldGenUtils;
 
 import java.util.List;
 
 public class ModOreConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_USYALIUM_ORE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("overworld_usyalium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_USYALIUM_ORE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "overworld_usyalium_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
@@ -26,7 +28,7 @@ public class ModOreConfiguredFeatures {
                 OreConfiguration.target(stonePlaceable, ModBlocks.USYALIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslatePlaceable, ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get().defaultBlockState())
         );
-        ModFeatureUtils.registerConfiguredFeature(context, OVERWORLD_USYALIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUsyaliumOres, 4));
+        WorldGenUtils.registerConfiguredFeature(context, OVERWORLD_USYALIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUsyaliumOres, 4));
     }
 
 }

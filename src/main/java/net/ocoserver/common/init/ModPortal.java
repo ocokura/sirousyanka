@@ -1,9 +1,7 @@
-package net.ocoserver.common.dimension;
+package net.ocoserver.common.init;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.resources.ResourceLocation;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.item.ModItems;
 
 public class ModPortal {
 

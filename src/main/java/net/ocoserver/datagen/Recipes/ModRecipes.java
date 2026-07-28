@@ -7,9 +7,9 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
-import net.ocoserver.datagen.ModTags;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.item.ModItems;
+import net.ocoserver.common.init.ModTags;
+import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

@@ -8,11 +8,12 @@ import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
-import net.ocoserver.common.worldgen.ModFeatureUtils;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.ocoserver.common.util.ModUtils;
 
 public class ModOreBiomeModifiers {
 
-    public static final ResourceKey<BiomeModifier> ADD_USYALIUM_ORE = ModFeatureUtils.registerBiomeModifierKey("add_usyalium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_USYALIUM_ORE = ModUtils.getResourceKey(NeoForgeRegistries.Keys.BIOME_MODIFIERS, "add_usyalium_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);

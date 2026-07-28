@@ -1,4 +1,4 @@
-package net.ocoserver.common.block;
+package net.ocoserver.common.init;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -10,13 +10,10 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.ocoserver.common.fluid.custom.HeatedLavaBlock;
-import net.ocoserver.common.fluid.custom.LiquidNitrogenBlock;
-import net.ocoserver.common.block.custom.plant.AbyssPlant;
-import net.ocoserver.common.block.custom.plant.ModPlant;
-import net.ocoserver.common.block.custom.wood.ModWoodTypes;
-import net.ocoserver.common.fluid.ModFluids;
-import net.ocoserver.common.item.ModItems;
+import net.ocoserver.common.block.fluid.HeatedLavaBlock;
+import net.ocoserver.common.block.fluid.LiquidNitrogenBlock;
+import net.ocoserver.common.block.plant.AbyssPlant;
+import net.ocoserver.common.block.plant.ModPlant;
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.worldgen.tree.ModTreeGrowers;
 import org.jetbrains.annotations.Nullable;
@@ -427,8 +424,6 @@ public class ModBlocks {
 
     //--------------------------------ここからメソッド--------------------------------------------------------
 
-
-
     private static <T extends Block> DeferredBlock<T> registerBlock(
             String name,
             float strength,
@@ -450,14 +445,14 @@ public class ModBlocks {
         return result;
     }
 
-    private static <T extends Block> DeferredBlock<T> registerBlockWithoutItem(String name, Supplier<T> block) {
-        return BLOCKS.register(name, block);
-    }
-
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
+    }
+
+    private static <T extends Block> DeferredBlock<T> registerBlockWithoutItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {

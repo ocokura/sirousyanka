@@ -7,8 +7,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.ocoserver.datagen.ModTags;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModTags;
+import net.ocoserver.common.init.ModBlocks;
 import net.ocoserver.Sirousyanka;
 
 import java.util.concurrent.CompletableFuture;

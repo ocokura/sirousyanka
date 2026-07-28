@@ -1,6 +1,6 @@
 package net.ocoserver.datagen.Blocks;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModBlocks;
 
 public class OreBlockProvider {
 

@@ -1,5 +1,6 @@
 package net.ocoserver.common.worldgen.tree;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -13,20 +14,21 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePl
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.worldgen.ModFeatureUtils;
+import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.util.ModUtils;
+import net.ocoserver.common.util.WorldGenUtils;
 
 public class ModTreeConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModFeatureUtils.registerConfiguredFeatureKey("frozen_spruce_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("ice_larch_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("keuti_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("crimson_crystal_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_spruce_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
         //FROZEN SPRUCE
-        ModFeatureUtils.registerConfiguredFeature(context, FROZEN_SPRUCE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, FROZEN_SPRUCE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.FROZEN_SPRUCE_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 1),
 
@@ -36,7 +38,7 @@ public class ModTreeConfiguredFeatures {
                 new TwoLayersFeatureSize(2, 0, 2)).ignoreVines().build());
 
         //ICE LARCH TREE
-        ModFeatureUtils.registerConfiguredFeature(context, ICE_LARCH_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, ICE_LARCH_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.ICE_LARCH_LOG.get()),
                 new StraightTrunkPlacer(8, 2, 2),
 
@@ -46,7 +48,7 @@ public class ModTreeConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //KEUTI TREE
-        ModFeatureUtils.registerConfiguredFeature(context, KEUTI_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, KEUTI_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.KEUTI_LOG.get()),
                 new StraightTrunkPlacer(5, 3, 2),
 
@@ -56,7 +58,7 @@ public class ModTreeConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //CRIMSON CRYSTAL TREE
-        ModFeatureUtils.registerConfiguredFeature(context, CRIMSON_CRYSTAL_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, CRIMSON_CRYSTAL_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRIMSON_CRYSTAL_LOG.get()),
                 new ForkingTrunkPlacer(6, 3, 2),
 

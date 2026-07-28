@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
-import net.ocoserver.common.block.ModBlocks;
+import net.ocoserver.common.init.ModBlocks;
 
 public class WoodBlockProvider {
 

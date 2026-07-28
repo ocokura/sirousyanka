@@ -1,4 +1,4 @@
-package net.ocoserver.common.damage;
+package net.ocoserver.common.init;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

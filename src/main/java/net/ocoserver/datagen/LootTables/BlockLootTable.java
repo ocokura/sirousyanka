@@ -7,8 +7,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
-import net.ocoserver.common.block.ModBlocks;
-import net.ocoserver.common.item.ModItems;
+import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Set;
