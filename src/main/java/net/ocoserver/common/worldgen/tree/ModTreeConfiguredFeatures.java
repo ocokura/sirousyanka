@@ -18,11 +18,22 @@ import net.ocoserver.common.worldgen.ModFeatureUtils;
 
 public class ModTreeConfiguredFeatures {
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModFeatureUtils.registerConfiguredFeatureKey("frozen_spruce_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("ice_larch_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("keuti_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE_KEY = ModFeatureUtils.registerConfiguredFeatureKey("crimson_crystal_tree");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
+
+        //FROZEN SPRUCE
+        ModFeatureUtils.registerConfiguredFeature(context, FROZEN_SPRUCE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.FROZEN_SPRUCE_LOG.get()),
+                new StraightTrunkPlacer(5, 2, 1),
+
+                BlockStateProvider.simple(ModBlocks.FROZEN_SPRUCE_LEAVES.get()),
+                new SpruceFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 2), UniformInt.of(1, 2)),
+
+                new TwoLayersFeatureSize(2, 0, 2)).ignoreVines().build());
 
         //ICE LARCH TREE
         ModFeatureUtils.registerConfiguredFeature(context, ICE_LARCH_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -32,7 +43,7 @@ public class ModTreeConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.ICE_LARCH_LEAVES.get()),
                 new SpruceFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(0), UniformInt.of(1, 2)),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //KEUTI TREE
         ModFeatureUtils.registerConfiguredFeature(context, KEUTI_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -42,7 +53,7 @@ public class ModTreeConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.KEUTI_LEAVES.get()),
                 new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(0), 3),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //CRIMSON CRYSTAL TREE
         ModFeatureUtils.registerConfiguredFeature(context, CRIMSON_CRYSTAL_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -52,6 +63,6 @@ public class ModTreeConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get()),
                 new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(3), 3),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
     }
 }

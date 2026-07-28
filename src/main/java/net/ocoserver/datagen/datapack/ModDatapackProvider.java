@@ -8,8 +8,8 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.worldgen.ModConfiguredFeatures;
+import net.ocoserver.common.worldgen.ModPlacedFeatures;
 import net.ocoserver.common.worldgen.ore.ModOreBiomeModifiers;
-import net.ocoserver.common.worldgen.ore.ModOrePlacedFeatures;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -19,7 +19,7 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             //Tree
             //Ore
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
-            .add(Registries.PLACED_FEATURE, ModOrePlacedFeatures::bootstrap)
+            .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModOreBiomeModifiers::bootstrap);
 
 

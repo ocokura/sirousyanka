@@ -27,21 +27,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Sirousyanka.MODID);
-    /*ウシャリウム鉱石
-    * 深層岩ウシャリウム鉱石 k
-    * ウシャリウムブロック　k
-    * 高度なウシャリウムブロック k
-    * 凍った松の原木 k
-    * 深淵の石
-    * 深淵の氷 k
-    * 深淵の氷塊 k
-    * 凍った草ブロック k
-    * 凍った石 k
-    * 深淵の黒曜石 k
-    * 凍った石レンガ k
-    * 凍った模様入り石レンガ k
-    * 凍ったひび割れた石レンガ k
-    * */
+
     public static final DeferredBlock<Block> USYALIUM_ORE_BLOCK = registerBlock("usyalium_ore_block", 3f, true, SoundType.STONE, null, Block::new);
 
     public static final DeferredBlock<Block> DEEPSLATE_USYALIUM_ORE_BLOCK = registerBlock("deepslate_usyalium_ore_block", 4f, true, SoundType.DEEPSLATE, null, Block::new);
