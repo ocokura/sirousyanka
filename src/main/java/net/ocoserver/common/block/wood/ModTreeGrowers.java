@@ -1,7 +1,8 @@
-package net.ocoserver.common.worldgen.tree;
+package net.ocoserver.common.block.wood;
 
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.ocoserver.Sirousyanka;
+import net.ocoserver.common.worldgen.tree.ModTreeConfiguredFeatures;
 
 import java.util.Optional;
 

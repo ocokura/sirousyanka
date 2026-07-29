@@ -15,7 +15,7 @@ import net.ocoserver.common.block.fluid.LiquidNitrogenBlock;
 import net.ocoserver.common.block.plant.AbyssPlant;
 import net.ocoserver.common.block.plant.ModPlant;
 import net.ocoserver.Sirousyanka;
-import net.ocoserver.common.worldgen.tree.ModTreeGrowers;
+import net.ocoserver.common.block.wood.ModTreeGrowers;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;

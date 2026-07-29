@@ -53,16 +53,21 @@ public abstract class HeatedLava extends BaseFlowingFluid {
     @Override
     public void tick(Level level, BlockPos pos, FluidState state) {
         for (Direction direction : Direction.values()) {
+            if (direction == Direction.DOWN) {
+                continue;
+            }
             BlockPos targetPos = pos.relative(direction);
             FluidState fluidState = level.getFluidState(targetPos);
             if (fluidState.is(Tags.Fluids.LAVA)) {
-                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
-                level.setBlock(targetPos, Blocks.COBBLESTONE.defaultBlockState(), 3);
+                level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
+                level.setBlock(pos, Blocks.MAGMA_BLOCK.defaultBlockState(), 3);
+                return;
             } else if (fluidState.is(Tags.Fluids.WATER)) {
-                level.playSound(null, targetPos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
-                level.setBlock(targetPos, ModBlocks.ABYSS_STONE.get().defaultBlockState(), 3);
+                level.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1f, 1f);
+                level.setBlock(pos, ModBlocks.ABYSS_STONE.get().defaultBlockState(), 3);
                 //level.setBlock(targetPos, Blocks.AIR.defaultBlockState(), 3);
                 //level.explode(null, level.damageSources().explosion(null), null, targetPos.getX(), targetPos.getY(), targetPos.getZ(), 5, false, Level.ExplosionInteraction.BLOCK);
+                return;
             }
         }
         super.tick(level, pos, state);

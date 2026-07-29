@@ -12,9 +12,6 @@ public class ModEffects {
 
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, Sirousyanka.MODID);
 
-    public static final Holder<MobEffect> COLD = EFFECTS.register("cold",
-            () -> new ColdEffect(MobEffectCategory.HARMFUL, 0x1e90ff));
-
     public static void register(IEventBus eventBus) {
         EFFECTS.register(eventBus);
     }

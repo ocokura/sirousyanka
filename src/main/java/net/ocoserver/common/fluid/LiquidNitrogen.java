@@ -36,6 +36,9 @@ public abstract class LiquidNitrogen extends BaseFlowingFluid {
     @Override
     public void tick(Level level, BlockPos pos, FluidState state) {
         for (Direction direction : Direction.values()) {
+            if (direction == Direction.UP) {
+                continue;
+            }
             BlockPos targetPos = pos.relative(direction);
             FluidState fluidState = level.getFluidState(targetPos);
             if (fluidState.is(ModFluids.HEATED_LAVA.get()) || fluidState.is(ModFluids.FLOWING_HEATED_LAVA.get())) {

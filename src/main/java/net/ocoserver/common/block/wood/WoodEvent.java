@@ -14,21 +14,22 @@ import net.ocoserver.Sirousyanka;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Supplier;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class WoodEvent {
 
-    private static final Map<Block, Block> STRIPPABLE = new HashMap<>();
+    private static final Map<Supplier<Block>, Supplier<Block>> STRIPPABLE = new HashMap<>();
 
     static {
-        STRIPPABLE.put(ModBlocks.ICE_LARCH_LOG.get(), ModBlocks.STRIPPED_ICE_LARCH_LOG.get());
-        STRIPPABLE.put(ModBlocks.ICE_LARCH_WOOD.get(), ModBlocks.STRIPPED_ICE_LARCH_WOOD.get());
+        STRIPPABLE.put(ModBlocks.ICE_LARCH_LOG::get, ModBlocks.STRIPPED_ICE_LARCH_LOG::get);
+        STRIPPABLE.put(ModBlocks.ICE_LARCH_WOOD::get, ModBlocks.STRIPPED_ICE_LARCH_WOOD::get);
 
-        STRIPPABLE.put(ModBlocks.KEUTI_LOG.get(), ModBlocks.STRIPPED_KEUTI_LOG.get());
-        STRIPPABLE.put(ModBlocks.KEUTI_WOOD.get(), ModBlocks.STRIPPED_KEUTI_WOOD.get());
+        STRIPPABLE.put(ModBlocks.KEUTI_LOG::get, ModBlocks.STRIPPED_KEUTI_LOG::get);
+        STRIPPABLE.put(ModBlocks.KEUTI_WOOD::get, ModBlocks.STRIPPED_KEUTI_WOOD::get);
 
-        STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_LOG.get(), ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get());
-        STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_WOOD.get(), ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get());
+        STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_LOG::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG::get);
+        STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_WOOD::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD::get);
     }
 
     @SubscribeEvent
@@ -37,11 +38,13 @@ public class WoodEvent {
             return;
         }
         BlockState originalState = event.getState();
-        Block strippedBlock = STRIPPABLE.get(originalState.getBlock());
-        if (strippedBlock == null) {
+        for (var entry : STRIPPABLE.entrySet()) {
+            if (entry.getKey().get() != originalState.getBlock()) {
+                continue;
+            }
+            event.setFinalState(entry.getValue().get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, originalState.getValue(RotatedPillarBlock.AXIS)));
             return;
         }
-        event.setFinalState(strippedBlock.defaultBlockState().setValue(RotatedPillarBlock.AXIS, originalState.getValue(RotatedPillarBlock.AXIS)));
     }
 
     @SubscribeEvent

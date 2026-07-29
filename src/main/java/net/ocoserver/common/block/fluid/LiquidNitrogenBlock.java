@@ -2,7 +2,6 @@ package net.ocoserver.common.block.fluid;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,9 +21,7 @@ public class LiquidNitrogenBlock extends LiquidBlock {
         }
         entity.clearFire();
         entity.hurt(ModDamageSource.cold(level), 4f);
-        if (entity instanceof LivingEntity) {
-            entity.setTicksFrozen(140);
-        }
+        entity.setTicksFrozen(140);
     }
 
     @Override
