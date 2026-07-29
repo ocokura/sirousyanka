@@ -51,6 +51,23 @@
     "sirousyanka:crimson_crystal_wall_sign",
     "sirousyanka:crimson_crystal_ceiling_hanging_sign",
     "sirousyanka:crimson_crystal_wall_hanging_sign",
+    "sirousyanka:nitrowd_log",
+    "sirousyanka:stripped_nitrowd_log",
+    "sirousyanka:nitrowd_wood",
+    "sirousyanka:stripped_nitrowd_wood",
+    "sirousyanka:nitrowd_planks",
+    "sirousyanka:nitrowd_stair",
+    "sirousyanka:nitrowd_slab",
+    "sirousyanka:nitrowd_fence",
+    "sirousyanka:nitrowd_fence_gate",
+    "sirousyanka:nitrowd_pressure_plate",
+    "sirousyanka:nitrowd_button",
+    "sirousyanka:nitrowd_door",
+    "sirousyanka:nitrowd_trap_door",
+    "sirousyanka:nitrowd_sign",
+    "sirousyanka:nitrowd_wall_sign",
+    "sirousyanka:nitrowd_ceiling_hanging_sign",
+    "sirousyanka:nitrowd_wall_hanging_sign",
     "sirousyanka:frozen_spruce_log"
   ]
 }

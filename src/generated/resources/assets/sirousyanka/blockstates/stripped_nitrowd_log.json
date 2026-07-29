@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sirousyanka:block/stripped_nitrowd_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sirousyanka:block/stripped_nitrowd_log"
+    },
+    "axis=z": {
+      "model": "sirousyanka:block/stripped_nitrowd_log_horizontal",
+      "x": 90
+    }
+  }
+}

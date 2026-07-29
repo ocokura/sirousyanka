@@ -15,6 +15,7 @@ public class ModTreePlacedFeatures {
     public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "ice_larch_tree_placed");
     public static final ResourceKey<PlacedFeature> KEUTI_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "keuti_tree_placed");
     public static final ResourceKey<PlacedFeature> CRIMSON_CRYSTAL_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "crimson_crystal_tree_placed");
+    public static final ResourceKey<PlacedFeature> NITROWD_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "nitrowd_tree_placed");
     public static final ResourceKey<PlacedFeature> FROZEN_SPRUCE_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frozen_spruce_tree_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {

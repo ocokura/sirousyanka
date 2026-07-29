@@ -156,6 +156,25 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_SAPLING.get());
 
+                        //ニトロウド
+                        output.accept(ModBlocks.NITROWD_LOG.get());
+                        output.accept(ModBlocks.NITROWD_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_NITROWD_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_NITROWD_WOOD.get());
+                        output.accept(ModBlocks.NITROWD_PLANKS.get());
+                        output.accept(ModBlocks.NITROWD_STAIR.get());
+                        output.accept(ModBlocks.NITROWD_SLAB.get());
+                        output.accept(ModBlocks.NITROWD_FENCE.get());
+                        output.accept(ModBlocks.NITROWD_FENCE_GATE.get());
+                        output.accept(ModBlocks.NITROWD_DOOR.get());
+                        output.accept(ModBlocks.NITROWD_TRAP_DOOR.get());
+                        output.accept(ModBlocks.NITROWD_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.NITROWD_BUTTON.get());
+                        output.accept(ModBlocks.NITROWD_SIGN.get());
+                        output.accept(ModBlocks.NITROWD_CEILING_HANGING_SIGN.get());
+                        output.accept(ModBlocks.NITROWD_LEAVES.get());
+                        output.accept(ModBlocks.NITROWD_SAPLING.get());
+
                         //plant
                         output.accept(ModBlocks.FROZEN_GRASS.get());
                         output.accept(ModBlocks.FROZEN_POPPY.get());

@@ -50,6 +50,13 @@ public class ItemTag extends ItemTagsProvider {
                 .add(ModBlocks.CRIMSON_CRYSTAL_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get().asItem());
 
+        //ニトロウドの板材が作れるように
+        tag(ModTags.Items.CRAFTABLE_TO_NITROWD_PLANKS)
+                .add(ModBlocks.NITROWD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_NITROWD_LOG.get().asItem())
+                .add(ModBlocks.NITROWD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_NITROWD_WOOD.get().asItem());
+
         //アイテムにもタグを紐づけ
         copy(BlockTags.PLANKS, ItemTags.PLANKS);
         copy(BlockTags.LOGS, ItemTags.LOGS);

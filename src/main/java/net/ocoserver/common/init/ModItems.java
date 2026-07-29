@@ -40,6 +40,14 @@ public class ModItems {
             ITEMS.register("crimson_crystal_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
+    //ニトロウド
+    public static final DeferredItem<Item> NITROWD_SIGN = ITEMS.register("nitrowd_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.NITROWD_SIGN.get(), ModBlocks.NITROWD_WALL_SIGN.get()));
+
+    public static final DeferredItem<Item> NITROWD_CEILING_HANGING_SIGN =
+            ITEMS.register("nitrowd_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(), ModBlocks.NITROWD_WALL_HANGING_SIGN.get(), new Item.Properties()));
+
     //高温溶岩バケツ
     public static final DeferredItem<BucketItem> HEATED_LAVA_BUCKET = ITEMS.register("heated_lava_bucket",
             () -> new BucketItem(ModFluids.HEATED_LAVA.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));

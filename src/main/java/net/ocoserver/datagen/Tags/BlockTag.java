@@ -204,6 +204,29 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.CRIMSON_CRYSTAL_SAPLING.get()
         );
 
+        //ニトロウド
+        registerWoodBlockTags(
+                ModBlocks.NITROWD_LOG.get(),
+                ModBlocks.NITROWD_WOOD.get(),
+                ModBlocks.STRIPPED_NITROWD_LOG.get(),
+                ModBlocks.STRIPPED_NITROWD_WOOD.get(),
+                ModBlocks.NITROWD_PLANKS.get(),
+                ModBlocks.NITROWD_STAIR.get(),
+                ModBlocks.NITROWD_SLAB.get(),
+                ModBlocks.NITROWD_FENCE.get(),
+                ModBlocks.NITROWD_FENCE_GATE.get(),
+                ModBlocks.NITROWD_PRESSURE_PLATE.get(),
+                ModBlocks.NITROWD_BUTTON.get(),
+                ModBlocks.NITROWD_DOOR.get(),
+                ModBlocks.NITROWD_TRAP_DOOR.get(),
+                ModBlocks.NITROWD_SIGN.get(),
+                ModBlocks.NITROWD_WALL_SIGN.get(),
+                ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_WALL_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_LEAVES.get(),
+                ModBlocks.NITROWD_SAPLING.get()
+        );
+
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())

@@ -233,6 +233,29 @@ public class BlockLootTable extends BlockLootSubProvider {
                 ModBlocks.CRIMSON_CRYSTAL_LEAVES.get()
         );
 
+        //ニトロウド
+        registerWoodLootFamily(
+                ModBlocks.NITROWD_LOG.get(),
+                ModBlocks.NITROWD_WOOD.get(),
+                ModBlocks.STRIPPED_NITROWD_LOG.get(),
+                ModBlocks.STRIPPED_NITROWD_WOOD.get(),
+                ModBlocks.NITROWD_PLANKS.get(),
+                ModBlocks.NITROWD_STAIR.get(),
+                ModBlocks.NITROWD_SLAB.get(),
+                ModBlocks.NITROWD_FENCE.get(),
+                ModBlocks.NITROWD_FENCE_GATE.get(),
+                ModBlocks.NITROWD_PRESSURE_PLATE.get(),
+                ModBlocks.NITROWD_BUTTON.get(),
+                ModBlocks.NITROWD_DOOR.get(),
+                ModBlocks.NITROWD_TRAP_DOOR.get(),
+                ModBlocks.NITROWD_SIGN.get(),
+                ModBlocks.NITROWD_WALL_SIGN.get(),
+                ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_WALL_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_SAPLING.get(),
+                ModBlocks.NITROWD_LEAVES.get()
+        );
+
         //植物
         registerGrass(ModBlocks.FROZEN_GRASS.get());
         dropSelf(ModBlocks.FROZEN_POPPY.get());

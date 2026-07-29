@@ -4,6 +4,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
@@ -213,7 +215,8 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.ICE_LARCH_DOOR.get(),
                 ModBlocks.ICE_LARCH_TRAP_DOOR.get(),
                 ModBlocks.ICE_LARCH_SIGN.get(),
-                ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get()
+                ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get(),
+                ModTags.Items.CRAFTABLE_TO_ICE_LARCH_PLANKS
         );
 
         //ケウチ
@@ -232,7 +235,8 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.KEUTI_DOOR.get(),
                 ModBlocks.KEUTI_TRAP_DOOR.get(),
                 ModBlocks.KEUTI_SIGN.get(),
-                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get()
+                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(),
+                ModTags.Items.CRAFTABLE_TO_KEUTI_PLANKS
         );
 
         //紅晶樹
@@ -251,7 +255,28 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.CRIMSON_CRYSTAL_DOOR.get(),
                 ModBlocks.CRIMSON_CRYSTAL_TRAP_DOOR.get(),
                 ModBlocks.CRIMSON_CRYSTAL_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get()
+                ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get(),
+                ModTags.Items.CRAFTABLE_TO_CRIMSON_CRYSTAL_PLANKS
+        );
+
+        //ニトロウド
+        registerWoodRecipeFamily(
+                ModBlocks.NITROWD_LOG.get(),
+                ModBlocks.NITROWD_WOOD.get(),
+                ModBlocks.STRIPPED_NITROWD_LOG.get(),
+                ModBlocks.STRIPPED_NITROWD_WOOD.get(),
+                ModBlocks.NITROWD_PLANKS.get(),
+                ModBlocks.NITROWD_STAIR.get(),
+                ModBlocks.NITROWD_SLAB.get(),
+                ModBlocks.NITROWD_FENCE.get(),
+                ModBlocks.NITROWD_FENCE_GATE.get(),
+                ModBlocks.NITROWD_PRESSURE_PLATE.get(),
+                ModBlocks.NITROWD_BUTTON.get(),
+                ModBlocks.NITROWD_DOOR.get(),
+                ModBlocks.NITROWD_TRAP_DOOR.get(),
+                ModBlocks.NITROWD_SIGN.get(),
+                ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(),
+                ModTags.Items.CRAFTABLE_TO_NITROWD_PLANKS
         );
 
         //植物
@@ -275,9 +300,10 @@ public class ModRecipes extends RecipeProvider {
             Block door,
             Block trapdoor,
             Block sign,
-            Block ceilingSign
+            Block ceilingSign,
+            TagKey<Item> craftablePlanksTag
     ) {
-        planksFromLog(output, planks, ModTags.Items.CRAFTABLE_TO_ICE_LARCH_PLANKS, 4);
+        planksFromLog(output, planks, craftablePlanksTag, 4);
         woodFromLogs(output, wood, log);
         woodFromLogs(output, strippedWood, strippedLog);
 

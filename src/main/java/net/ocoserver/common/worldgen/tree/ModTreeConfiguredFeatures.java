@@ -24,6 +24,7 @@ public class ModTreeConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "nitrowd_tree");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
@@ -63,6 +64,16 @@ public class ModTreeConfiguredFeatures {
                 new ForkingTrunkPlacer(6, 3, 2),
 
                 BlockStateProvider.simple(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(3), 3),
+
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        //NITROWD_TREE
+        WorldGenUtils.registerConfiguredFeature(context, NITROWD_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.NITROWD_LOG.get()),
+                new ForkingTrunkPlacer(6, 3, 2),
+
+                BlockStateProvider.simple(ModBlocks.NITROWD_LEAVES.get()),
                 new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(3), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());

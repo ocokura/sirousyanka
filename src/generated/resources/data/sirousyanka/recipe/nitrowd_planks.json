@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sirousyanka:craftable_to_nitrowd_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sirousyanka:nitrowd_planks"
+  }
+}

@@ -48,6 +48,10 @@ public class ModTags {
                 TagKey.create(Registries.ITEM,
                         ResourceLocation.fromNamespaceAndPath("sirousyanka", "craftable_to_crimson_crystal_planks")
                 );
+        public static final TagKey<Item> CRAFTABLE_TO_NITROWD_PLANKS =
+                TagKey.create(Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath("sirousyanka", "craftable_to_nitrowd_planks")
+                );
         public static final TagKey<Item> BURN_IN_FURNACE_PLANKS =
                 TagKey.create(Registries.ITEM,
                         ResourceLocation.fromNamespaceAndPath("sirousyanka", "burn_in_furnace_planks")

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sirousyanka:block/stripped_nitrowd_log_top",
+    "side": "sirousyanka:block/stripped_nitrowd_log"
+  }
+}

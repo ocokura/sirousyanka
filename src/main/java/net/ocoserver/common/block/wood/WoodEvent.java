@@ -30,6 +30,9 @@ public class WoodEvent {
 
         STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_LOG::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG::get);
         STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_WOOD::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD::get);
+
+        STRIPPABLE.put(ModBlocks.NITROWD_LOG::get, ModBlocks.STRIPPED_NITROWD_LOG::get);
+        STRIPPABLE.put(ModBlocks.NITROWD_WOOD::get, ModBlocks.STRIPPED_NITROWD_WOOD::get);
     }
 
     @SubscribeEvent
@@ -56,7 +59,9 @@ public class WoodEvent {
                 ModBlocks.KEUTI_SIGN.get(),
                 ModBlocks.KEUTI_WALL_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_WALL_SIGN.get()
+                ModBlocks.CRIMSON_CRYSTAL_WALL_SIGN.get(),
+                ModBlocks.NITROWD_SIGN.get(),
+                ModBlocks.NITROWD_WALL_SIGN.get()
 
         );
         event.modify(
@@ -66,7 +71,9 @@ public class WoodEvent {
                 ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(),
                 ModBlocks.KEUTI_WALL_HANGING_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_WALL_HANGING_SIGN.get()
+                ModBlocks.CRIMSON_CRYSTAL_WALL_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(),
+                ModBlocks.NITROWD_WALL_HANGING_SIGN.get()
         );
     }
 }

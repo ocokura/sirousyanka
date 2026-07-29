@@ -378,6 +378,74 @@ public class ModBlocks {
 
 
 
+    //ニトロウド
+    public static final DeferredBlock<RotatedPillarBlock> NITROWD_LOG = registerBlock("nitrowd_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> NITROWD_WOOD = registerBlock("nitrowd_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_NITROWD_LOG = registerBlock("stripped_nitrowd_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_NITROWD_WOOD = registerBlock("stripped_nitrowd_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+
+    public static final DeferredBlock<Block> NITROWD_PLANKS = registerBlock("nitrowd_planks", 2.0f, false, SoundType.WOOD, null, Block::new);
+
+    public static final DeferredBlock<LeavesBlock> NITROWD_LEAVES = registerBlock("nitrowd_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<StairBlock> NITROWD_STAIR = registerBlock("nitrowd_stair", () -> new StairBlock(ModBlocks.NITROWD_PLANKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<SlabBlock> NITROWD_SLAB = registerBlock("nitrowd_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+
+    public static final DeferredBlock<PressurePlateBlock> NITROWD_PRESSURE_PLATE = registerBlock("nitrowd_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<ButtonBlock> NITROWD_BUTTON = registerBlock("nitrowd_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+            BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
+    ));
+
+    public static final DeferredBlock<FenceBlock> NITROWD_FENCE = registerBlock("nitrowd_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+
+    public static final DeferredBlock<FenceGateBlock> NITROWD_FENCE_GATE = registerBlock("nitrowd_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+            BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
+    ));
+
+    public static final DeferredBlock<DoorBlock> NITROWD_DOOR = registerBlock("nitrowd_door", () -> new DoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<TrapDoorBlock> NITROWD_TRAP_DOOR = registerBlock("nitrowd_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+            BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<StandingSignBlock> NITROWD_SIGN = registerBlockWithoutItem("nitrowd_sign", () -> new StandingSignBlock(ModWoodTypes.NITROWD,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<WallSignBlock> NITROWD_WALL_SIGN = registerBlockWithoutItem("nitrowd_wall_sign", () -> new WallSignBlock(ModWoodTypes.NITROWD,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(NITROWD_SIGN)
+    ));
+
+    public static final DeferredBlock<CeilingHangingSignBlock> NITROWD_CEILING_HANGING_SIGN = registerBlockWithoutItem("nitrowd_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.NITROWD,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
+    ));
+
+    public static final DeferredBlock<WallHangingSignBlock> NITROWD_WALL_HANGING_SIGN = registerBlockWithoutItem("nitrowd_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.NITROWD,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(NITROWD_CEILING_HANGING_SIGN)
+    ));
+
+    public static final DeferredBlock<SaplingBlock> NITROWD_SAPLING = registerBlock("nitrowd_sapling", () -> new SaplingBlock(ModTreeGrowers.NITROWD_TREE,
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
+    ));
+
+
+
     //植物など
     public static final DeferredBlock<ModPlant> FROZEN_GRASS = registerBlock("frozen_grass", () -> new ModPlant(
             BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
