@@ -17,10 +17,9 @@ import java.util.List;
 
 public class ModOreConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_USYALIUM_ORE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "overworld_usyalium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> USYALIUM_ORE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "usyalium_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
-
         //USYALIUM ORE
         RuleTest stonePlaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslatePlaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -28,7 +27,7 @@ public class ModOreConfiguredFeatures {
                 OreConfiguration.target(stonePlaceable, ModBlocks.USYALIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslatePlaceable, ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get().defaultBlockState())
         );
-        WorldGenUtils.registerConfiguredFeature(context, OVERWORLD_USYALIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUsyaliumOres, 4));
+        WorldGenUtils.registerConfiguredFeature(context, USYALIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUsyaliumOres, 4));
     }
 
 }

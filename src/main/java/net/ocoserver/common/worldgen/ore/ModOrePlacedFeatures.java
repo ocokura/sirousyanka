@@ -11,12 +11,15 @@ import net.ocoserver.common.util.WorldGenUtils;
 
 public class ModOrePlacedFeatures {
 
-    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_PLACED_KEY = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "usyalium_ore_placed");
+    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_OVERWORLD_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "usyalium_ore_overworld_placed");
+    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_FROZEN_ABYSS_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "usyalium_ore_frozen_abyss_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-        WorldGenUtils.registerPlacedFeature(context, USYALIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModOreConfiguredFeatures.OVERWORLD_USYALIUM_ORE_KEY),
+        WorldGenUtils.registerPlacedFeature(context, USYALIUM_ORE_OVERWORLD_PLACED, configuredFeatures.getOrThrow(ModOreConfiguredFeatures.USYALIUM_ORE_KEY),
             ModOrePlacementUtils.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-54), VerticalAnchor.absolute(20))));
+        WorldGenUtils.registerPlacedFeature(context, USYALIUM_ORE_FROZEN_ABYSS_PLACED, configuredFeatures.getOrThrow(ModOreConfiguredFeatures.USYALIUM_ORE_KEY),
+                ModOrePlacementUtils.commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.absolute(-54), VerticalAnchor.absolute(40))));
     }
 
 }
