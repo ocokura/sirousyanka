@@ -51,22 +51,22 @@ public class WoodEvent {
     public static void blockEntityTypeAddBlockEvent(BlockEntityTypeAddBlocksEvent event) {
         event.modify(
                 BlockEntityType.SIGN,
-                ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
-                ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_WALL_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get()
+                ModBlocks.ICE_LARCH_SIGN.get(),
+                ModBlocks.ICE_LARCH_WALL_SIGN.get(),
+                ModBlocks.KEUTI_SIGN.get(),
+                ModBlocks.KEUTI_WALL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_WALL_SIGN.get()
 
         );
         event.modify(
                 BlockEntityType.HANGING_SIGN,
-                ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(),
-                ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get()
+                ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get(),
+                ModBlocks.ICE_LARCH_WALL_HANGING_SIGN.get(),
+                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(),
+                ModBlocks.KEUTI_WALL_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_WALL_HANGING_SIGN.get()
         );
     }
 }

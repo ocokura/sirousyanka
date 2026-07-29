@@ -204,16 +204,16 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.STRIPPED_ICE_LARCH_LOG.get(),
                 ModBlocks.STRIPPED_ICE_LARCH_WOOD.get(),
                 ModBlocks.ICE_LARCH_PLANKS.get(),
-                ModBlocks.ICE_LARCH_PLANKS_STAIR.get(),
-                ModBlocks.ICE_LARCH_PLANKS_SLAB.get(),
-                ModBlocks.ICE_LARCH_PLANKS_FENCE.get(),
-                ModBlocks.ICE_LARCH_PLANKS_FENCE_GATE.get(),
-                ModBlocks.ICE_LARCH_PLANKS_PRESSURE_PLATE.get(),
-                ModBlocks.ICE_LARCH_PLANKS_BUTTON.get(),
-                ModBlocks.ICE_LARCH_PLANKS_DOOR.get(),
-                ModBlocks.ICE_LARCH_PLANKS_TRAP_DOOR.get(),
-                ModBlocks.ICE_LARCH_PLANKS_SIGN.get(),
-                ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get()
+                ModBlocks.ICE_LARCH_STAIR.get(),
+                ModBlocks.ICE_LARCH_SLAB.get(),
+                ModBlocks.ICE_LARCH_FENCE.get(),
+                ModBlocks.ICE_LARCH_FENCE_GATE.get(),
+                ModBlocks.ICE_LARCH_PRESSURE_PLATE.get(),
+                ModBlocks.ICE_LARCH_BUTTON.get(),
+                ModBlocks.ICE_LARCH_DOOR.get(),
+                ModBlocks.ICE_LARCH_TRAP_DOOR.get(),
+                ModBlocks.ICE_LARCH_SIGN.get(),
+                ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get()
         );
 
         //ケウチ
@@ -223,16 +223,16 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.STRIPPED_KEUTI_LOG.get(),
                 ModBlocks.STRIPPED_KEUTI_WOOD.get(),
                 ModBlocks.KEUTI_PLANKS.get(),
-                ModBlocks.KEUTI_PLANKS_STAIR.get(),
-                ModBlocks.KEUTI_PLANKS_SLAB.get(),
-                ModBlocks.KEUTI_PLANKS_FENCE.get(),
-                ModBlocks.KEUTI_PLANKS_FENCE_GATE.get(),
-                ModBlocks.KEUTI_PLANKS_PRESSURE_PLATE.get(),
-                ModBlocks.KEUTI_PLANKS_BUTTON.get(),
-                ModBlocks.KEUTI_PLANKS_DOOR.get(),
-                ModBlocks.KEUTI_PLANKS_TRAP_DOOR.get(),
-                ModBlocks.KEUTI_PLANKS_SIGN.get(),
-                ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get()
+                ModBlocks.KEUTI_STAIR.get(),
+                ModBlocks.KEUTI_SLAB.get(),
+                ModBlocks.KEUTI_FENCE.get(),
+                ModBlocks.KEUTI_FENCE_GATE.get(),
+                ModBlocks.KEUTI_PRESSURE_PLATE.get(),
+                ModBlocks.KEUTI_BUTTON.get(),
+                ModBlocks.KEUTI_DOOR.get(),
+                ModBlocks.KEUTI_TRAP_DOOR.get(),
+                ModBlocks.KEUTI_SIGN.get(),
+                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get()
         );
 
         //紅晶樹
@@ -242,16 +242,16 @@ public class ModRecipes extends RecipeProvider {
                 ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG.get(),
                 ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD.get(),
                 ModBlocks.CRIMSON_CRYSTAL_PLANKS.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_STAIR.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SLAB.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_FENCE_GATE.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_BUTTON.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_DOOR.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(),
-                ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get()
+                ModBlocks.CRIMSON_CRYSTAL_STAIR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_SLAB.get(),
+                ModBlocks.CRIMSON_CRYSTAL_FENCE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_FENCE_GATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_PRESSURE_PLATE.get(),
+                ModBlocks.CRIMSON_CRYSTAL_BUTTON.get(),
+                ModBlocks.CRIMSON_CRYSTAL_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_TRAP_DOOR.get(),
+                ModBlocks.CRIMSON_CRYSTAL_SIGN.get(),
+                ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get()
         );
 
         //植物

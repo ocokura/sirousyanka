@@ -198,46 +198,46 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
-    public static final DeferredBlock<StairBlock> ICE_LARCH_PLANKS_STAIR = registerBlock("ice_larch_stair", () -> new StairBlock(ModBlocks.ICE_LARCH_PLANKS.get().defaultBlockState(),
+    public static final DeferredBlock<StairBlock> ICE_LARCH_STAIR = registerBlock("ice_larch_stair", () -> new StairBlock(ModBlocks.ICE_LARCH_PLANKS.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<SlabBlock> ICE_LARCH_PLANKS_SLAB = registerBlock("ice_larch_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+    public static final DeferredBlock<SlabBlock> ICE_LARCH_SLAB = registerBlock("ice_larch_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
 
-    public static final DeferredBlock<PressurePlateBlock> ICE_LARCH_PLANKS_PRESSURE_PLATE = registerBlock("ice_larch_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<PressurePlateBlock> ICE_LARCH_PRESSURE_PLATE = registerBlock("ice_larch_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<ButtonBlock> ICE_LARCH_PLANKS_BUTTON = registerBlock("ice_larch_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+    public static final DeferredBlock<ButtonBlock> ICE_LARCH_BUTTON = registerBlock("ice_larch_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
     ));
 
-    public static final DeferredBlock<FenceBlock> ICE_LARCH_PLANKS_FENCE = registerBlock("ice_larch_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+    public static final DeferredBlock<FenceBlock> ICE_LARCH_FENCE = registerBlock("ice_larch_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
 
-    public static final DeferredBlock<FenceGateBlock> ICE_LARCH_PLANKS_FENCE_GATE = registerBlock("ice_larch_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+    public static final DeferredBlock<FenceGateBlock> ICE_LARCH_FENCE_GATE = registerBlock("ice_larch_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<DoorBlock> ICE_LARCH_PLANKS_DOOR = registerBlock("ice_larch_door", () -> new DoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<DoorBlock> ICE_LARCH_DOOR = registerBlock("ice_larch_door", () -> new DoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<TrapDoorBlock> ICE_LARCH_PLANKS_TRAP_DOOR = registerBlock("ice_larch_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<TrapDoorBlock> ICE_LARCH_TRAP_DOOR = registerBlock("ice_larch_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_PLANKS_SIGN = registerBlockWithoutItem("ice_larch_sign", () -> new StandingSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<StandingSignBlock> ICE_LARCH_SIGN = registerBlockWithoutItem("ice_larch_sign", () -> new StandingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> ICE_LARCH_PLANKS_WALL_SIGN = registerBlockWithoutItem("ice_larch_wall_sign", () -> new WallSignBlock(ModWoodTypes.ICE_LARCH,
-            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_SIGN)
+    public static final DeferredBlock<WallSignBlock> ICE_LARCH_WALL_SIGN = registerBlockWithoutItem("ice_larch_wall_sign", () -> new WallSignBlock(ModWoodTypes.ICE_LARCH,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN = registerBlockWithoutItem("ice_larch_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.ICE_LARCH,
+    public static final DeferredBlock<CeilingHangingSignBlock> ICE_LARCH_CEILING_HANGING_SIGN = registerBlockWithoutItem("ice_larch_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.ICE_LARCH,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_PLANKS_WALL_HANGING_SIGN = registerBlockWithoutItem("ice_larch_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.ICE_LARCH,
-            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_PLANKS_CEILING_HANGING_SIGN)
+    public static final DeferredBlock<WallHangingSignBlock> ICE_LARCH_WALL_HANGING_SIGN = registerBlockWithoutItem("ice_larch_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.ICE_LARCH,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_CEILING_HANGING_SIGN)
     ));
 
     public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(ModTreeGrowers.ICE_LARCH_TREE,
@@ -264,46 +264,46 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
-    public static final DeferredBlock<StairBlock> KEUTI_PLANKS_STAIR = registerBlock("keuti_stair", () -> new StairBlock(ModBlocks.KEUTI_PLANKS.get().defaultBlockState(),
+    public static final DeferredBlock<StairBlock> KEUTI_STAIR = registerBlock("keuti_stair", () -> new StairBlock(ModBlocks.KEUTI_PLANKS.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<SlabBlock> KEUTI_PLANKS_SLAB = registerBlock("keuti_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+    public static final DeferredBlock<SlabBlock> KEUTI_SLAB = registerBlock("keuti_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
 
-    public static final DeferredBlock<PressurePlateBlock> KEUTI_PLANKS_PRESSURE_PLATE = registerBlock("keuti_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<PressurePlateBlock> KEUTI_PRESSURE_PLATE = registerBlock("keuti_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<ButtonBlock> KEUTI_PLANKS_BUTTON = registerBlock("keuti_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+    public static final DeferredBlock<ButtonBlock> KEUTI_BUTTON = registerBlock("keuti_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
     ));
 
-    public static final DeferredBlock<FenceBlock> KEUTI_PLANKS_FENCE = registerBlock("keuti_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+    public static final DeferredBlock<FenceBlock> KEUTI_FENCE = registerBlock("keuti_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
 
-    public static final DeferredBlock<FenceGateBlock> KEUTI_PLANKS_FENCE_GATE = registerBlock("keuti_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+    public static final DeferredBlock<FenceGateBlock> KEUTI_FENCE_GATE = registerBlock("keuti_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<DoorBlock> KEUTI_PLANKS_DOOR = registerBlock("keuti_door", () -> new DoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<DoorBlock> KEUTI_DOOR = registerBlock("keuti_door", () -> new DoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<TrapDoorBlock> KEUTI_PLANKS_TRAP_DOOR = registerBlock("keuti_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<TrapDoorBlock> KEUTI_TRAP_DOOR = registerBlock("keuti_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> KEUTI_PLANKS_SIGN = registerBlockWithoutItem("keuti_sign", () -> new StandingSignBlock(ModWoodTypes.KEUTI,
+    public static final DeferredBlock<StandingSignBlock> KEUTI_SIGN = registerBlockWithoutItem("keuti_sign", () -> new StandingSignBlock(ModWoodTypes.KEUTI,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> KEUTI_PLANKS_WALL_SIGN = registerBlockWithoutItem("keuti_wall_sign", () -> new WallSignBlock(ModWoodTypes.KEUTI,
-            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_PLANKS_SIGN)
+    public static final DeferredBlock<WallSignBlock> KEUTI_WALL_SIGN = registerBlockWithoutItem("keuti_wall_sign", () -> new WallSignBlock(ModWoodTypes.KEUTI,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> KEUTI_PLANKS_CEILING_HANGING_SIGN = registerBlockWithoutItem("keuti_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.KEUTI,
+    public static final DeferredBlock<CeilingHangingSignBlock> KEUTI_CEILING_HANGING_SIGN = registerBlockWithoutItem("keuti_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.KEUTI,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> KEUTI_PLANKS_WALL_HANGING_SIGN = registerBlockWithoutItem("keuti_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.KEUTI,
-            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_PLANKS_CEILING_HANGING_SIGN)
+    public static final DeferredBlock<WallHangingSignBlock> KEUTI_WALL_HANGING_SIGN = registerBlockWithoutItem("keuti_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.KEUTI,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_CEILING_HANGING_SIGN)
     ));
 
     public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(ModTreeGrowers.KEUTI_TREE,
@@ -330,46 +330,46 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
-    public static final DeferredBlock<StairBlock> CRIMSON_CRYSTAL_PLANKS_STAIR = registerBlock("crimson_crystal_stair", () -> new StairBlock(ModBlocks.CRIMSON_CRYSTAL_PLANKS.get().defaultBlockState(),
+    public static final DeferredBlock<StairBlock> CRIMSON_CRYSTAL_STAIR = registerBlock("crimson_crystal_stair", () -> new StairBlock(ModBlocks.CRIMSON_CRYSTAL_PLANKS.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<SlabBlock> CRIMSON_CRYSTAL_PLANKS_SLAB = registerBlock("crimson_crystal_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+    public static final DeferredBlock<SlabBlock> CRIMSON_CRYSTAL_SLAB = registerBlock("crimson_crystal_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
 
-    public static final DeferredBlock<PressurePlateBlock> CRIMSON_CRYSTAL_PLANKS_PRESSURE_PLATE = registerBlock("crimson_crystal_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<PressurePlateBlock> CRIMSON_CRYSTAL_PRESSURE_PLATE = registerBlock("crimson_crystal_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<ButtonBlock> CRIMSON_CRYSTAL_PLANKS_BUTTON = registerBlock("crimson_crystal_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+    public static final DeferredBlock<ButtonBlock> CRIMSON_CRYSTAL_BUTTON = registerBlock("crimson_crystal_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
     ));
 
-    public static final DeferredBlock<FenceBlock> CRIMSON_CRYSTAL_PLANKS_FENCE = registerBlock("crimson_crystal_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+    public static final DeferredBlock<FenceBlock> CRIMSON_CRYSTAL_FENCE = registerBlock("crimson_crystal_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
 
-    public static final DeferredBlock<FenceGateBlock> CRIMSON_CRYSTAL_PLANKS_FENCE_GATE = registerBlock("crimson_crystal_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+    public static final DeferredBlock<FenceGateBlock> CRIMSON_CRYSTAL_FENCE_GATE = registerBlock("crimson_crystal_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<DoorBlock> CRIMSON_CRYSTAL_PLANKS_DOOR = registerBlock("crimson_crystal_door", () -> new DoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<DoorBlock> CRIMSON_CRYSTAL_DOOR = registerBlock("crimson_crystal_door", () -> new DoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<TrapDoorBlock> CRIMSON_CRYSTAL_PLANKS_TRAP_DOOR = registerBlock("crimson_crystal_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<TrapDoorBlock> CRIMSON_CRYSTAL_TRAP_DOOR = registerBlock("crimson_crystal_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> CRIMSON_CRYSTAL_PLANKS_SIGN = registerBlockWithoutItem("crimson_crystal_sign", () -> new StandingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+    public static final DeferredBlock<StandingSignBlock> CRIMSON_CRYSTAL_SIGN = registerBlockWithoutItem("crimson_crystal_sign", () -> new StandingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> CRIMSON_CRYSTAL_PLANKS_WALL_SIGN = registerBlockWithoutItem("crimson_crystal_wall_sign", () -> new WallSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
-            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_PLANKS_SIGN)
+    public static final DeferredBlock<WallSignBlock> CRIMSON_CRYSTAL_WALL_SIGN = registerBlockWithoutItem("crimson_crystal_wall_sign", () -> new WallSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+    public static final DeferredBlock<CeilingHangingSignBlock> CRIMSON_CRYSTAL_CEILING_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
-            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN)
+    public static final DeferredBlock<WallHangingSignBlock> CRIMSON_CRYSTAL_WALL_HANGING_SIGN = registerBlockWithoutItem("crimson_crystal_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.CRIMSON_CRYSTAL,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_CEILING_HANGING_SIGN)
     ));
 
     public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(ModTreeGrowers.CRIMSON_CRYSTAL_TREE,
