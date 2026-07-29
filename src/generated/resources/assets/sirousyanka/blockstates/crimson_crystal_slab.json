@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/crimson_crystal_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/crimson_crystal_planks"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/crimson_crystal_slab_top"
+    }
+  }
+}

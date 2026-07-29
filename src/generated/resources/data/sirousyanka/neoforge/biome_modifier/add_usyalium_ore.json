@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "sirousyanka:usyalium_ore_placed",
+  "features": "sirousyanka:usyalium_ore_overworld_placed",
   "step": "underground_ores"
 }

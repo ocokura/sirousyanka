@@ -20,7 +20,7 @@ public class ModOreBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
         context.register(ADD_USYALIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModOrePlacedFeatures.USYALIUM_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModOrePlacedFeatures.USYALIUM_ORE_OVERWORLD_PLACED)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
     }

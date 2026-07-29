@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "sirousyanka:crimson_crystal_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sirousyanka:crimson_crystal_button"
+  }
+}

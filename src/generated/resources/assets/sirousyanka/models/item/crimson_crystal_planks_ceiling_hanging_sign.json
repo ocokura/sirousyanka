@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "sirousyanka:item/crimson_crystal_planks_ceiling_hanging_sign"
-  }
-}

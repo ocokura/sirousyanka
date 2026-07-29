@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sirousyanka:item/crimson_crystal_door"
+  }
+}

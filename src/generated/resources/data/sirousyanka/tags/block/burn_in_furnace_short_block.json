@@ -1,13 +1,13 @@
 {
   "values": [
-    "sirousyanka:ice_larch_planks_pressure_plate",
-    "sirousyanka:ice_larch_planks_button",
+    "sirousyanka:ice_larch_pressure_plate",
+    "sirousyanka:ice_larch_button",
     "sirousyanka:ice_larch_sapling",
-    "sirousyanka:keuti_planks_pressure_plate",
-    "sirousyanka:keuti_planks_button",
+    "sirousyanka:keuti_pressure_plate",
+    "sirousyanka:keuti_button",
     "sirousyanka:keuti_sapling",
-    "sirousyanka:crimson_crystal_planks_pressure_plate",
-    "sirousyanka:crimson_crystal_planks_button",
+    "sirousyanka:crimson_crystal_pressure_plate",
+    "sirousyanka:crimson_crystal_button",
     "sirousyanka:crimson_crystal_sapling"
   ]
 }

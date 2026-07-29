@@ -17,27 +17,27 @@ public class ModItems {
     public static final DeferredItem<Item> ADVANCED_USYALIUM_INGOT = ITEMS.registerSimpleItem("advanced_usyalium_ingot");
 
     //氷雪のカラマツ
-    public static final DeferredItem<Item> ICE_LARCH_PLANKS_SIGN = ITEMS.register("ice_larch_planks_sign",
+    public static final DeferredItem<Item> ICE_LARCH_PLANKS_SIGN = ITEMS.register("ice_larch_sign",
                     () -> new SignItem(new Item.Properties(), ModBlocks.ICE_LARCH_PLANKS_SIGN.get(), ModBlocks.ICE_LARCH_PLANKS_WALL_SIGN.get()));
 
     public static final DeferredItem<Item> ICE_LARCH_PLANKS_CEILING_HANGING_SIGN =
-            ITEMS.register("ice_larch_planks_ceiling_hanging_sign",
+            ITEMS.register("ice_larch_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.ICE_LARCH_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.ICE_LARCH_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
     //ケウチ
-    public static final DeferredItem<Item> KEUTI_PLANKS_SIGN = ITEMS.register("keuti_planks_sign",
+    public static final DeferredItem<Item> KEUTI_PLANKS_SIGN = ITEMS.register("keuti_sign",
             () -> new SignItem(new Item.Properties(), ModBlocks.KEUTI_PLANKS_SIGN.get(), ModBlocks.KEUTI_PLANKS_WALL_SIGN.get()));
 
     public static final DeferredItem<Item> KEUTI_PLANKS_CEILING_HANGING_SIGN =
-            ITEMS.register("keuti_planks_ceiling_hanging_sign",
+            ITEMS.register("keuti_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.KEUTI_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.KEUTI_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
     //紅結晶
-    public static final DeferredItem<Item> CRIMSON_CRYSTAL_PLANKS_SIGN = ITEMS.register("crimson_crystal_planks_sign",
+    public static final DeferredItem<Item> CRIMSON_CRYSTAL_PLANKS_SIGN = ITEMS.register("crimson_crystal_sign",
             () -> new SignItem(new Item.Properties(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_SIGN.get()));
 
     public static final DeferredItem<Item> CRIMSON_CRYSTAL_CEILING_HANGING_SIGN =
-            ITEMS.register("crimson_crystal_planks_ceiling_hanging_sign",
+            ITEMS.register("crimson_crystal_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.CRIMSON_CRYSTAL_PLANKS_CEILING_HANGING_SIGN.get(), ModBlocks.CRIMSON_CRYSTAL_PLANKS_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
     //高温溶岩バケツ
