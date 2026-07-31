@@ -1,4 +1,4 @@
-package net.ocoserver.common.block.plant;
+package net.ocoserver.common.block.deco;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
