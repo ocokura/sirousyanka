@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ocoserver.common.block.ModGrassBlock;
 import net.ocoserver.common.block.fluid.HeatedLavaBlock;
 import net.ocoserver.common.block.fluid.LiquidNitrogenBlock;
 import net.ocoserver.common.block.plant.AbyssPlant;
@@ -54,8 +55,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1f, true, SoundType.GLASS, 0.98f, Block::new);
 
     public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block",1f, false, SoundType.GRASS, 0.72f, Block::new);
-    public static final DeferredBlock<Block> ABYSS_GRASS_BLOCK = registerBlock("abyss_grass_block",1f, false, SoundType.GRASS, null, Block::new);
-    public static final DeferredBlock<Block> CRIMSON_GRASS_BLOCK = registerBlock("crimson_grass_block",1f, false, SoundType.GRASS, null, Block::new);
+    public static final DeferredBlock<ModGrassBlock> ABYSS_GRASS_BLOCK = registerBlock("abyss_grass_block", () -> new ModGrassBlock(BlockBehaviour.Properties.of().strength(1f).randomTicks().sound(SoundType.GRASS), ModBlocks.ABYSS_GRASS_BLOCK::get));
+    public static final DeferredBlock<ModGrassBlock> CRIMSON_GRASS_BLOCK = registerBlock("crimson_grass_block", () -> new ModGrassBlock(BlockBehaviour.Properties.of().strength(1f).randomTicks().sound(SoundType.GRASS), ModBlocks.CRIMSON_GRASS_BLOCK::get));
 
     public static final DeferredBlock<Block> ABYSS_OBSIDIAN = registerBlock("abyss_obsidian", 50f, true, SoundType.STONE, null, Block::new);
 
