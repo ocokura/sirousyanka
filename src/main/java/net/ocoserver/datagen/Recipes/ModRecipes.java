@@ -199,6 +199,37 @@ public class ModRecipes extends RecipeProvider {
                 null
         );
 
+        //SOLID_NITROGEN
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BLOCK.get(),
+                ModBlocks.SOLID_NITROGEN_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        //SOLID_NITROGEN_BRICKS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOLID_NITROGEN_BRICKS.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.SOLID_NITROGEN_BLOCK.get())
+                .unlockedBy("has_solid_nitrogen_block", has(ModBlocks.SOLID_NITROGEN_BLOCK.get()))
+                .save(output, "solid_nitrogen_bricks_from_solid_nitrogen_block");
+
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BRICKS.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.SOLID_NITROGEN_BRICKS_WALL.get(),
+                null,
+                null
+        );
+
         //氷雪のカラマツ
         registerWoodRecipeFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),
@@ -283,6 +314,9 @@ public class ModRecipes extends RecipeProvider {
         oneToOneConversionRecipe(output, Items.LIGHT_BLUE_DYE, ModBlocks.FROZEN_POPPY.get(),"");
         oneToOneConversionRecipe(output, Items.PURPLE_DYE, ModBlocks.IRIS_PETAL.get(),"");
         oneToOneConversionRecipe(output, Items.BLUE_DYE, ModBlocks.FROST_FLARE.get(),"");
+        oneToOneConversionRecipe(output, Items.PINK_DYE, ModBlocks.COSMOS.get(),"");
+        oneToOneConversionRecipe(output, Items.LIGHT_BLUE_DYE, ModBlocks.SPIKE_ICER.get(),"");
+        oneToOneConversionRecipe(output, Items.BLACK_DYE, ModBlocks.BLOWER.get(),"");
     }
 
     private static void registerWoodRecipeFamily(

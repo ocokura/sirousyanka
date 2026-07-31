@@ -49,6 +49,12 @@ public class BlockLootTable extends BlockLootSubProvider {
         add(ModBlocks.FROZEN_GRASS_BLOCK.get(), createSilkTouchDispatchTable(ModBlocks.FROZEN_GRASS_BLOCK.get(),
                 LootItem.lootTableItem(Blocks.DIRT)
         ));
+        add(ModBlocks.ABYSS_GRASS_BLOCK.get(), createSilkTouchDispatchTable(ModBlocks.ABYSS_GRASS_BLOCK.get(),
+                LootItem.lootTableItem(Blocks.DIRT)
+        ));
+        add(ModBlocks.CRIMSON_GRASS_BLOCK.get(), createSilkTouchDispatchTable(ModBlocks.CRIMSON_GRASS_BLOCK.get(),
+                LootItem.lootTableItem(Blocks.DIRT)
+        ));
 
         dropSelf(ModBlocks.ABYSS_OBSIDIAN.get());
 
@@ -164,6 +170,30 @@ public class BlockLootTable extends BlockLootSubProvider {
                 null
         );
 
+        //SOLID_NITROGEN
+        dropSelf(ModBlocks.SOLID_NITROGEN_BLOCK.get());
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        //SOLID_NITROGEN_BRICKS
+        dropSelf(ModBlocks.SOLID_NITROGEN_BRICKS.get());
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BRICKS_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.SOLID_NITROGEN_BRICKS_WALL.get(),
+                null,
+                null
+        );
+
         //氷雪のカラマツ
         registerWoodLootFamily(
                 ModBlocks.ICE_LARCH_LOG.get(),
@@ -265,6 +295,14 @@ public class BlockLootTable extends BlockLootSubProvider {
         dropWhenSilkTouch(ModBlocks.ABYSS_STONE_GRASS.get());
         dropWhenSilkTouch(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
         registerGrass(ModBlocks.ICE_BUSH.get());
+        registerGrass(ModBlocks.ABYSS_GRASS.get());
+        registerGrass(ModBlocks.CRIMSON_GRASS.get());
+        dropSelf(ModBlocks.COSMOS.get());
+        dropSelf(ModBlocks.SPIKE_ICER.get());
+        dropSelf(ModBlocks.BLOWER.get());
+        dropSelf(ModBlocks.PINK_AZUSAI.get());
+        dropSelf(ModBlocks.BLUE_AZUSAI.get());
+        dropSelf(ModBlocks.PURPLE_AZUSAI.get());
 
     }
 

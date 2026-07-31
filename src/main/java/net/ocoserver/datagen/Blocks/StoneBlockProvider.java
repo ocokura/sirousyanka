@@ -120,6 +120,30 @@ public class StoneBlockProvider {
                 null,
                 null
         );
+
+        //固形窒素
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BLOCK.get(),
+                ModBlocks.SOLID_NITROGEN_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        //固形窒素レンガ
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BRICKS.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.SOLID_NITROGEN_BRICKS_WALL.get(),
+                null,
+                null
+        );
     }
 
     private static void registerStoneFamily(

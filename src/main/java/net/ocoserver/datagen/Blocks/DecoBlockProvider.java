@@ -30,6 +30,18 @@ public class DecoBlockProvider {
                     provider.modLoc("block/frozen_grass_block_top")
                 ));
 
+        provider.simpleBlockWithItem(ModBlocks.ABYSS_GRASS_BLOCK.get(), provider.models().cubeBottomTop("abyss_grass_block",
+                provider.modLoc("block/abyss_grass_block"),
+                provider.modLoc("block/dirt"),
+                provider.modLoc("block/abyss_grass_block_top")
+        ));
+
+        provider.simpleBlockWithItem(ModBlocks.CRIMSON_GRASS_BLOCK.get(), provider.models().cubeBottomTop("crimson_grass_block",
+                provider.modLoc("block/crimson_grass_block"),
+                provider.modLoc("block/dirt"),
+                provider.modLoc("block/crimson_grass_block_top")
+        ));
+
         provider.simpleBlockWithItem(ModBlocks.SNOW_PILED_STONE.get(), provider.models().cubeBottomTop("snow_piled_stone",
                 provider.modLoc("block/snow_piled_stone"),
                 provider.modLoc("block/snow_piled_stone_bottom"),
@@ -45,6 +57,16 @@ public class DecoBlockProvider {
         registerPlant(ModBlocks.ABYSS_STONE_GRASS.get());
         registerPlant(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
         registerTallPlant(ModBlocks.ICE_BUSH.get());
+        registerPlant(ModBlocks.ABYSS_GRASS.get());
+        registerPlant(ModBlocks.CRIMSON_GRASS.get());
+        registerPlant(ModBlocks.COSMOS.get());
+        registerPlant(ModBlocks.SPIKE_ICER.get());
+        registerPlant(ModBlocks.BLOWER.get());
+
+        //あずさい
+        provider.simpleBlockWithItem(ModBlocks.PINK_AZUSAI.get(), provider.cubeAll(ModBlocks.PINK_AZUSAI.get()));
+        provider.simpleBlockWithItem(ModBlocks.BLUE_AZUSAI.get(), provider.cubeAll(ModBlocks.BLUE_AZUSAI.get()));
+        provider.simpleBlockWithItem(ModBlocks.PURPLE_AZUSAI.get(), provider.cubeAll(ModBlocks.PURPLE_AZUSAI.get()));
 
     }
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/solid_nitrogen_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/solid_nitrogen_block"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/solid_nitrogen_slab_top"
+    }
+  }
+}

@@ -54,6 +54,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ABYSS_PACKED_ICE = registerBlock("abyss_packed_ice", 1f, true, SoundType.GLASS, 0.98f, Block::new);
 
     public static final DeferredBlock<Block> FROZEN_GRASS_BLOCK = registerBlock("frozen_grass_block",1f, false, SoundType.GRASS, 0.72f, Block::new);
+    public static final DeferredBlock<Block> ABYSS_GRASS_BLOCK = registerBlock("abyss_grass_block",1f, false, SoundType.GRASS, null, Block::new);
+    public static final DeferredBlock<Block> CRIMSON_GRASS_BLOCK = registerBlock("crimson_grass_block",1f, false, SoundType.GRASS, null, Block::new);
 
     public static final DeferredBlock<Block> ABYSS_OBSIDIAN = registerBlock("abyss_obsidian", 50f, true, SoundType.STONE, null, Block::new);
 
@@ -177,6 +179,30 @@ public class ModBlocks {
     ));
 
     public static final DeferredBlock<SlabBlock> LIME_STONE_BRICKS_SLAB = registerBlock("lime_stone_bricks_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+
+
+    //固形窒素
+    public static final DeferredBlock<Block> SOLID_NITROGEN_BLOCK = registerBlock("solid_nitrogen_block", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> SOLID_NITROGEN_STAIR = registerBlock("solid_nitrogen_stair", () -> new StairBlock(
+            ModBlocks.LIME_STONE.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> SOLID_NITROGEN_SLAB = registerBlock("solid_nitrogen_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    //固形窒素レンガ
+    public static final DeferredBlock<Block> SOLID_NITROGEN_BRICKS = registerBlock("solid_nitrogen_bricks", 3f, true, SoundType.STONE, null, Block::new);
+
+    public static final DeferredBlock<StairBlock> SOLID_NITROGEN_BRICKS_STAIR = registerBlock("solid_nitrogen_bricks_stair", () -> new StairBlock(
+            ModBlocks.LIME_STONE_BRICKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ));
+
+    public static final DeferredBlock<SlabBlock> SOLID_NITROGEN_BRICKS_SLAB = registerBlock("solid_nitrogen_bricks_slab", 3f, true, SoundType.STONE, null, SlabBlock::new);
+
+    public static final DeferredBlock<WallBlock> SOLID_NITROGEN_BRICKS_WALL = registerBlock("solid_nitrogen_bricks_wall", 3f, true, SoundType.STONE, null, WallBlock::new);
 
 
 
@@ -477,6 +503,47 @@ public class ModBlocks {
 
     public static final DeferredBlock<DoublePlantBlock> ICE_BUSH = registerBlock("ice_bush", () -> new DoublePlantBlock(
             BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<LeavesBlock> PINK_AZUSAI = registerBlock("pink_azusai",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<LeavesBlock> BLUE_AZUSAI = registerBlock("blue_azusai",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<LeavesBlock> PURPLE_AZUSAI = registerBlock("purple_azusai",
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+                    .isValidSpawn((state, level, pos, type) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
+    public static final DeferredBlock<ModPlant> CRIMSON_GRASS = registerBlock("crimson_grass", () -> new ModPlant(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
+    ));
+
+    public static final DeferredBlock<ModPlant> ABYSS_GRASS = registerBlock("abyss_grass", () -> new ModPlant(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
+    ));
+
+    public static final DeferredBlock<ModPlant> COSMOS = registerBlock("cosmos", () -> new ModPlant(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<ModPlant> SPIKE_ICER = registerBlock("spike_icer", () -> new ModPlant(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    public static final DeferredBlock<ModPlant> BLOWER = registerBlock("blower", () -> new ModPlant(
+            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     //流体

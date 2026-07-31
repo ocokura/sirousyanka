@@ -25,6 +25,11 @@ public class BlockTag extends BlockTagsProvider {
         tag(ModTags.Blocks.STONES)
             .add(ModBlocks.SNOW_PILED_STONE.get());
 
+        //草ブロックとして扱えるようにする
+        tag(BlockTags.DIRT)
+            .add(ModBlocks.ABYSS_GRASS_BLOCK.get())
+            .add(ModBlocks.CRIMSON_GRASS_BLOCK.get());
+
         //Abyss Stone系
         registerStoneFamily(
                 ModBlocks.ABYSS_STONE.get(),
@@ -135,6 +140,30 @@ public class BlockTag extends BlockTagsProvider {
                 null
         );
 
+        //SOLID NITROGEN
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BLOCK.get(),
+                ModBlocks.SOLID_NITROGEN_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_SLAB.get(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        //SOLID NITROGEN BRICKS
+        registerStoneFamily(
+                ModBlocks.SOLID_NITROGEN_BRICKS.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_STAIR.get(),
+                ModBlocks.SOLID_NITROGEN_BRICKS_SLAB.get(),
+                null,
+                null,
+                ModBlocks.SOLID_NITROGEN_BRICKS_WALL.get(),
+                null,
+                null
+        );
+
         //氷雪のカラマツブロック
         registerWoodBlockTags(
                 ModBlocks.ICE_LARCH_LOG.get(),
@@ -241,11 +270,10 @@ public class BlockTag extends BlockTagsProvider {
                 .add(ModBlocks.ABYSS_PACKED_ICE.get())
                 .add(ModBlocks.ABYSS_OBSIDIAN.get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.FROZEN_SPRUCE_LOG.get());
-
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.FROZEN_GRASS_BLOCK.get());
+                .add(ModBlocks.FROZEN_GRASS_BLOCK.get())
+                .add(ModBlocks.ABYSS_GRASS_BLOCK.get())
+                .add(ModBlocks.CRIMSON_GRASS_BLOCK.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(ModTags.Blocks.STONES);

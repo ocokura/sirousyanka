@@ -34,6 +34,7 @@
   "block.sirousyanka.abyss_cobble_stone_stair" : "深淵の丸石の階段",
   "block.sirousyanka.abyss_cobble_stone_slab" : "深淵の丸石のハーフブロック",
   "block.sirousyanka.abyss_cobble_stone_wall_block" : "深淵の丸石の塀",
+  "block.sirousyanka.abyss_grass_block" : "深淵の草ブロック",
 
   "block.sirousyanka.frozen_stone" : "凍った石",
   "block.sirousyanka.frozen_stone_stair" : "凍った石の階段",
@@ -63,6 +64,14 @@
   "block.sirousyanka.lime_stone_bricks": "緑力岩レンガ",
   "block.sirousyanka.lime_stone_bricks_stair": "緑力岩レンガの階段",
   "block.sirousyanka.lime_stone_bricks_slab": "緑力岩レンガのハーフブロック",
+
+  "block.sirousyanka.solid_nitrogen_block": "固形窒素",
+  "block.sirousyanka.solid_nitrogen_stair": "固形窒素の階段",
+  "block.sirousyanka.solid_nitrogen_slab": "固形窒素のハーフブロック",
+  "block.sirousyanka.solid_nitrogen_bricks": "固形窒素レンガ",
+  "block.sirousyanka.solid_nitrogen_bricks_stair": "固形窒素レンガの階段",
+  "block.sirousyanka.solid_nitrogen_bricks_slab": "固形窒素レンガのハーフブロック",
+  "block.sirousyanka.solid_nitrogen_bricks_wall": "固形窒素レンガの塀",
 
   "block.sirousyanka.ice_larch_log" : "氷雪のカラマツの原木",
   "block.sirousyanka.ice_larch_wood" : "氷雪のカラマツの木",
@@ -123,6 +132,7 @@
   "block.sirousyanka.crimson_crystal_wall_hanging_sign" : "紅晶樹の吊り看板",
   "block.sirousyanka.crimson_crystal_leaves" : "紅晶樹の葉",
   "block.sirousyanka.crimson_crystal_sapling" : "紅晶樹の苗木",
+  "block.sirousyanka.crimson_grass_block" : "紅晶の草ブロック",
 
   "block.sirousyanka.nitrowd_log" : "ニトロウドの原木",
   "block.sirousyanka.nitrowd_wood" : "ニトロウドの木",
@@ -145,6 +155,8 @@
   "block.sirousyanka.nitrowd_sapling" : "ニトロウドの苗木",
 
   "block.sirousyanka.frozen_grass" : "凍った草",
+  "block.sirousyanka.abyss_grass" : "深淵の草",
+  "block.sirousyanka.crimson_grass" : "紅晶の草",
   "block.sirousyanka.frozen_poppy" : "凍ったポピー",
   "block.sirousyanka.berry_grass" : "実のついた草",
   "block.sirousyanka.abyss_stone_grass" : "深淵の石草",
@@ -152,13 +164,17 @@
   "block.sirousyanka.frost_flare": "フロストフレア",
   "block.sirousyanka.lit_abyss_stone_grass": "火のついた深淵の石草",
   "block.sirousyanka.ice_bush": "氷の茂み",
+  "block.sirousyanka.pink_azusai": "ピンクのアズサイ",
+  "block.sirousyanka.blue_azusai": "青のアズサイ",
+  "block.sirousyanka.purple_azusai": "紫のアズサイ",
+  "block.sirousyanka.cosmos": "コスモス",
+  "block.sirousyanka.spike_icer": "スパイクアイサー",
+  "block.sirousyanka.blower": "ブラワー",
 
   "block.sirousyanka.heated_lava" : "高温の溶岩",
   "item.sirousyanka.heated_lava_bucket" : "高温の溶岩入りバケツ",
   "block.sirousyanka.liquid_nitrogen" : "液体窒素",
   "item.sirousyanka.liquid_nitrogen_bucket" : "液体窒素入りバケツ",
 
-  "death.attack.cold": "%1$sは凍った",
-
-  "effect.sirousyanka.cold" : "凍結"
+  "death.attack.cold": "%1$sは凍った"
 }

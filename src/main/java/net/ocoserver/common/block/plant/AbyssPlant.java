@@ -15,7 +15,7 @@ public class AbyssPlant extends ModPlant {
 
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.is(ModBlocks.ABYSS_STONE);
+        return state.is(ModBlocks.ABYSS_STONE.get());
     }
 
     @Override

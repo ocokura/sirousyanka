@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "sirousyanka:block/solid_nitrogen_block",
+    "side": "sirousyanka:block/solid_nitrogen_block",
+    "top": "sirousyanka:block/solid_nitrogen_block"
+  }
+}

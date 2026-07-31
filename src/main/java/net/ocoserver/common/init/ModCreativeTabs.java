@@ -60,6 +60,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ABYSS_ICE.get());
                         output.accept(ModBlocks.ABYSS_PACKED_ICE.get());
                         output.accept(ModBlocks.ABYSS_OBSIDIAN.get());
+                        output.accept(ModBlocks.ABYSS_GRASS_BLOCK.get());
 
                         // FROZEN
                         output.accept(ModBlocks.FROZEN_GRASS_BLOCK.get());
@@ -98,6 +99,17 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.LIME_STONE_BRICKS.get());
                         output.accept(ModBlocks.LIME_STONE_BRICKS_STAIR.get());
                         output.accept(ModBlocks.LIME_STONE_BRICKS_SLAB.get());
+
+                        //SOLID NITROGEN
+                        output.accept(ModBlocks.SOLID_NITROGEN_BLOCK.get());
+                        output.accept(ModBlocks.SOLID_NITROGEN_STAIR.get());
+                        output.accept(ModBlocks.SOLID_NITROGEN_SLAB.get());
+
+                        //SOLID NITROGEN BRICKS
+                        output.accept(ModBlocks.SOLID_NITROGEN_BRICKS.get());
+                        output.accept(ModBlocks.SOLID_NITROGEN_BRICKS_STAIR.get());
+                        output.accept(ModBlocks.SOLID_NITROGEN_BRICKS_SLAB.get());
+                        output.accept(ModBlocks.SOLID_NITROGEN_BRICKS_WALL.get());
 
                         //氷雪のカラマツ
                         output.accept(ModBlocks.ICE_LARCH_LOG.get());
@@ -155,6 +167,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_LEAVES.get());
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_SAPLING.get());
+                        output.accept(ModBlocks.CRIMSON_GRASS_BLOCK.get());
 
                         //ニトロウド
                         output.accept(ModBlocks.NITROWD_LOG.get());
@@ -184,6 +197,14 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ABYSS_STONE_GRASS.get());
                         output.accept(ModBlocks.LIT_ABYSS_STONE_GRASS.get());
                         output.accept(ModBlocks.ICE_BUSH.get());
+                        output.accept(ModBlocks.PINK_AZUSAI.get());
+                        output.accept(ModBlocks.BLUE_AZUSAI.get());
+                        output.accept(ModBlocks.PURPLE_AZUSAI.get());
+                        output.accept(ModBlocks.CRIMSON_GRASS.get());
+                        output.accept(ModBlocks.ABYSS_GRASS.get());
+                        output.accept(ModBlocks.COSMOS.get());
+                        output.accept(ModBlocks.SPIKE_ICER.get());
+                        output.accept(ModBlocks.BLOWER.get());
 
                         //Fluid
                         output.accept(ModItems.HEATED_LAVA_BUCKET.get());

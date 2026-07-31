@@ -40,6 +40,13 @@
     "sirousyanka:lime_stone_wall",
     "sirousyanka:lime_stone_bricks",
     "sirousyanka:lime_stone_bricks_stair",
-    "sirousyanka:lime_stone_bricks_slab"
+    "sirousyanka:lime_stone_bricks_slab",
+    "sirousyanka:solid_nitrogen_block",
+    "sirousyanka:solid_nitrogen_stair",
+    "sirousyanka:solid_nitrogen_slab",
+    "sirousyanka:solid_nitrogen_bricks",
+    "sirousyanka:solid_nitrogen_bricks_stair",
+    "sirousyanka:solid_nitrogen_bricks_slab",
+    "sirousyanka:solid_nitrogen_bricks_wall"
   ]
 }
