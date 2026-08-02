@@ -11,7 +11,7 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.ocoserver.common.util.ModUtils;
 
-public class ModOreBiomeModifiers {
+public class OreBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_USYALIUM_ORE = ModUtils.getResourceKey(NeoForgeRegistries.Keys.BIOME_MODIFIERS, "add_usyalium_ore");
 
@@ -20,7 +20,7 @@ public class ModOreBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
         context.register(ADD_USYALIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModOrePlacedFeatures.USYALIUM_ORE_OVERWORLD_PLACED)),
+                HolderSet.direct(placedFeatures.getOrThrow(OrePlaced.USYALIUM_ORE_OVERWORLD_PLACED)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
     }

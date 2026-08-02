@@ -10,7 +10,7 @@ import net.ocoserver.common.init.ModBlocks;
 import net.ocoserver.common.util.ModUtils;
 import net.ocoserver.common.util.WorldGenUtils;
 
-public class ModTreePlacedFeatures {
+public class TreePlaced {
 
     public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "ice_larch_tree_placed");
     public static final ResourceKey<PlacedFeature> KEUTI_TREE_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "keuti_tree_placed");
@@ -21,8 +21,11 @@ public class ModTreePlacedFeatures {
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        WorldGenUtils.registerPlacedFeature(context, ICE_LARCH_TREE_PLACED, configuredFeatures.getOrThrow(ModTreeConfiguredFeatures.ICE_LARCH_TREE_KEY),
+        WorldGenUtils.registerPlacedFeature(context, ICE_LARCH_TREE_PLACED, configuredFeatures.getOrThrow(TreeConfigure.ICE_LARCH_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2), ModBlocks.ICE_LARCH_SAPLING.get()));
+        WorldGenUtils.registerPlacedFeature(context, ICE_LARCH_TREE_PLACED, configuredFeatures.getOrThrow(TreeConfigure.ICE_LARCH_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 0)));
+
     }
 
 }

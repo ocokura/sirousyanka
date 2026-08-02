@@ -51,7 +51,6 @@ public class MiniGeyser extends Block {
                 Vec3 motion = entity.getDeltaMovement();
                 entity.setDeltaMovement(motion.x, Math.max(motion.y, 0.6), motion.z);
                 entity.hurtMarked = true;
-                entity.hurt(level.damageSources().inFire(), 1);
                 entity.setRemainingFireTicks(100);
             }
             level.scheduleTick(pos, this, 2);
@@ -96,7 +95,9 @@ public class MiniGeyser extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        entity.hurt(level.damageSources().inFire(), 1);
+        if (level.isClientSide) {
+            return;
+        }
         entity.setRemainingFireTicks(100);
     }
 }

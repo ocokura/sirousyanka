@@ -9,6 +9,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
@@ -18,7 +19,7 @@ import net.ocoserver.common.init.ModBlocks;
 import net.ocoserver.common.util.ModUtils;
 import net.ocoserver.common.util.WorldGenUtils;
 
-public class ModTreeConfiguredFeatures {
+public class TreeConfigure {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_spruce_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
@@ -74,7 +75,7 @@ public class ModTreeConfiguredFeatures {
                 new ForkingTrunkPlacer(6, 3, 2),
 
                 BlockStateProvider.simple(ModBlocks.NITROWD_LEAVES.get()),
-                new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(3), 3),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
 
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
     }

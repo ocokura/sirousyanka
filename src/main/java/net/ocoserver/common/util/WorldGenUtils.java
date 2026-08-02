@@ -20,7 +20,7 @@ public class WorldGenUtils {
 
     public static void registerPlacedFeature(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<ConfiguredFeature<?, ?>> configuration,
                                              List<PlacementModifier> modifiers) {
-        context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
+        context.register(key, new PlacedFeature(configuration, modifiers));
     }
 
 }

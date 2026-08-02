@@ -15,7 +15,7 @@ import net.ocoserver.common.util.WorldGenUtils;
 
 import java.util.List;
 
-public class ModOreConfiguredFeatures {
+public class OreConfigure {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> USYALIUM_ORE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "usyalium_ore");
 
