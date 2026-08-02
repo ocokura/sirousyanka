@@ -304,6 +304,8 @@ public class BlockLootTable extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLUE_AZUSAI.get());
         dropSelf(ModBlocks.PURPLE_AZUSAI.get());
 
+        dropSelf(ModBlocks.MINI_GEYSER.get());
+
     }
 
     private void registerGrass(Block block) {

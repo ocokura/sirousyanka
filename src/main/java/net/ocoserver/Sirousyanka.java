@@ -3,12 +3,7 @@ package net.ocoserver;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.ocoserver.common.init.ModBlocks;
-import net.ocoserver.common.init.ModFluidTypes;
-import net.ocoserver.common.init.ModFluids;
-import net.ocoserver.common.init.ModEffects;
-import net.ocoserver.common.init.ModCreativeTabs;
-import net.ocoserver.common.init.ModItems;
+import net.ocoserver.common.init.*;
 
 @Mod(Sirousyanka.MODID)
 public class Sirousyanka {

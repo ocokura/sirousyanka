@@ -473,76 +473,81 @@ public class ModBlocks {
 
     //植物など
     public static final DeferredBlock<ModPlant> FROZEN_GRASS = registerBlock("frozen_grass", () -> new ModPlant(
-            BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().replaceable().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<FlowerBlock> FROZEN_POPPY = registerBlock("frozen_poppy", () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5,
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<ModPlant> BERRY_GRASS = registerBlock("berry_grass", () -> new ModPlant(
-            BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().replaceable().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<ModPlant> IRIS_PETAL = registerBlock("iris_petal", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<ModPlant> FROST_FLARE = registerBlock("frost_flare", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<AbyssPlant> ABYSS_STONE_GRASS = registerBlock("abyss_stone_grass", () -> new AbyssPlant(
-            BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().replaceable().strength(0f).sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<AbyssPlant> LIT_ABYSS_STONE_GRASS = registerBlock("lit_abyss_stone_grass", () -> new AbyssPlant(
-            BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().replaceable().strength(0f).sound(SoundType.STONE).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<DoublePlantBlock> ICE_BUSH = registerBlock("ice_bush", () -> new DoublePlantBlock(
-            BlockBehaviour.Properties.of().replaceable().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().replaceable().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<LeavesBlock> PINK_AZUSAI = registerBlock("pink_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
     public static final DeferredBlock<LeavesBlock> BLUE_AZUSAI = registerBlock("blue_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
     public static final DeferredBlock<LeavesBlock> PURPLE_AZUSAI = registerBlock("purple_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
+            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
     public static final DeferredBlock<ModPlant> CRIMSON_GRASS = registerBlock("crimson_grass", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
     ));
 
     public static final DeferredBlock<ModPlant> ABYSS_GRASS = registerBlock("abyss_grass", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).replaceable()
     ));
 
     public static final DeferredBlock<ModPlant> COSMOS = registerBlock("cosmos", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<ModPlant> SPIKE_ICER = registerBlock("spike_icer", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
     ));
 
     public static final DeferredBlock<ModPlant> BLOWER = registerBlock("blower", () -> new ModPlant(
-            BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+            BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS).noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XZ)
+    ));
+
+    //間欠泉
+    public static final DeferredBlock<MiniGeyser> MINI_GEYSER = registerBlock("mini_geyser", () -> new MiniGeyser(
+            BlockBehaviour.Properties.of().strength(3f).randomTicks().sound(SoundType.STONE).noOcclusion()
     ));
 
     //流体

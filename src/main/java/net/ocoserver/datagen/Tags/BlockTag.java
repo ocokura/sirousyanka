@@ -256,6 +256,10 @@ public class BlockTag extends BlockTagsProvider {
                 ModBlocks.NITROWD_SAPLING.get()
         );
 
+        //間欠泉
+        tag(ModTags.Blocks.STONES)
+                .add(ModBlocks.MINI_GEYSER.get());
+
         tag(ModTags.Blocks.USYALIUM)
                 .add(ModBlocks.USYALIUM_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_USYALIUM_ORE_BLOCK.get())
@@ -275,8 +279,7 @@ public class BlockTag extends BlockTagsProvider {
                 .add(ModBlocks.ABYSS_GRASS_BLOCK.get())
                 .add(ModBlocks.CRIMSON_GRASS_BLOCK.get());
 
-        tag(BlockTags.NEEDS_STONE_TOOL)
-                .addTag(ModTags.Blocks.STONES);
+        tag(BlockTags.NEEDS_STONE_TOOL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(ModTags.Blocks.USYALIUM);

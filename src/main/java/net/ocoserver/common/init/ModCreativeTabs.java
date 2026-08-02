@@ -206,6 +206,9 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.SPIKE_ICER.get());
                         output.accept(ModBlocks.BLOWER.get());
 
+                        //geyser
+                        output.accept(ModBlocks.MINI_GEYSER.get());
+
                         //Fluid
                         output.accept(ModItems.HEATED_LAVA_BUCKET.get());
                         output.accept(ModItems.LIQUID_NITROGEN_BUCKET.get());

@@ -171,6 +171,8 @@
   "block.sirousyanka.spike_icer": "スパイクアイサー",
   "block.sirousyanka.blower": "ブラワー",
 
+  "block.sirousyanka.mini_geyser": "小さな間欠泉",
+
   "block.sirousyanka.heated_lava" : "高温の溶岩",
   "item.sirousyanka.heated_lava_bucket" : "高温の溶岩入りバケツ",
   "block.sirousyanka.liquid_nitrogen" : "液体窒素",
