@@ -31,6 +31,9 @@ public class ObjectPlaced {
     // 機能付き自然ブロック　通常設置
     public static final ResourceKey<PlacedFeature> MINI_GEYSER_PLAIN = PlacementUtils.createKey("mini_geyser_plain");
 
+    //その他の自然オブジェクト
+    public static final ResourceKey<PlacedFeature> ABYSS_ICE_SPIKE = PlacementUtils.createKey("abyss_ice_spike");
+
     //バイオームごとの特殊配置
     public static final ResourceKey<PlacedFeature> COSMOS_CRIMSON_BIOME = PlacementUtils.createKey("cosmos_placed");
     public static final ResourceKey<PlacedFeature> PINK_AZUSAI_CRIMSON_BIOME = PlacementUtils.createKey("pink_azusai_placed");
@@ -170,6 +173,14 @@ public class ObjectPlaced {
         PlacementUtils.register(context, MINI_GEYSER_PLAIN, cf.getOrThrow(ObjectConfigure.MINI_GEYSER), List.of(
                 CountPlacement.of(20),
                 RarityFilter.onAverageOnceEvery(2),
+                InSquarePlacement.spread(),
+                PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                BiomeFilter.biome()
+        ));
+
+        PlacementUtils.register(context, ABYSS_ICE_SPIKE, cf.getOrThrow(ObjectConfigure.ABYSS_ICE_SPIKE), List.of(
+                CountPlacement.of(4),
+                RarityFilter.onAverageOnceEvery(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()

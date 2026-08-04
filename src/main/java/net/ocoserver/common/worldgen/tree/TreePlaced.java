@@ -8,23 +8,22 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.ocoserver.common.init.ModBlocks;
-import net.ocoserver.common.util.ModUtils;
 
 public class TreePlaced {
 
     //通常設置
-    public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "ice_larch_tree_plain");
-    public static final ResourceKey<PlacedFeature> KEUTI_TREE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "keuti_tree_plain");
-    public static final ResourceKey<PlacedFeature> CRIMSON_CRYSTAL_TREE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "crimson_crystal_tree_plain");
-    public static final ResourceKey<PlacedFeature> NITROWD_TREE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "nitrowd_tree_plain");
-    public static final ResourceKey<PlacedFeature> FROZEN_SPRUCE_TREE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frozen_spruce_tree_plain");
+    public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_PLAIN = PlacementUtils.createKey("ice_larch_tree_plain");
+    public static final ResourceKey<PlacedFeature> KEUTI_TREE_PLAIN = PlacementUtils.createKey("keuti_tree_plain");
+    public static final ResourceKey<PlacedFeature> CRIMSON_CRYSTAL_TREE_PLAIN = PlacementUtils.createKey("crimson_crystal_tree_plain");
+    public static final ResourceKey<PlacedFeature> NITROWD_TREE_PLAIN = PlacementUtils.createKey("nitrowd_tree_plain");
+    public static final ResourceKey<PlacedFeature> FROZEN_SPRUCE_TREE_PLAIN = PlacementUtils.createKey("frozen_spruce_tree_plain");
 
     //専用バイオームごとの設置
-    public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_FOREST = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "ice_larch_tree_forest");
-    public static final ResourceKey<PlacedFeature> KEUTI_TREE_FOREST = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "keuti_tree_forest");
-    public static final ResourceKey<PlacedFeature> CRIMSON_CRYSTAL_TREE_FOREST = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "crimson_crystal_tree_forest");
-    public static final ResourceKey<PlacedFeature> NITROWD_TREE_FOREST = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "nitrowd_tree_forest");
-    public static final ResourceKey<PlacedFeature> FROZEN_SPRUCE_TREE_FOREST = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frozen_spruce_tree_forest");
+    public static final ResourceKey<PlacedFeature> ICE_LARCH_TREE_FOREST = PlacementUtils.createKey("ice_larch_tree_forest");
+    public static final ResourceKey<PlacedFeature> KEUTI_TREE_FOREST = PlacementUtils.createKey("keuti_tree_forest");
+    public static final ResourceKey<PlacedFeature> CRIMSON_CRYSTAL_TREE_FOREST = PlacementUtils.createKey("crimson_crystal_tree_forest");
+    public static final ResourceKey<PlacedFeature> NITROWD_TREE_FOREST = PlacementUtils.createKey("nitrowd_tree_forest");
+    public static final ResourceKey<PlacedFeature> FROZEN_SPRUCE_TREE_FOREST = PlacementUtils.createKey("frozen_spruce_tree_forest");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var cf = context.lookup(Registries.CONFIGURED_FEATURE);

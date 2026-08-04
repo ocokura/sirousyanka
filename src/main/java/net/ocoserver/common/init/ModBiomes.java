@@ -39,7 +39,6 @@ public class ModBiomes {
     public static final ResourceKey<Biome> KEUTI_MOUNTAIN = ModUtils.getResourceKey(Registries.BIOME, "keuti_mountain");
 
     public static final ResourceKey<Biome> CRIMSON_CRYSTAL_FOREST = ModUtils.getResourceKey(Registries.BIOME, "crimson_crystal_forest");
-    public static final ResourceKey<Biome> CRIMSON_CRYSTAL_MOUNTAIN = ModUtils.getResourceKey(Registries.BIOME, "crimson_crystal_mountain");
 
     public static final ResourceKey<Biome> ICE_PLANE = ModUtils.getResourceKey(Registries.BIOME, "ice_plane");
     public static final ResourceKey<Biome> ICE_MOUNTAIN = ModUtils.getResourceKey(Registries.BIOME, "ice_mountain");

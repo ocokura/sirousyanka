@@ -11,6 +11,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConf
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.ModFeatures;
 
 public class ObjectConfigure {
 
@@ -35,6 +36,9 @@ public class ObjectConfigure {
     //機能付き自然ブロック
     public static final ResourceKey<ConfiguredFeature<?, ?>> MINI_GEYSER = FeatureUtils.createKey("mini_geyser");
 
+    //その他の自然オブジェクト
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_ICE_SPIKE = FeatureUtils.createKey("abyss_ice_spike");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
         FeatureUtils.register(context, FROZEN_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.FROZEN_GRASS.get()), 32));
@@ -42,7 +46,7 @@ public class ObjectConfigure {
         FeatureUtils.register(context, ABYSS_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.ABYSS_GRASS.get()), 32));
         FeatureUtils.register(context, CRIMSON_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.CRIMSON_GRASS.get()), 32));
         FeatureUtils.register(context, ABYSS_STONE_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.ABYSS_STONE_GRASS.get()), 32));
-        FeatureUtils.register(context, LIT_ABYSS_STONE_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.LIT_ABYSS_STONE_GRASS.get()), 32));
+        FeatureUtils.register(context, LIT_ABYSS_STONE_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.LIT_ABYSS_STONE_GRASS.get()), 16));
         FeatureUtils.register(context, BERRY_GRASS, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.BERRY_GRASS.get()), 32));
 
         FeatureUtils.register(context, FROZEN_POPPY, Feature.RANDOM_PATCH,
@@ -69,6 +73,7 @@ public class ObjectConfigure {
 
         FeatureUtils.register(context, MINI_GEYSER, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINI_GEYSER.get())));
 
+        FeatureUtils.register(context, ABYSS_ICE_SPIKE, ModFeatures.ABYSS_ICE_SPIKE.get());
     }
 
     private static RandomPatchConfiguration grassPatch(BlockStateProvider stateProvider, int tries) {

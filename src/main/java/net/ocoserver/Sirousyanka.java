@@ -18,5 +18,6 @@ public class Sirousyanka {
         ModFluids.register(eventBus);
         ModFluidTypes.register(eventBus);
         ModEffects.register(eventBus);
+        ModFeatures.register(eventBus);
     }
 }
