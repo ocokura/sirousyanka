@@ -22,10 +22,10 @@ import net.ocoserver.common.util.WorldGenUtils;
 public class TreeConfigure {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_spruce_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "nitrowd_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "nitrowd_tree");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 
@@ -40,7 +40,7 @@ public class TreeConfigure {
                 new TwoLayersFeatureSize(2, 0, 2)).ignoreVines().build());
 
         //ICE LARCH TREE
-        WorldGenUtils.registerConfiguredFeature(context, ICE_LARCH_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, ICE_LARCH_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.ICE_LARCH_LOG.get()),
                 new StraightTrunkPlacer(8, 2, 2),
 
@@ -50,7 +50,7 @@ public class TreeConfigure {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //KEUTI TREE
-        WorldGenUtils.registerConfiguredFeature(context, KEUTI_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, KEUTI_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.KEUTI_LOG.get()),
                 new StraightTrunkPlacer(5, 3, 2),
 
@@ -60,7 +60,7 @@ public class TreeConfigure {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //CRIMSON CRYSTAL TREE
-        WorldGenUtils.registerConfiguredFeature(context, CRIMSON_CRYSTAL_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, CRIMSON_CRYSTAL_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRIMSON_CRYSTAL_LOG.get()),
                 new ForkingTrunkPlacer(6, 3, 2),
 
@@ -70,7 +70,7 @@ public class TreeConfigure {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         //NITROWD_TREE
-        WorldGenUtils.registerConfiguredFeature(context, NITROWD_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        WorldGenUtils.registerConfiguredFeature(context, NITROWD_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.NITROWD_LOG.get()),
                 new ForkingTrunkPlacer(7, 3, 2),
 
