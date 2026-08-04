@@ -265,7 +265,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(ICE_LARCH_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(ModTreeGrowers.ICE_LARCH_TREE,
+    public static final DeferredBlock<SaplingBlock> ICE_LARCH_SAPLING = registerBlock("ice_larch_sapling", () -> new SaplingBlock(ModTreeGrowers.ICE_LARCH_TREE_GROWER,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 
@@ -331,7 +331,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(ModTreeGrowers.KEUTI_TREE,
+    public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(ModTreeGrowers.KEUTI_TREE_GROWER,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 
@@ -397,7 +397,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CRIMSON_CRYSTAL_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(ModTreeGrowers.CRIMSON_CRYSTAL_TREE,
+    public static final DeferredBlock<SaplingBlock> CRIMSON_CRYSTAL_SAPLING = registerBlock("crimson_crystal_sapling", () -> new SaplingBlock(ModTreeGrowers.CRIMSON_CRYSTAL_TREE_GROWER,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 
@@ -465,7 +465,7 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(NITROWD_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> NITROWD_SAPLING = registerBlock("nitrowd_sapling", () -> new SaplingBlock(ModTreeGrowers.NITROWD_TREE,
+    public static final DeferredBlock<SaplingBlock> NITROWD_SAPLING = registerBlock("nitrowd_sapling", () -> new SaplingBlock(ModTreeGrowers.NITROWD_TREE_GROWER,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 

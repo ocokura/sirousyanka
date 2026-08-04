@@ -7,14 +7,14 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.ocoserver.Sirousyanka;
-import net.ocoserver.common.block.wood.WoodFlammable;
+import net.ocoserver.common.block.Flammable;
 
 @EventBusSubscriber(modid = Sirousyanka.MODID)
 public class SetupEvents {
 
     @SubscribeEvent
     public static void commonSetupEvent(FMLCommonSetupEvent event) {
-        WoodFlammable.setFlammable();
+        Flammable.setFlammable();
 
     }
 

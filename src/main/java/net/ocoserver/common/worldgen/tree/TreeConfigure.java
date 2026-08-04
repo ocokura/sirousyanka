@@ -69,7 +69,7 @@ public class TreeConfigure {
 
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
-        //NITROWD_TREE
+        //NITROWD_TREE_GROWER
         WorldGenUtils.registerConfiguredFeature(context, NITROWD_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.NITROWD_LOG.get()),
                 new ForkingTrunkPlacer(7, 3, 2),
