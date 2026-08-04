@@ -72,7 +72,7 @@ public class TreeConfigure {
         //NITROWD_TREE
         WorldGenUtils.registerConfiguredFeature(context, NITROWD_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.NITROWD_LOG.get()),
-                new ForkingTrunkPlacer(6, 3, 2),
+                new ForkingTrunkPlacer(7, 3, 2),
 
                 BlockStateProvider.simple(ModBlocks.NITROWD_LEAVES.get()),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),

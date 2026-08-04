@@ -18,6 +18,7 @@ import net.ocoserver.common.worldgen.tree.TreePlaced;
 import java.awt.*;
 
 public class FrozenAbyssBiomes {
+    /*
 
     public static Biome frozenSpruceForest(HolderGetter<PlacedFeature> placedFeatures, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
         //スポーン
@@ -87,5 +88,6 @@ public class FrozenAbyssBiomes {
     private static void addFeature(BiomeGenerationSettings.Builder builder, GenerationStep.Decoration step, ResourceKey<PlacedFeature> feature) {
         builder.addFeature(step, feature);
     }
+    */
 
 }
