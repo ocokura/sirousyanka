@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.misc;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

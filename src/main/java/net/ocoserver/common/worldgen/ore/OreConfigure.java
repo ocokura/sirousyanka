@@ -9,7 +9,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
-import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.block.ModBlocks;
 import net.ocoserver.common.util.WorldGenUtils;
 
 import java.util.List;

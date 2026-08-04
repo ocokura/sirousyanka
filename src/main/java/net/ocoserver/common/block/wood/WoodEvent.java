@@ -9,7 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.block.ModBlocks;
 import net.ocoserver.Sirousyanka;
 
 import java.util.HashMap;

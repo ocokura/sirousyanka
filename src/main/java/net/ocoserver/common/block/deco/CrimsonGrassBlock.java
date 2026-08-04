@@ -6,7 +6,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.block.ModBlocks;
 
 import java.util.function.Supplier;
 

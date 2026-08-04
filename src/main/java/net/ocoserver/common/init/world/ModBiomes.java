@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.world;
 
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

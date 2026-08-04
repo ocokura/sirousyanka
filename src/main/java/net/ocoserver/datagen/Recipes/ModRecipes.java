@@ -9,9 +9,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.*;
-import net.ocoserver.common.init.ModTags;
-import net.ocoserver.common.init.ModBlocks;
-import net.ocoserver.common.init.ModItems;
+import net.ocoserver.common.init.misc.ModTags;
+import net.ocoserver.common.init.block.ModBlocks;
+import net.ocoserver.common.init.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

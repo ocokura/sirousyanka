@@ -5,8 +5,8 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
-import net.ocoserver.common.init.ModItems;
-import net.ocoserver.common.init.ModTags;
+import net.ocoserver.common.init.item.ModItems;
+import net.ocoserver.common.init.misc.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 

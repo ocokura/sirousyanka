@@ -5,7 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.block.ModBlocks;
 
 public class AbyssPlant extends ModPlant {
 

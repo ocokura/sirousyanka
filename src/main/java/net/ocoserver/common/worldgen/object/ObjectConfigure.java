@@ -10,8 +10,8 @@ import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfi
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.ocoserver.common.init.ModBlocks;
-import net.ocoserver.common.init.ModFeatures;
+import net.ocoserver.common.init.block.ModBlocks;
+import net.ocoserver.common.init.world.ModFeatures;
 
 public class ObjectConfigure {
 

@@ -1,10 +1,12 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.item;
 
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ocoserver.Sirousyanka;
+import net.ocoserver.common.init.block.ModBlocks;
+import net.ocoserver.common.init.fluid.ModFluids;
 
 
 public class ModItems {

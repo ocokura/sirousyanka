@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ocoserver.Sirousyanka;
+import net.ocoserver.common.init.block.ModBlocks;
 
 import java.util.function.Supplier;
 

@@ -1,11 +1,10 @@
-package net.ocoserver.common.block;
+package net.ocoserver.common.init.block;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
-import net.ocoserver.common.init.ModBlocks;
 
-public class Flammable {
+public class SetFlammable {
 
     public static void setFlammable() {
 

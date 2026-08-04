@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.block;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -15,6 +15,8 @@ import net.ocoserver.common.block.fluid.HeatedLavaBlock;
 import net.ocoserver.common.block.fluid.LiquidNitrogenBlock;
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.block.wood.ModTreeGrowers;
+import net.ocoserver.common.init.fluid.ModFluids;
+import net.ocoserver.common.init.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
@@ -547,7 +549,7 @@ public class ModBlocks {
 
     //間欠泉
     public static final DeferredBlock<MiniGeyser> MINI_GEYSER = registerBlock("mini_geyser", () -> new MiniGeyser(
-            BlockBehaviour.Properties.of().strength(3f).randomTicks().sound(SoundType.STONE).noOcclusion()
+            BlockBehaviour.Properties.of().strength(3f).randomTicks().sound(SoundType.STONE).noOcclusion().lightLevel(state -> 4)
     ));
 
     //流体

@@ -6,8 +6,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.ocoserver.common.init.ModTags;
-import net.ocoserver.common.init.ModBlocks;
+import net.ocoserver.common.init.misc.ModTags;
+import net.ocoserver.common.init.block.ModBlocks;
 import net.ocoserver.Sirousyanka;
 import org.jetbrains.annotations.Nullable;
 

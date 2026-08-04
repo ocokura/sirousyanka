@@ -12,7 +12,7 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
-import net.ocoserver.common.init.ModFluids;
+import net.ocoserver.common.init.fluid.ModFluids;
 
 import java.util.Optional;
 

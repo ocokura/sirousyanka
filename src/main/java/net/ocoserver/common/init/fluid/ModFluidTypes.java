@@ -1,4 +1,4 @@
-package net.ocoserver.common.init;
+package net.ocoserver.common.init.fluid;
 
 import net.minecraft.sounds.SoundEvents;
 import net.neoforged.bus.api.IEventBus;
