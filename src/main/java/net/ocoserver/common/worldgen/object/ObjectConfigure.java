@@ -1,5 +1,6 @@
 package net.ocoserver.common.worldgen.object;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -12,32 +13,33 @@ import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConf
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.ocoserver.common.init.block.ModBlocks;
 import net.ocoserver.common.init.world.ModFeatures;
+import net.ocoserver.common.util.ModUtils;
 
 public class ObjectConfigure {
 
     //基本となる草花の単品
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_GRASS = FeatureUtils.createKey("frozen_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_POPPY = FeatureUtils.createKey("frozen_poppy");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BERRY_GRASS = FeatureUtils.createKey("berry_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_PETAL = FeatureUtils.createKey("iris_petal");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FROST_FLARE = FeatureUtils.createKey("frost_flare");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_STONE_GRASS = FeatureUtils.createKey("abyss_stone_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> LIT_ABYSS_STONE_GRASS = FeatureUtils.createKey("lit_abyss_stone_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_BUSH = FeatureUtils.createKey("ice_bush");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_GRASS = FeatureUtils.createKey("crimson_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_GRASS = FeatureUtils.createKey("abyss_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> COSMOS = FeatureUtils.createKey("cosmos");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SPIKE_ICER = FeatureUtils.createKey("spike_icer");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BLOWER = FeatureUtils.createKey("blower");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_AZUSAI = FeatureUtils.createKey("pink_azusai");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_AZUSAI = FeatureUtils.createKey("blue_azusai");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_AZUSAI = FeatureUtils.createKey("purple_azusai");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_POPPY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_poppy");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BERRY_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "berry_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_PETAL = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "iris_petal");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROST_FLARE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frost_flare");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_STONE_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "abyss_stone_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIT_ABYSS_STONE_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "lit_abyss_stone_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_BUSH = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_GRASS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "abyss_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> COSMOS = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "cosmos");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPIKE_ICER = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "spike_icer");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLOWER = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "blower");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_AZUSAI = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "pink_azusai");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_AZUSAI = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "blue_azusai");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_AZUSAI = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "purple_azusai");
 
     //機能付き自然ブロック
-    public static final ResourceKey<ConfiguredFeature<?, ?>> MINI_GEYSER = FeatureUtils.createKey("mini_geyser");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINI_GEYSER = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "mini_geyser");
 
     //その他の自然オブジェクト
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_ICE_SPIKE = FeatureUtils.createKey("abyss_ice_spike");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ABYSS_ICE_SPIKE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "abyss_ice_spike");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 

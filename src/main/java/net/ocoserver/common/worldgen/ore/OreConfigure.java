@@ -1,7 +1,7 @@
 package net.ocoserver.common.worldgen.ore;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -10,13 +10,14 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.ocoserver.common.init.block.ModBlocks;
+import net.ocoserver.common.util.ModUtils;
 import net.ocoserver.common.util.WorldGenUtils;
 
 import java.util.List;
 
 public class OreConfigure {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> USYALIUM_ORE_KEY = FeatureUtils.createKey("usyalium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> USYALIUM_ORE_KEY = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "usyalium_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
         //USYALIUM ORE

@@ -5,39 +5,40 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.ocoserver.common.util.ModUtils;
 
 import java.util.List;
 
 public class ObjectPlaced {
 
     // 基本となる草花　通常設置
-    public static final ResourceKey<PlacedFeature> FROZEN_GRASS_PLAIN = PlacementUtils.createKey("frozen_grass_plain");
-    public static final ResourceKey<PlacedFeature> FROZEN_POPPY_PLAIN = PlacementUtils.createKey("frozen_poppy_plain");
-    public static final ResourceKey<PlacedFeature> BERRY_GRASS_PLAIN = PlacementUtils.createKey("berry_grass_plain");
-    public static final ResourceKey<PlacedFeature> IRIS_PETAL_PLAIN = PlacementUtils.createKey("iris_petal_plain");
-    public static final ResourceKey<PlacedFeature> FROST_FLARE_PLAIN = PlacementUtils.createKey("frost_flare_plain");
-    public static final ResourceKey<PlacedFeature> ABYSS_STONE_GRASS_PLAIN = PlacementUtils.createKey("abyss_stone_grass_plain");
-    public static final ResourceKey<PlacedFeature> LIT_ABYSS_STONE_GRASS_PLAIN = PlacementUtils.createKey("lit_abyss_stone_grass_plain");
-    public static final ResourceKey<PlacedFeature> ICE_BUSH_PLAIN = PlacementUtils.createKey("ice_bush_plain");
-    public static final ResourceKey<PlacedFeature> CRIMSON_GRASS_PLAIN = PlacementUtils.createKey("crimson_grass_plain");
-    public static final ResourceKey<PlacedFeature> ABYSS_GRASS_PLAIN = PlacementUtils.createKey("abyss_grass_plain");
-    public static final ResourceKey<PlacedFeature> COSMOS_PLAIN = PlacementUtils.createKey("cosmos_plain");
-    public static final ResourceKey<PlacedFeature> SPIKE_ICER_PLAIN = PlacementUtils.createKey("spike_icer_plain");
-    public static final ResourceKey<PlacedFeature> BLOWER_PLAIN = PlacementUtils.createKey("blower_plain");
-    public static final ResourceKey<PlacedFeature> PINK_AZUSAI_PLAIN = PlacementUtils.createKey("pink_azusai_plain");
-    public static final ResourceKey<PlacedFeature> BLUE_AZUSAI_PLAIN = PlacementUtils.createKey("blue_azusai_plain");
-    public static final ResourceKey<PlacedFeature> PURPLE_AZUSAI_PLAIN = PlacementUtils.createKey("purple_azusai_plain");
+    public static final ResourceKey<PlacedFeature> FROZEN_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frozen_grass_plain");
+    public static final ResourceKey<PlacedFeature> FROZEN_POPPY_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frozen_poppy_plain");
+    public static final ResourceKey<PlacedFeature> BERRY_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "berry_grass_plain");
+    public static final ResourceKey<PlacedFeature> IRIS_PETAL_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "iris_petal_plain");
+    public static final ResourceKey<PlacedFeature> FROST_FLARE_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "frost_flare_plain");
+    public static final ResourceKey<PlacedFeature> ABYSS_STONE_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "abyss_stone_grass_plain");
+    public static final ResourceKey<PlacedFeature> LIT_ABYSS_STONE_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "lit_abyss_stone_grass_plain");
+    public static final ResourceKey<PlacedFeature> ICE_BUSH_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "ice_bush_plain");
+    public static final ResourceKey<PlacedFeature> CRIMSON_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "crimson_grass_plain");
+    public static final ResourceKey<PlacedFeature> ABYSS_GRASS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "abyss_grass_plain");
+    public static final ResourceKey<PlacedFeature> COSMOS_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "cosmos_plain");
+    public static final ResourceKey<PlacedFeature> SPIKE_ICER_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "spike_icer_plain");
+    public static final ResourceKey<PlacedFeature> BLOWER_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "blower_plain");
+    public static final ResourceKey<PlacedFeature> PINK_AZUSAI_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "pink_azusai_plain");
+    public static final ResourceKey<PlacedFeature> BLUE_AZUSAI_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "blue_azusai_plain");
+    public static final ResourceKey<PlacedFeature> PURPLE_AZUSAI_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "purple_azusai_plain");
 
     // 機能付き自然ブロック　通常設置
-    public static final ResourceKey<PlacedFeature> MINI_GEYSER_PLAIN = PlacementUtils.createKey("mini_geyser_plain");
+    public static final ResourceKey<PlacedFeature> MINI_GEYSER_PLAIN = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "mini_geyser_plain");
 
     //その他の自然オブジェクト
-    public static final ResourceKey<PlacedFeature> ABYSS_ICE_SPIKE = PlacementUtils.createKey("abyss_ice_spike");
+    public static final ResourceKey<PlacedFeature> ABYSS_ICE_SPIKE = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "abyss_ice_spike");
 
     //バイオームごとの特殊配置
-    public static final ResourceKey<PlacedFeature> COSMOS_CRIMSON_BIOME = PlacementUtils.createKey("cosmos_placed");
-    public static final ResourceKey<PlacedFeature> PINK_AZUSAI_CRIMSON_BIOME = PlacementUtils.createKey("pink_azusai_placed");
-    public static final ResourceKey<PlacedFeature> PURPLE_AZUSAI_CRIMSON_BIOME = PlacementUtils.createKey("purple_azusai_placed");
+    public static final ResourceKey<PlacedFeature> COSMOS_CRIMSON_BIOME = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "cosmos_placed");
+    public static final ResourceKey<PlacedFeature> PINK_AZUSAI_CRIMSON_BIOME = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "pink_azusai_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_AZUSAI_CRIMSON_BIOME = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "purple_azusai_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var cf = context.lookup(Registries.CONFIGURED_FEATURE);

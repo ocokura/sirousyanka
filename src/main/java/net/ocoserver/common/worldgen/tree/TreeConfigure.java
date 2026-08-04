@@ -1,7 +1,7 @@
 package net.ocoserver.common.worldgen.tree;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -16,15 +16,16 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.ocoserver.common.init.block.ModBlocks;
+import net.ocoserver.common.util.ModUtils;
 import net.ocoserver.common.util.WorldGenUtils;
 
 public class TreeConfigure {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = FeatureUtils.createKey("frozen_spruce_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE = FeatureUtils.createKey("ice_larch_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE = FeatureUtils.createKey("keuti_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE = FeatureUtils.createKey("crimson_crystal_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE = FeatureUtils.createKey("nitrowd_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_spruce_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "nitrowd_tree");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context ) {
 

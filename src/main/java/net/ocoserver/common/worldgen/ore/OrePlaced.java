@@ -2,18 +2,18 @@ package net.ocoserver.common.worldgen.ore;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.ocoserver.common.util.ModUtils;
 import net.ocoserver.common.util.WorldGenUtils;
 
 import java.util.List;
 
 public class OrePlaced {
 
-    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_OVERWORLD_PLACED = PlacementUtils.createKey("usyalium_ore_overworld_placed");
-    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_FROZEN_ABYSS_PLACED = PlacementUtils.createKey("usyalium_ore_frozen_abyss_placed");
+    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_OVERWORLD_PLACED =  ModUtils.getResourceKey(Registries.PLACED_FEATURE, "usyalium_ore_overworld_placed");
+    public static final ResourceKey<PlacedFeature> USYALIUM_ORE_FROZEN_ABYSS_PLACED = ModUtils.getResourceKey(Registries.PLACED_FEATURE, "usyalium_ore_frozen_abyss_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
