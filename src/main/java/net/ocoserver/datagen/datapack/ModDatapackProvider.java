@@ -9,6 +9,9 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.worldgen.ModConfigure;
 import net.ocoserver.common.worldgen.ModPlaced;
+import net.ocoserver.common.worldgen.dimension.BiomeRegister;
+import net.ocoserver.common.worldgen.dimension.LevelStems;
+import net.ocoserver.common.worldgen.dimension.NoiseGenSettings;
 import net.ocoserver.common.worldgen.ore.OreBiomeModifiers;
 
 import java.util.Set;
@@ -20,7 +23,10 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             //Ore
             .add(Registries.CONFIGURED_FEATURE, ModConfigure::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlaced::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, OreBiomeModifiers::bootstrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, OreBiomeModifiers::bootstrap)
+            .add(Registries.NOISE_SETTINGS, NoiseGenSettings::bootstrap)
+            .add(Registries.BIOME, BiomeRegister::bootstrapBiomes)
+            .add(Registries.LEVEL_STEM, LevelStems::levelBootstrap);
 
 
 

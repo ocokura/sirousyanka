@@ -1,4 +1,4 @@
-package net.ocoserver.common.worldgen.Feature;
+package net.ocoserver.common.worldgen.feature;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
