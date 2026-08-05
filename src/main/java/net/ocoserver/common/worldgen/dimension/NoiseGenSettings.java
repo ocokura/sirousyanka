@@ -26,7 +26,7 @@ public class NoiseGenSettings {
                 NoiseSettings.create(-64, 384, 1, 2),
                 Blocks.STONE.defaultBlockState(),
                 Blocks.AIR.defaultBlockState(),
-                ModNoiseRouter.getData(densityFunctions, noise, false, true),
+                ModNoiseRouter.getData(densityFunctions, noise, false, false),
                 SurfaceRules.sequence(SurfaceRules.state(Blocks.GRASS_BLOCK.defaultBlockState())),
                 List.of(),
                 0,

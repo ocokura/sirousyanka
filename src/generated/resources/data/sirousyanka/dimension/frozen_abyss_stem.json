@@ -1,0 +1,276 @@
+{
+  "type": "sirousyanka:frozen_abyss_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "sirousyanka:frozen_spruce_forest",
+          "parameters": {
+            "continentalness": 0.2,
+            "depth": 0.0,
+            "erosion": 0.8,
+            "humidity": 0.2,
+            "offset": 0.0,
+            "temperature": -1.0,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:frozen_mountain",
+          "parameters": {
+            "continentalness": 0.3,
+            "depth": 0.5,
+            "erosion": 1.0,
+            "humidity": 0.1,
+            "offset": 0.0,
+            "temperature": -1.2,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_ice_spikes_field",
+          "parameters": {
+            "continentalness": 0.1,
+            "depth": 0.8,
+            "erosion": 0.7,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": -1.5,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:frozen_peaks",
+          "parameters": {
+            "continentalness": 0.4,
+            "depth": 1.0,
+            "erosion": 1.0,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": -1.8,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_volcano_crater",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.7,
+            "erosion": 0.8,
+            "humidity": 0.4,
+            "offset": 0.0,
+            "temperature": 1.5,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_volcano",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.8,
+            "erosion": 0.5,
+            "humidity": 0.3,
+            "offset": 0.0,
+            "temperature": 1.8,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_plain",
+          "parameters": {
+            "continentalness": 0.4,
+            "depth": 0.2,
+            "erosion": 0.3,
+            "humidity": 0.5,
+            "offset": 0.0,
+            "temperature": 1.0,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_peaks",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.6,
+            "erosion": 1.0,
+            "humidity": 0.7,
+            "offset": 0.0,
+            "temperature": 0.3,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:solid_nitrogen_mountain",
+          "parameters": {
+            "continentalness": 0.2,
+            "depth": 0.9,
+            "erosion": 1.0,
+            "humidity": 0.1,
+            "offset": 0.0,
+            "temperature": -1.9,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:solid_nitrogen_plain",
+          "parameters": {
+            "continentalness": 0.3,
+            "depth": 0.3,
+            "erosion": 0.2,
+            "humidity": 0.2,
+            "offset": 0.0,
+            "temperature": -1.7,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:solid_nitrogen_forest",
+          "parameters": {
+            "continentalness": 0.4,
+            "depth": 0.5,
+            "erosion": 0.4,
+            "humidity": 0.3,
+            "offset": 0.0,
+            "temperature": -1.5,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:ice_larch_forest",
+          "parameters": {
+            "continentalness": 0.4,
+            "depth": 0.0,
+            "erosion": 0.2,
+            "humidity": 0.5,
+            "offset": 0.0,
+            "temperature": -0.5,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:ice_larch_mountain",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.5,
+            "erosion": 0.8,
+            "humidity": 0.4,
+            "offset": 0.0,
+            "temperature": -0.7,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:keuti_forest",
+          "parameters": {
+            "continentalness": 0.4,
+            "depth": 0.0,
+            "erosion": 0.3,
+            "humidity": 0.6,
+            "offset": 0.0,
+            "temperature": 0.6,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:keuti_mountain",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.4,
+            "erosion": 0.8,
+            "humidity": 0.4,
+            "offset": 0.0,
+            "temperature": 0.1,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:crimson_crystal_forest",
+          "parameters": {
+            "continentalness": 0.6,
+            "depth": 1.0,
+            "erosion": 0.3,
+            "humidity": 0.5,
+            "offset": 0.0,
+            "temperature": 0.8,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:ice_plane",
+          "parameters": {
+            "continentalness": 0.2,
+            "depth": 0.0,
+            "erosion": 0.1,
+            "humidity": 0.5,
+            "offset": 0.0,
+            "temperature": -0.6,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:ice_mountain",
+          "parameters": {
+            "continentalness": 0.5,
+            "depth": 0.5,
+            "erosion": 0.7,
+            "humidity": 0.4,
+            "offset": 0.0,
+            "temperature": -1.0,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:ice_peaks",
+          "parameters": {
+            "continentalness": 0.6,
+            "depth": 0.8,
+            "erosion": 1.0,
+            "humidity": 0.2,
+            "offset": 0.0,
+            "temperature": -1.4,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:eternal_blizzard",
+          "parameters": {
+            "continentalness": 0.0,
+            "depth": 1.0,
+            "erosion": 1.0,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": -2.0,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:abyss_rift",
+          "parameters": {
+            "continentalness": 0.7,
+            "depth": 1.0,
+            "erosion": 1.0,
+            "humidity": 0.5,
+            "offset": 0.0,
+            "temperature": 1.0,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "sirousyanka:unstable_wetland",
+          "parameters": {
+            "continentalness": 0.2,
+            "depth": 0.8,
+            "erosion": 0.0,
+            "humidity": 0.8,
+            "offset": 0.0,
+            "temperature": 0.7,
+            "weirdness": 0.0
+          }
+        }
+      ]
+    },
+    "settings": "sirousyanka:frozen_abyss_noise_settings"
+  }
+}
