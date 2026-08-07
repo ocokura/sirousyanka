@@ -16,12 +16,22 @@ public class FrozenAbyssNoise {
 
         DensityFunction baseNoise = DensityFunctions.noise(noises.getOrThrow(ModNoiseParameters.FROZEN_ABYSS_BASE_NOISE));
         DensityFunction smallNoise = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.28, noises.getOrThrow(ModNoiseParameters.FROZEN_ABYSS_SMALL_NOISE));
-        DensityFunction plainNoise = DensityFunctions.add(DensityFunctions.mul(baseNoise, DensityFunctions.constant(1.35)), DensityFunctions.mul(smallNoise, DensityFunctions.constant(0.65)));
+        DensityFunction plainNoise = DensityFunctions.add(DensityFunctions.mul(baseNoise, DensityFunctions.constant(0.65)), DensityFunctions.mul(smallNoise, DensityFunctions.constant(0.35)));
 
-        DensityFunction mountainNoise = DensityFunctions.noise(noises.getOrThrow(ModNoiseParameters.FROZEN_ABYSS_MOUNTAIN_NOISE));
+        DensityFunction mountainBaseNoise =
+                DensityFunctions.shiftedNoise2d(
+                        shiftX,
+                        shiftZ,
+                        0.33,
+                        noises.getOrThrow(ModNoiseParameters.FROZEN_ABYSS_MOUNTAIN_NOISE)
+                );
 
-        DensityFunction height = DensityFunctions.mul(plainNoise, DensityFunctions.constant(2));
-        DensityFunction mountainHeight = DensityFunctions.mul(DensityFunctions.add(mountainNoise, DensityFunctions.constant(-0.06)).clamp(0, 1), DensityFunctions.constant(40));
+        DensityFunction mountainNoise = DensityFunctions.add(DensityFunctions.mul(mountainBaseNoise, DensityFunctions.constant(0.9)), DensityFunctions.mul(smallNoise, DensityFunctions.constant(0.1)));
+
+        DensityFunction mountain = DensityFunctions.mul(DensityFunctions.add(mountainNoise, DensityFunctions.constant(-0.5)).clamp(0, 1), DensityFunctions.constant(50));
+
+        DensityFunction height = DensityFunctions.mul(plainNoise, DensityFunctions.constant(5));
+        height = DensityFunctions.add(height, mountain);
 
         return DensityFunctions.add(height, DensityFunctions.constant(60));
     }

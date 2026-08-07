@@ -15,7 +15,7 @@ public class ModNoiseParameters {
 
     public static void bootstrap(BootstrapContext<NormalNoise.NoiseParameters> context) {
         context.register(FROZEN_ABYSS_BASE_NOISE, new NormalNoise.NoiseParameters(-5, 2, 0.5));
-        context.register(FROZEN_ABYSS_MOUNTAIN_NOISE, new NormalNoise.NoiseParameters(-6, 2));
+        context.register(FROZEN_ABYSS_MOUNTAIN_NOISE, new NormalNoise.NoiseParameters(-7, 3));
         context.register(FROZEN_ABYSS_PEAK_NOISE, new NormalNoise.NoiseParameters(-4, 2));
         context.register(FROZEN_ABYSS_SMALL_NOISE, new NormalNoise.NoiseParameters(-3, 1));
     }
