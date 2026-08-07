@@ -8,6 +8,7 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.ocoserver.Sirousyanka;
 import net.ocoserver.common.init.world.ModDimension;
+import net.ocoserver.common.init.world.ModNoiseParameters;
 import net.ocoserver.common.worldgen.ModConfigure;
 import net.ocoserver.common.worldgen.ModPlaced;
 import net.ocoserver.common.worldgen.dimension.BiomeRegister;
@@ -28,7 +29,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.NOISE_SETTINGS, NoiseGenSettings::bootstrap)
             .add(Registries.BIOME, BiomeRegister::bootstrapBiomes)
             .add(Registries.LEVEL_STEM, LevelStems::levelBootstrap)
-            .add(Registries.DIMENSION_TYPE, ModDimension::bootstrap);
+            .add(Registries.DIMENSION_TYPE, ModDimension::bootstrap)
+            .add(Registries.NOISE, ModNoiseParameters::bootstrap);
 
 
 

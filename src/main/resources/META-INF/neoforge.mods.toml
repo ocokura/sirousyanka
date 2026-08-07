@@ -48,6 +48,8 @@ displayName="sirousyanka" #mandatory
 description='''
 very interesting
 '''
+[[mixins]]
+config="sirousyanka/mixins.json"
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]

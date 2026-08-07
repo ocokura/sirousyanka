@@ -15,9 +15,7 @@ public class BiomeRegister {
 
         HolderGetter<ConfiguredWorldCarver<?>> carverGetter = context.lookup(Registries.CONFIGURED_CARVER);
         HolderGetter<PlacedFeature> placedFeatureGetter = context.lookup(Registries.PLACED_FEATURE);
-
-
-
+        
         register(context, ModBiomes.FROZEN_SPRUCE_FOREST,
                 FrozenAbyssBiomes.frozenSpruceForest(placedFeatureGetter, carverGetter));
 

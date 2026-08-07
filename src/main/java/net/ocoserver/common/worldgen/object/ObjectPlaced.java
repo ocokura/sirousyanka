@@ -44,50 +44,50 @@ public class ObjectPlaced {
         var cf = context.lookup(Registries.CONFIGURED_FEATURE);
 
         PlacementUtils.register(context, FROZEN_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.FROZEN_GRASS), List.of(
-                CountPlacement.of(40),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, ICE_BUSH_PLAIN, cf.getOrThrow(ObjectConfigure.ICE_BUSH), List.of(
-                CountPlacement.of(30),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, BERRY_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.BERRY_GRASS), List.of(
-                CountPlacement.of(30),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, ABYSS_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.ABYSS_GRASS), List.of(
-                CountPlacement.of(40),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, CRIMSON_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.CRIMSON_GRASS), List.of(
-                CountPlacement.of(40),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, ABYSS_STONE_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.ABYSS_STONE_GRASS), List.of(
-                CountPlacement.of(40),
+                CountPlacement.of(5),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
         PlacementUtils.register(context, LIT_ABYSS_STONE_GRASS_PLAIN, cf.getOrThrow(ObjectConfigure.LIT_ABYSS_STONE_GRASS), List.of(
-                CountPlacement.of(20),
+                CountPlacement.of(1),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                 BiomeFilter.biome()
         ));
 
         PlacementUtils.register(context, FROZEN_POPPY_PLAIN, cf.getOrThrow(ObjectConfigure.FROZEN_POPPY), List.of(
-                CountPlacement.of(10),
+                CountPlacement.of(2),
                 RarityFilter.onAverageOnceEvery(2),
                 InSquarePlacement.spread(),
                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,

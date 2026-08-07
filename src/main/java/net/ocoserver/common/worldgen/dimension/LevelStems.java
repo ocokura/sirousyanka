@@ -19,7 +19,7 @@ import java.util.List;
 
 public class LevelStems {
 
-    public static final ResourceKey<LevelStem> FROZEN_ABYSS_STEM = ModUtils.getResourceKey(Registries.LEVEL_STEM, "frozen_abyss_stem");
+    public static final ResourceKey<LevelStem> FROZEN_ABYSS_STEM = ModUtils.getResourceKey(Registries.LEVEL_STEM, "frozen_abyss");
 
     public static void levelBootstrap(BootstrapContext<LevelStem> context) {
         HolderGetter<Biome> biomes = context.lookup(Registries.BIOME);
