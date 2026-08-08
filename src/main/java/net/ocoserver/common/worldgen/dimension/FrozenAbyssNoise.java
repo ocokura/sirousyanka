@@ -22,7 +22,7 @@ public class FrozenAbyssNoise {
         //山
         DensityFunction mountainBaseNoise = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noises.getOrThrow(ModNoiseParameters.BASE_MOUNTAIN_NOISE));
         DensityFunction mountainSmallNoise = DensityFunctions.noise(noises.getOrThrow(ModNoiseParameters.BASE_MOUNTAIN_NOISE));
-        DensityFunction mountainNoise = DensityFunctions.add(DensityFunctions.mul(mountainBaseNoise, DensityFunctions.constant(0.61)), DensityFunctions.mul(mountainSmallNoise, DensityFunctions.constant(0.39)));
+        DensityFunction mountainNoise = DensityFunctions.add(DensityFunctions.mul(mountainBaseNoise, DensityFunctions.constant(0.55)), DensityFunctions.mul(mountainSmallNoise, DensityFunctions.constant(0.45)));
 
         DensityFunction mountainMask = mountainNoise.clamp(0, 1);
         mountainMask = DensityFunctions.mul(mountainMask, mountainMask);
@@ -30,7 +30,7 @@ public class FrozenAbyssNoise {
         //雪山
         DensityFunction peakBaseNoise = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.14, noises.getOrThrow(ModNoiseParameters.BASE_PEAK_NOISE));
         DensityFunction peakSmallNoise = DensityFunctions.noise(noises.getOrThrow(ModNoiseParameters.BASE_PEAK_NOISE));
-        DensityFunction peakNoise = DensityFunctions.add(DensityFunctions.mul(peakBaseNoise, DensityFunctions.constant(0.76)), DensityFunctions.mul(peakSmallNoise, DensityFunctions.constant(0.24)));
+        DensityFunction peakNoise = DensityFunctions.add(DensityFunctions.mul(peakBaseNoise, DensityFunctions.constant(0.63)), DensityFunctions.mul(peakSmallNoise, DensityFunctions.constant(0.37)));
 
         DensityFunction peakMask = DensityFunctions.mul(DensityFunctions.add(mountainNoise, DensityFunctions.constant(-0.1)).clamp(0, 1), peakNoise.clamp(0, 1));
         peakMask = DensityFunctions.mul(peakMask, peakMask);

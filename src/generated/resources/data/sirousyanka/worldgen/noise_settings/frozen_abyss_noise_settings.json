@@ -91,7 +91,7 @@
                     "type": "minecraft:add",
                     "argument1": {
                       "type": "minecraft:mul",
-                      "argument1": 0.61,
+                      "argument1": 0.55,
                       "argument2": {
                         "type": "minecraft:shifted_noise",
                         "noise": "sirousyanka:base_mountain_noise",
@@ -104,7 +104,7 @@
                     },
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 0.39,
+                      "argument1": 0.45,
                       "argument2": {
                         "type": "minecraft:noise",
                         "noise": "sirousyanka:base_mountain_noise",
@@ -122,7 +122,7 @@
                     "type": "minecraft:add",
                     "argument1": {
                       "type": "minecraft:mul",
-                      "argument1": 0.61,
+                      "argument1": 0.55,
                       "argument2": {
                         "type": "minecraft:shifted_noise",
                         "noise": "sirousyanka:base_mountain_noise",
@@ -135,7 +135,7 @@
                     },
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 0.39,
+                      "argument1": 0.45,
                       "argument2": {
                         "type": "minecraft:noise",
                         "noise": "sirousyanka:base_mountain_noise",
@@ -166,7 +166,7 @@
                       "type": "minecraft:add",
                       "argument1": {
                         "type": "minecraft:mul",
-                        "argument1": 0.61,
+                        "argument1": 0.55,
                         "argument2": {
                           "type": "minecraft:shifted_noise",
                           "noise": "sirousyanka:base_mountain_noise",
@@ -179,7 +179,7 @@
                       },
                       "argument2": {
                         "type": "minecraft:mul",
-                        "argument1": 0.39,
+                        "argument1": 0.45,
                         "argument2": {
                           "type": "minecraft:noise",
                           "noise": "sirousyanka:base_mountain_noise",
@@ -198,7 +198,7 @@
                     "type": "minecraft:add",
                     "argument1": {
                       "type": "minecraft:mul",
-                      "argument1": 0.76,
+                      "argument1": 0.63,
                       "argument2": {
                         "type": "minecraft:shifted_noise",
                         "noise": "sirousyanka:base_peak_noise",
@@ -211,7 +211,7 @@
                     },
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 0.24,
+                      "argument1": 0.37,
                       "argument2": {
                         "type": "minecraft:noise",
                         "noise": "sirousyanka:base_peak_noise",
@@ -235,7 +235,7 @@
                       "type": "minecraft:add",
                       "argument1": {
                         "type": "minecraft:mul",
-                        "argument1": 0.61,
+                        "argument1": 0.55,
                         "argument2": {
                           "type": "minecraft:shifted_noise",
                           "noise": "sirousyanka:base_mountain_noise",
@@ -248,7 +248,7 @@
                       },
                       "argument2": {
                         "type": "minecraft:mul",
-                        "argument1": 0.39,
+                        "argument1": 0.45,
                         "argument2": {
                           "type": "minecraft:noise",
                           "noise": "sirousyanka:base_mountain_noise",
@@ -267,7 +267,7 @@
                     "type": "minecraft:add",
                     "argument1": {
                       "type": "minecraft:mul",
-                      "argument1": 0.76,
+                      "argument1": 0.63,
                       "argument2": {
                         "type": "minecraft:shifted_noise",
                         "noise": "sirousyanka:base_peak_noise",
@@ -280,7 +280,7 @@
                     },
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 0.24,
+                      "argument1": 0.37,
                       "argument2": {
                         "type": "minecraft:noise",
                         "noise": "sirousyanka:base_peak_noise",
