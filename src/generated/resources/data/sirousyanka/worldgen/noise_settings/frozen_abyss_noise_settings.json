@@ -161,31 +161,70 @@
                   "type": "minecraft:clamp",
                   "input": {
                     "type": "minecraft:add",
-                    "argument1": -0.1,
+                    "argument1": -0.01,
                     "argument2": {
-                      "type": "minecraft:add",
+                      "type": "minecraft:mul",
                       "argument1": {
-                        "type": "minecraft:mul",
-                        "argument1": 0.55,
-                        "argument2": {
-                          "type": "minecraft:shifted_noise",
-                          "noise": "sirousyanka:base_mountain_noise",
-                          "shift_x": "minecraft:shift_x",
-                          "shift_y": 0.0,
-                          "shift_z": "minecraft:shift_z",
-                          "xz_scale": 0.2,
-                          "y_scale": 0.0
-                        }
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:add",
+                          "argument1": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.55,
+                            "argument2": {
+                              "type": "minecraft:shifted_noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "shift_x": "minecraft:shift_x",
+                              "shift_y": 0.0,
+                              "shift_z": "minecraft:shift_z",
+                              "xz_scale": 0.2,
+                              "y_scale": 0.0
+                            }
+                          },
+                          "argument2": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.45,
+                            "argument2": {
+                              "type": "minecraft:noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "xz_scale": 1.0,
+                              "y_scale": 1.0
+                            }
+                          }
+                        },
+                        "max": 1.0,
+                        "min": 0.0
                       },
                       "argument2": {
-                        "type": "minecraft:mul",
-                        "argument1": 0.45,
-                        "argument2": {
-                          "type": "minecraft:noise",
-                          "noise": "sirousyanka:base_mountain_noise",
-                          "xz_scale": 1.0,
-                          "y_scale": 1.0
-                        }
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:add",
+                          "argument1": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.55,
+                            "argument2": {
+                              "type": "minecraft:shifted_noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "shift_x": "minecraft:shift_x",
+                              "shift_y": 0.0,
+                              "shift_z": "minecraft:shift_z",
+                              "xz_scale": 0.2,
+                              "y_scale": 0.0
+                            }
+                          },
+                          "argument2": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.45,
+                            "argument2": {
+                              "type": "minecraft:noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "xz_scale": 1.0,
+                              "y_scale": 1.0
+                            }
+                          }
+                        },
+                        "max": 1.0,
+                        "min": 0.0
                       }
                     }
                   },
@@ -195,28 +234,31 @@
                 "argument2": {
                   "type": "minecraft:clamp",
                   "input": {
-                    "type": "minecraft:add",
-                    "argument1": {
-                      "type": "minecraft:mul",
-                      "argument1": 0.63,
+                    "type": "minecraft:flat_cache",
+                    "argument": {
+                      "type": "minecraft:add",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": 0.63,
+                        "argument2": {
+                          "type": "minecraft:shifted_noise",
+                          "noise": "sirousyanka:base_peak_noise",
+                          "shift_x": "minecraft:shift_x",
+                          "shift_y": 0.0,
+                          "shift_z": "minecraft:shift_z",
+                          "xz_scale": 0.14,
+                          "y_scale": 0.0
+                        }
+                      },
                       "argument2": {
-                        "type": "minecraft:shifted_noise",
-                        "noise": "sirousyanka:base_peak_noise",
-                        "shift_x": "minecraft:shift_x",
-                        "shift_y": 0.0,
-                        "shift_z": "minecraft:shift_z",
-                        "xz_scale": 0.14,
-                        "y_scale": 0.0
-                      }
-                    },
-                    "argument2": {
-                      "type": "minecraft:mul",
-                      "argument1": 0.37,
-                      "argument2": {
-                        "type": "minecraft:noise",
-                        "noise": "sirousyanka:base_peak_noise",
-                        "xz_scale": 1.0,
-                        "y_scale": 1.0
+                        "type": "minecraft:mul",
+                        "argument1": 0.37,
+                        "argument2": {
+                          "type": "minecraft:noise",
+                          "noise": "sirousyanka:base_peak_noise",
+                          "xz_scale": 1.0,
+                          "y_scale": 1.0
+                        }
                       }
                     }
                   },
@@ -230,31 +272,70 @@
                   "type": "minecraft:clamp",
                   "input": {
                     "type": "minecraft:add",
-                    "argument1": -0.1,
+                    "argument1": -0.01,
                     "argument2": {
-                      "type": "minecraft:add",
+                      "type": "minecraft:mul",
                       "argument1": {
-                        "type": "minecraft:mul",
-                        "argument1": 0.55,
-                        "argument2": {
-                          "type": "minecraft:shifted_noise",
-                          "noise": "sirousyanka:base_mountain_noise",
-                          "shift_x": "minecraft:shift_x",
-                          "shift_y": 0.0,
-                          "shift_z": "minecraft:shift_z",
-                          "xz_scale": 0.2,
-                          "y_scale": 0.0
-                        }
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:add",
+                          "argument1": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.55,
+                            "argument2": {
+                              "type": "minecraft:shifted_noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "shift_x": "minecraft:shift_x",
+                              "shift_y": 0.0,
+                              "shift_z": "minecraft:shift_z",
+                              "xz_scale": 0.2,
+                              "y_scale": 0.0
+                            }
+                          },
+                          "argument2": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.45,
+                            "argument2": {
+                              "type": "minecraft:noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "xz_scale": 1.0,
+                              "y_scale": 1.0
+                            }
+                          }
+                        },
+                        "max": 1.0,
+                        "min": 0.0
                       },
                       "argument2": {
-                        "type": "minecraft:mul",
-                        "argument1": 0.45,
-                        "argument2": {
-                          "type": "minecraft:noise",
-                          "noise": "sirousyanka:base_mountain_noise",
-                          "xz_scale": 1.0,
-                          "y_scale": 1.0
-                        }
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:add",
+                          "argument1": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.55,
+                            "argument2": {
+                              "type": "minecraft:shifted_noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "shift_x": "minecraft:shift_x",
+                              "shift_y": 0.0,
+                              "shift_z": "minecraft:shift_z",
+                              "xz_scale": 0.2,
+                              "y_scale": 0.0
+                            }
+                          },
+                          "argument2": {
+                            "type": "minecraft:mul",
+                            "argument1": 0.45,
+                            "argument2": {
+                              "type": "minecraft:noise",
+                              "noise": "sirousyanka:base_mountain_noise",
+                              "xz_scale": 1.0,
+                              "y_scale": 1.0
+                            }
+                          }
+                        },
+                        "max": 1.0,
+                        "min": 0.0
                       }
                     }
                   },
@@ -264,28 +345,31 @@
                 "argument2": {
                   "type": "minecraft:clamp",
                   "input": {
-                    "type": "minecraft:add",
-                    "argument1": {
-                      "type": "minecraft:mul",
-                      "argument1": 0.63,
+                    "type": "minecraft:flat_cache",
+                    "argument": {
+                      "type": "minecraft:add",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": 0.63,
+                        "argument2": {
+                          "type": "minecraft:shifted_noise",
+                          "noise": "sirousyanka:base_peak_noise",
+                          "shift_x": "minecraft:shift_x",
+                          "shift_y": 0.0,
+                          "shift_z": "minecraft:shift_z",
+                          "xz_scale": 0.14,
+                          "y_scale": 0.0
+                        }
+                      },
                       "argument2": {
-                        "type": "minecraft:shifted_noise",
-                        "noise": "sirousyanka:base_peak_noise",
-                        "shift_x": "minecraft:shift_x",
-                        "shift_y": 0.0,
-                        "shift_z": "minecraft:shift_z",
-                        "xz_scale": 0.14,
-                        "y_scale": 0.0
-                      }
-                    },
-                    "argument2": {
-                      "type": "minecraft:mul",
-                      "argument1": 0.37,
-                      "argument2": {
-                        "type": "minecraft:noise",
-                        "noise": "sirousyanka:base_peak_noise",
-                        "xz_scale": 1.0,
-                        "y_scale": 1.0
+                        "type": "minecraft:mul",
+                        "argument1": 0.37,
+                        "argument2": {
+                          "type": "minecraft:noise",
+                          "noise": "sirousyanka:base_peak_noise",
+                          "xz_scale": 1.0,
+                          "y_scale": 1.0
+                        }
                       }
                     }
                   },

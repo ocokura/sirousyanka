@@ -12,13 +12,15 @@ public class ModNoiseRouter extends NoiseRouterData {
         DensityFunction shiftX = new DensityFunctions.HolderHolder(density.getOrThrow(NoiseRouterAccessor.shiftX()));
         DensityFunction shiftZ = new DensityFunctions.HolderHolder(density.getOrThrow(NoiseRouterAccessor.shiftZ()));
 
+        ModNoiseCreator noiseCreator = new ModNoiseCreator(noise, shiftX, shiftZ);
+
         DensityFunction temperature = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.TEMPERATURE)));
         DensityFunction vegetation = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.VEGETATION)));
         DensityFunction continents = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.CONTINENTALNESS)));
         DensityFunction erosion = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.EROSION)));
         DensityFunction ridges = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.RIDGE)));
 
-        DensityFunction height = FrozenAbyssNoise.frozenAbyss2D(noise, density);
+        DensityFunction height = noiseCreator.frozenAbyssTerrain();
         DensityFunction y = DensityFunctions.yClampedGradient(-64, 320, -64, 320);
         DensityFunction finalDensity = DensityFunctions.add(height, DensityFunctions.mul(y, DensityFunctions.constant(-1)));
 
