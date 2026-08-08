@@ -23,7 +23,7 @@ public class ModNoiseParameters {
 
         context.register(BASE_MOUNTAIN_NOISE, new NormalNoise.NoiseParameters(-8, 3));
 
-        context.register(BASE_PEAK_NOISE, new NormalNoise.NoiseParameters(-7, 3));
+        context.register(BASE_PEAK_NOISE, new NormalNoise.NoiseParameters(-7, 1));
         context.register(SMALL_PEAK_NOISE, new NormalNoise.NoiseParameters(-3, 1));
     }
 }
