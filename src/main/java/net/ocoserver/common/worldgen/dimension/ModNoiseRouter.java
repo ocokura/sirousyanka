@@ -14,10 +14,10 @@ public class ModNoiseRouter extends NoiseRouterData {
 
         ModNoiseCreator noiseCreator = new ModNoiseCreator(noise, shiftX, shiftZ);
 
-        DensityFunction temperature = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.TEMPERATURE)));
+        DensityFunction temperature = noiseCreator.frozenAbyssTemperature();
         DensityFunction vegetation = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.VEGETATION)));
         DensityFunction continents = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.CONTINENTALNESS)));
-        DensityFunction erosion = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.EROSION)));
+        DensityFunction erosion = noiseCreator.frozenAbyssErosion();
         DensityFunction ridges = DensityFunctions.flatCache(DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.2, noise.getOrThrow(Noises.RIDGE)));
 
         DensityFunction height = noiseCreator.frozenAbyssTerrain();
