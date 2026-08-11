@@ -45,6 +45,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 runs {
     // applies to all the run configs below
     configureEach {
+        jvmArguments '-Xmx8G'
         // Recommended logging data for a userdev environment
         // The markers can be added/remove as needed separated by commas.
         // "SCAN": For mods scan.
