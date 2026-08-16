@@ -8,12 +8,12 @@
   },
   "downfall": 0.5,
   "effects": {
-    "fog_color": -3132947,
-    "foliage_color": -14342875,
-    "grass_color": -1379767041,
-    "sky_color": -55052,
-    "water_color": -12844922,
-    "water_fog_color": -16252867
+    "fog_color": -26929,
+    "foliage_color": -62330,
+    "grass_color": -65436,
+    "sky_color": -22811,
+    "water_color": -37458,
+    "water_fog_color": -30263
   },
   "features": [
     [],
@@ -52,10 +52,10 @@
     [],
     [],
     [
-      "sirousyanka:crimson_grass_plain",
-      "sirousyanka:cosmos_placed",
-      "sirousyanka:pink_azusai_placed",
-      "sirousyanka:purple_azusai_placed",
+      "sirousyanka:grass_forest",
+      "sirousyanka:cosmos_in_crimson",
+      "sirousyanka:pink_azusai_in_crimson",
+      "sirousyanka:purple_azusai_in_crimson",
       "sirousyanka:crimson_crystal_tree_forest"
     ]
   ],

@@ -34,8 +34,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.FROZEN_SPRUCE_TREE_FOREST);
 
@@ -67,8 +65,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.FROZEN_SPRUCE_TREE_PLAIN);
 
@@ -100,8 +96,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_ICE_SPIKE);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.FROZEN_SPRUCE_TREE_PLAIN);
@@ -134,7 +128,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(-0.8F).downfall(0.9F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(28, 177, 255, 121).getRGB())
@@ -165,8 +158,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.LIT_ABYSS_STONE_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(false).temperature(1.5F).downfall(0.4F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())
@@ -197,8 +188,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.LIT_ABYSS_STONE_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(false).temperature(1.8F).downfall(0.3F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())
@@ -229,8 +218,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.LIT_ABYSS_STONE_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(false).temperature(1F).downfall(0.5F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())
@@ -261,7 +248,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(false).temperature(0.3F).downfall(0.7F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())
@@ -287,20 +273,17 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_MOUNTAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ICE_BUSH_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.SPIKE_ICER_PLAIN);
-
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.NITROWD_TREE_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.NITROWD_TREE_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(-1.9F).downfall(0.1F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(186, 208, 255).getRGB())
-                        .waterFogColor(new Color(87, 133, 214).getRGB())
+                        .waterColor(new Color(209, 224, 255).getRGB())
+                        .waterFogColor(new Color(213, 253, 255).getRGB())
                         .fogColor(new Color(187, 198, 210).getRGB())
                         .skyColor(new Color(187, 198, 210).getRGB())
-                        .grassColorOverride(new Color(233, 255, 233).getRGB())
-                        .foliageColorOverride(new Color(233, 255, 233).getRGB())
+                        .grassColorOverride(new Color(237, 237, 237).getRGB())
+                        .foliageColorOverride(new Color(226, 226, 226).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -319,19 +302,17 @@ public class FrozenAbyssBiomes {
 
         //自然オブジェクト
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ICE_BUSH_PLAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.SPIKE_ICER_PLAIN);
-
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.NITROWD_TREE_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(-1.7F).downfall(0.2F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(186, 208, 255).getRGB())
-                        .waterFogColor(new Color(87, 133, 214).getRGB())
+                        .waterColor(new Color(209, 224, 255).getRGB())
+                        .waterFogColor(new Color(213, 253, 255).getRGB())
                         .fogColor(new Color(187, 198, 210).getRGB())
                         .skyColor(new Color(187, 198, 210).getRGB())
-                        .grassColorOverride(new Color(233, 255, 233).getRGB())
-                        .foliageColorOverride(new Color(233, 255, 233).getRGB())
+                        .grassColorOverride(new Color(237, 237, 237).getRGB())
+                        .foliageColorOverride(new Color(226, 226, 226).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -349,20 +330,18 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_FOREST);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ICE_BUSH_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.SPIKE_ICER_PLAIN);
-
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.SPIKE_ICER_FOREST);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.NITROWD_TREE_FOREST);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(-1.5F).downfall(0.3F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(186, 208, 255).getRGB())
-                        .waterFogColor(new Color(87, 133, 214).getRGB())
+                        .waterColor(new Color(209, 224, 255).getRGB())
+                        .waterFogColor(new Color(213, 253, 255).getRGB())
                         .fogColor(new Color(187, 198, 210).getRGB())
                         .skyColor(new Color(187, 198, 210).getRGB())
-                        .grassColorOverride(new Color(233, 255, 233).getRGB())
-                        .foliageColorOverride(new Color(233, 255, 233).getRGB())
+                        .grassColorOverride(new Color(237, 237, 237).getRGB())
+                        .foliageColorOverride(new Color(226, 226, 226).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -384,10 +363,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BERRY_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROST_FLARE_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.ICE_LARCH_TREE_FOREST);
 
@@ -419,10 +394,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BERRY_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROST_FLARE_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.ICE_LARCH_TREE_PLAIN);
 
@@ -454,18 +425,17 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BLOWER_PLAIN);
-
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.GRASS_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BLOWER_FOREST);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.KEUTI_TREE_FOREST);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.6F).downfall(0.6F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(0, 42, 134).getRGB())
-                        .waterFogColor(new Color(0, 22, 61).getRGB())
+                        .waterColor(new Color(39, 39, 39).getRGB())
+                        .waterFogColor(new Color(45, 45, 45).getRGB())
                         .fogColor(new Color(54, 54, 57).getRGB())
                         .skyColor(new Color(55, 55, 55).getRGB())
                         .grassColorOverride(new Color(130, 130, 130).getRGB())
-                        .foliageColorOverride(new Color(37, 37, 37).getRGB())
+                        .foliageColorOverride(new Color(75, 75, 75).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -487,18 +457,16 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BLOWER_PLAIN);
-
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.GRASS_MOUNTAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.KEUTI_TREE_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.1F).downfall(0.4F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(0, 42, 134).getRGB())
-                        .waterFogColor(new Color(0, 22, 61).getRGB())
+                        .waterColor(new Color(39, 39, 39).getRGB())
+                        .waterFogColor(new Color(45, 45, 45).getRGB())
                         .fogColor(new Color(54, 54, 57).getRGB())
                         .skyColor(new Color(55, 55, 55).getRGB())
                         .grassColorOverride(new Color(130, 130, 130).getRGB())
-                        .foliageColorOverride(new Color(37, 37, 37).getRGB())
+                        .foliageColorOverride(new Color(75, 75, 75).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -520,20 +488,20 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.CRIMSON_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.COSMOS_CRIMSON_BIOME);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.PINK_AZUSAI_CRIMSON_BIOME);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.PURPLE_AZUSAI_CRIMSON_BIOME);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.GRASS_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.COSMOS_IN_CRIMSON);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.PINK_AZUSAI_IN_CRIMSON);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.PURPLE_AZUSAI_IN_CRIMSON);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.CRIMSON_CRYSTAL_TREE_FOREST);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.8F).downfall(0.5F).specialEffects(new BiomeSpecialEffects.Builder()
-                        .waterColor(new Color(60, 0, 134).getRGB())
-                        .waterFogColor(new Color(8, 0, 61).getRGB())
-                        .fogColor(new Color(208, 49, 237).getRGB())
-                        .skyColor(new Color(255, 40, 244).getRGB())
-                        .grassColorOverride(new Color(194, 108, 255, 173).getRGB())
-                        .foliageColorOverride(new Color(37, 37, 37).getRGB())
+                        .waterColor(new Color(255, 109, 174).getRGB())
+                        .waterFogColor(new Color(255, 137, 201).getRGB())
+                        .fogColor(new Color(255, 150, 207).getRGB())
+                        .skyColor(new Color(255, 166, 229).getRGB())
+                        .grassColorOverride(new Color(255, 0, 100, 255).getRGB())
+                        .foliageColorOverride(new Color(255, 12, 134).getRGB())
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(biomeBuilder.build())
@@ -555,8 +523,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.ICE_LARCH_TREE_PLAIN);
 
@@ -588,8 +554,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.ICE_LARCH_TREE_PLAIN);
 
@@ -621,7 +585,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(-1.4F).downfall(0.2F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(100, 151, 255).getRGB())
@@ -646,9 +609,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.FROZEN_POPPY_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ICE_BUSH_PLAIN);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.NITROWD_TREE_PLAIN);
 
@@ -681,7 +641,6 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.ABYSS_STONE_GRASS_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(1.0F).downfall(0.5F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())

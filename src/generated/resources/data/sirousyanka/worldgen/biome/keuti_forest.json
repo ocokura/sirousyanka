@@ -9,11 +9,11 @@
   "downfall": 0.6,
   "effects": {
     "fog_color": -13224391,
-    "foliage_color": -14342875,
+    "foliage_color": -11842741,
     "grass_color": -8224126,
     "sky_color": -13158601,
-    "water_color": -16766330,
-    "water_fog_color": -16771523
+    "water_color": -14211289,
+    "water_fog_color": -13816531
   },
   "features": [
     [],
@@ -52,8 +52,8 @@
     [],
     [],
     [
-      "sirousyanka:abyss_grass_plain",
-      "sirousyanka:blower_plain",
+      "sirousyanka:grass_forest",
+      "sirousyanka:blower_forest",
       "sirousyanka:keuti_tree_forest"
     ]
   ],

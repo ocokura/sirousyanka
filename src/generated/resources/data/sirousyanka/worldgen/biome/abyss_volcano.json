@@ -48,12 +48,6 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma"
-    ],
-    [],
-    [],
-    [
-      "sirousyanka:abyss_grass_plain",
-      "sirousyanka:lit_abyss_stone_grass_plain"
     ]
   ],
   "has_precipitation": false,

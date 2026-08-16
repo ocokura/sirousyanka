@@ -507,21 +507,21 @@ public class ModBlocks {
     ));
 
     public static final DeferredBlock<LeavesBlock> PINK_AZUSAI = registerBlock("pink_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
+            () -> new AzusaiBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
     public static final DeferredBlock<LeavesBlock> BLUE_AZUSAI = registerBlock("blue_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
+            () -> new AzusaiBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
     public static final DeferredBlock<LeavesBlock> PURPLE_AZUSAI = registerBlock("purple_azusai",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
+            () -> new AzusaiBlock(BlockBehaviour.Properties.of().strength(0.2f).sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)

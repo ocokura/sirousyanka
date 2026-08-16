@@ -1,20 +1,16 @@
 {
-  "feature": "sirousyanka:mini_geyser",
+  "feature": "sirousyanka:frozen_grass",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 20
-    },
-    {
-      "type": "minecraft:rarity_filter",
-      "chance": 2
+      "count": 6
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

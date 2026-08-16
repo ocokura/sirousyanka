@@ -9,11 +9,11 @@
   "downfall": 0.1,
   "effects": {
     "fog_color": -4471086,
-    "foliage_color": -1441815,
-    "grass_color": -1441815,
+    "foliage_color": -1907998,
+    "grass_color": -1184275,
     "sky_color": -4471086,
-    "water_color": -4534017,
-    "water_fog_color": -11041322
+    "water_color": -3022593,
+    "water_fog_color": -2753025
   },
   "features": [
     [],
@@ -52,11 +52,9 @@
     [],
     [],
     [
-      "sirousyanka:frozen_grass_plain",
-      "sirousyanka:frozen_poppy_plain",
+      "sirousyanka:frozen_grass_mountain",
       "sirousyanka:ice_bush_plain",
-      "sirousyanka:spike_icer_plain",
-      "sirousyanka:nitrowd_tree_forest"
+      "sirousyanka:nitrowd_tree_plain"
     ]
   ],
   "has_precipitation": true,

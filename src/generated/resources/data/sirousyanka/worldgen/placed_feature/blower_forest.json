@@ -1,20 +1,20 @@
 {
-  "feature": "sirousyanka:iris_petal",
+  "feature": "sirousyanka:blower",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 10
+      "count": 4
     },
     {
       "type": "minecraft:rarity_filter",
-      "chance": 2
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

@@ -30,25 +30,25 @@ public class TreePlaced {
         var cf = context.lookup(Registries.CONFIGURED_FEATURE);
 
         PlacementUtils.register(context, ICE_LARCH_TREE_PLAIN, cf.getOrThrow(TreeConfigure.ICE_LARCH_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1F, 1), ModBlocks.ICE_LARCH_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1), ModBlocks.ICE_LARCH_SAPLING.get()));
         PlacementUtils.register(context, KEUTI_TREE_PLAIN, cf.getOrThrow(TreeConfigure.KEUTI_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1F, 1), ModBlocks.KEUTI_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1), ModBlocks.KEUTI_SAPLING.get()));
         PlacementUtils.register(context, CRIMSON_CRYSTAL_TREE_PLAIN, cf.getOrThrow(TreeConfigure.CRIMSON_CRYSTAL_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1F, 1), ModBlocks.CRIMSON_CRYSTAL_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1), ModBlocks.CRIMSON_CRYSTAL_SAPLING.get()));
         PlacementUtils.register(context, NITROWD_TREE_PLAIN, cf.getOrThrow(TreeConfigure.NITROWD_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1F, 1), ModBlocks.NITROWD_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1), ModBlocks.NITROWD_SAPLING.get()));
         PlacementUtils.register(context, FROZEN_SPRUCE_TREE_PLAIN, cf.getOrThrow(TreeConfigure.FROZEN_SPRUCE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1F, 1), Blocks.SPRUCE_SAPLING));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1), Blocks.SPRUCE_SAPLING));
 
         PlacementUtils.register(context, ICE_LARCH_TREE_FOREST, cf.getOrThrow(TreeConfigure.ICE_LARCH_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), ModBlocks.ICE_LARCH_SAPLING.get()));
         PlacementUtils.register(context, KEUTI_TREE_FOREST, cf.getOrThrow(TreeConfigure.KEUTI_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), ModBlocks.KEUTI_SAPLING.get()));
         PlacementUtils.register(context, CRIMSON_CRYSTAL_TREE_FOREST, cf.getOrThrow(TreeConfigure.CRIMSON_CRYSTAL_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), ModBlocks.CRIMSON_CRYSTAL_SAPLING.get()));
         PlacementUtils.register(context, NITROWD_TREE_FOREST, cf.getOrThrow(TreeConfigure.NITROWD_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), ModBlocks.NITROWD_SAPLING.get()));
         PlacementUtils.register(context, FROZEN_SPRUCE_TREE_FOREST, cf.getOrThrow(TreeConfigure.FROZEN_SPRUCE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), Blocks.SPRUCE_SAPLING));
     }
 }
