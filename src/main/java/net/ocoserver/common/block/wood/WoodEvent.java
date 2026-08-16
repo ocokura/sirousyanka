@@ -25,8 +25,8 @@ public class WoodEvent {
         STRIPPABLE.put(ModBlocks.ICE_LARCH_LOG::get, ModBlocks.STRIPPED_ICE_LARCH_LOG::get);
         STRIPPABLE.put(ModBlocks.ICE_LARCH_WOOD::get, ModBlocks.STRIPPED_ICE_LARCH_WOOD::get);
 
-        STRIPPABLE.put(ModBlocks.KEUTI_LOG::get, ModBlocks.STRIPPED_KEUTI_LOG::get);
-        STRIPPABLE.put(ModBlocks.KEUTI_WOOD::get, ModBlocks.STRIPPED_KEUTI_WOOD::get);
+        STRIPPABLE.put(ModBlocks.CLOWD_LOG::get, ModBlocks.STRIPPED_CLOWD_LOG::get);
+        STRIPPABLE.put(ModBlocks.CLOWD_WOOD::get, ModBlocks.STRIPPED_CLOWD_WOOD::get);
 
         STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_LOG::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_LOG::get);
         STRIPPABLE.put(ModBlocks.CRIMSON_CRYSTAL_WOOD::get, ModBlocks.STRIPPED_CRIMSON_CRYSTAL_WOOD::get);
@@ -56,8 +56,8 @@ public class WoodEvent {
                 BlockEntityType.SIGN,
                 ModBlocks.ICE_LARCH_SIGN.get(),
                 ModBlocks.ICE_LARCH_WALL_SIGN.get(),
-                ModBlocks.KEUTI_SIGN.get(),
-                ModBlocks.KEUTI_WALL_SIGN.get(),
+                ModBlocks.CLOWD_SIGN.get(),
+                ModBlocks.CLOWD_WALL_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_WALL_SIGN.get(),
                 ModBlocks.NITROWD_SIGN.get(),
@@ -68,8 +68,8 @@ public class WoodEvent {
                 BlockEntityType.HANGING_SIGN,
                 ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get(),
                 ModBlocks.ICE_LARCH_WALL_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_WALL_HANGING_SIGN.get(),
+                ModBlocks.CLOWD_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CLOWD_WALL_HANGING_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_CEILING_HANGING_SIGN.get(),
                 ModBlocks.CRIMSON_CRYSTAL_WALL_HANGING_SIGN.get(),
                 ModBlocks.NITROWD_CEILING_HANGING_SIGN.get(),

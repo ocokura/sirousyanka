@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sirousyanka:block/clowd_slab"
+    },
+    "type=double": {
+      "model": "sirousyanka:block/clowd_planks"
+    },
+    "type=top": {
+      "model": "sirousyanka:block/clowd_slab_top"
+    }
+  }
+}

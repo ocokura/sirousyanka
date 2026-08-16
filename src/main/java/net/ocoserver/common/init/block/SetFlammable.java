@@ -24,16 +24,16 @@ public class SetFlammable {
 
         //ケウチ
         woodFamilySetFlammable(
-                ModBlocks.KEUTI_LOG.get(),
-                ModBlocks.KEUTI_WOOD.get(),
-                ModBlocks.STRIPPED_KEUTI_LOG.get(),
-                ModBlocks.STRIPPED_KEUTI_WOOD.get(),
-                ModBlocks.KEUTI_PLANKS.get(),
-                ModBlocks.KEUTI_STAIR.get(),
-                ModBlocks.KEUTI_SLAB.get(),
-                ModBlocks.KEUTI_FENCE.get(),
-                ModBlocks.KEUTI_FENCE_GATE.get(),
-                ModBlocks.KEUTI_LEAVES.get()
+                ModBlocks.CLOWD_LOG.get(),
+                ModBlocks.CLOWD_WOOD.get(),
+                ModBlocks.STRIPPED_CLOWD_LOG.get(),
+                ModBlocks.STRIPPED_CLOWD_WOOD.get(),
+                ModBlocks.CLOWD_PLANKS.get(),
+                ModBlocks.CLOWD_STAIR.get(),
+                ModBlocks.CLOWD_SLAB.get(),
+                ModBlocks.CLOWD_FENCE.get(),
+                ModBlocks.CLOWD_FENCE_GATE.get(),
+                ModBlocks.CLOWD_LEAVES.get()
         );
 
         //紅晶樹

@@ -37,11 +37,11 @@ public class ItemTag extends ItemTagsProvider {
             .add(ModBlocks.STRIPPED_ICE_LARCH_WOOD.get().asItem());
 
         //ケウチが板材作れるように
-        tag(ModTags.Items.CRAFTABLE_TO_KEUTI_PLANKS)
-                .add(ModBlocks.KEUTI_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_KEUTI_LOG.get().asItem())
-                .add(ModBlocks.KEUTI_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_KEUTI_WOOD.get().asItem());
+        tag(ModTags.Items.CRAFTABLE_TO_CLOWD_PLANKS)
+                .add(ModBlocks.CLOWD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_CLOWD_LOG.get().asItem())
+                .add(ModBlocks.CLOWD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_CLOWD_WOOD.get().asItem());
 
         //紅晶樹の板材が作れるように
         tag(ModTags.Items.CRAFTABLE_TO_CRIMSON_CRYSTAL_PLANKS)

@@ -132,23 +132,23 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ICE_LARCH_SAPLING.get());
 
                         //ケウチ
-                        output.accept(ModBlocks.KEUTI_LOG.get());
-                        output.accept(ModBlocks.KEUTI_WOOD.get());
-                        output.accept(ModBlocks.STRIPPED_KEUTI_LOG.get());
-                        output.accept(ModBlocks.STRIPPED_KEUTI_WOOD.get());
-                        output.accept(ModBlocks.KEUTI_PLANKS.get());
-                        output.accept(ModBlocks.KEUTI_STAIR.get());
-                        output.accept(ModBlocks.KEUTI_SLAB.get());
-                        output.accept(ModBlocks.KEUTI_FENCE.get());
-                        output.accept(ModBlocks.KEUTI_FENCE_GATE.get());
-                        output.accept(ModBlocks.KEUTI_DOOR.get());
-                        output.accept(ModBlocks.KEUTI_TRAP_DOOR.get());
-                        output.accept(ModBlocks.KEUTI_PRESSURE_PLATE.get());
-                        output.accept(ModBlocks.KEUTI_BUTTON.get());
-                        output.accept(ModBlocks.KEUTI_SIGN.get());
-                        output.accept(ModBlocks.KEUTI_CEILING_HANGING_SIGN.get());
-                        output.accept(ModBlocks.KEUTI_LEAVES.get());
-                        output.accept(ModBlocks.KEUTI_SAPLING.get());
+                        output.accept(ModBlocks.CLOWD_LOG.get());
+                        output.accept(ModBlocks.CLOWD_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_CLOWD_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_CLOWD_WOOD.get());
+                        output.accept(ModBlocks.CLOWD_PLANKS.get());
+                        output.accept(ModBlocks.CLOWD_STAIR.get());
+                        output.accept(ModBlocks.CLOWD_SLAB.get());
+                        output.accept(ModBlocks.CLOWD_FENCE.get());
+                        output.accept(ModBlocks.CLOWD_FENCE_GATE.get());
+                        output.accept(ModBlocks.CLOWD_DOOR.get());
+                        output.accept(ModBlocks.CLOWD_TRAP_DOOR.get());
+                        output.accept(ModBlocks.CLOWD_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.CLOWD_BUTTON.get());
+                        output.accept(ModBlocks.CLOWD_SIGN.get());
+                        output.accept(ModBlocks.CLOWD_CEILING_HANGING_SIGN.get());
+                        output.accept(ModBlocks.CLOWD_LEAVES.get());
+                        output.accept(ModBlocks.CLOWD_SAPLING.get());
 
                         //紅結晶
                         output.accept(ModBlocks.CRIMSON_CRYSTAL_LOG.get());

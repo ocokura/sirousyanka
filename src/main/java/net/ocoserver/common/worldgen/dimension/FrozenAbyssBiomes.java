@@ -410,7 +410,7 @@ public class FrozenAbyssBiomes {
                 .build();
     }
 
-    public static Biome keutiForest(HolderGetter<PlacedFeature> placedFeatures, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
+    public static Biome clowdForest(HolderGetter<PlacedFeature> placedFeatures, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 30, 1, 3));
         spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.ZOMBIE, 30, 1, 3));
@@ -427,7 +427,7 @@ public class FrozenAbyssBiomes {
         //自然オブジェクト
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.GRASS_FOREST);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.BLOWER_FOREST);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.KEUTI_TREE_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.CLOWD_TREE_FOREST);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.6F).downfall(0.6F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(39, 39, 39).getRGB())
@@ -442,7 +442,7 @@ public class FrozenAbyssBiomes {
                 .build();
     }
 
-    public static Biome keutiMountain(HolderGetter<PlacedFeature> placedFeatures, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
+    public static Biome clowdMountain(HolderGetter<PlacedFeature> placedFeatures, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 30, 1, 3));
         spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.ZOMBIE, 30, 1, 3));
@@ -458,7 +458,7 @@ public class FrozenAbyssBiomes {
 
         //自然オブジェクト
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ObjectPlaced.GRASS_MOUNTAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.KEUTI_TREE_PLAIN);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.CLOWD_TREE_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.1F).downfall(0.4F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(39, 39, 39).getRGB())
@@ -670,7 +670,7 @@ public class FrozenAbyssBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
         //自然オブジェクト
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.KEUTI_TREE_PLAIN);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, TreePlaced.CLOWD_TREE_PLAIN);
 
         return new Biome.BiomeBuilder().hasPrecipitation(true).temperature(0.7F).downfall(0.8F).specialEffects(new BiomeSpecialEffects.Builder()
                         .waterColor(new Color(27, 27, 27, 121).getRGB())

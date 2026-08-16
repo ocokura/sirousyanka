@@ -189,25 +189,25 @@ public class BlockTag extends BlockTagsProvider {
 
         //ケウチ
         registerWoodBlockTags(
-                ModBlocks.KEUTI_LOG.get(),
-                ModBlocks.KEUTI_WOOD.get(),
-                ModBlocks.STRIPPED_KEUTI_LOG.get(),
-                ModBlocks.STRIPPED_KEUTI_WOOD.get(),
-                ModBlocks.KEUTI_PLANKS.get(),
-                ModBlocks.KEUTI_STAIR.get(),
-                ModBlocks.KEUTI_SLAB.get(),
-                ModBlocks.KEUTI_FENCE.get(),
-                ModBlocks.KEUTI_FENCE_GATE.get(),
-                ModBlocks.KEUTI_PRESSURE_PLATE.get(),
-                ModBlocks.KEUTI_BUTTON.get(),
-                ModBlocks.KEUTI_DOOR.get(),
-                ModBlocks.KEUTI_TRAP_DOOR.get(),
-                ModBlocks.KEUTI_SIGN.get(),
-                ModBlocks.KEUTI_WALL_SIGN.get(),
-                ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_WALL_HANGING_SIGN.get(),
-                ModBlocks.KEUTI_LEAVES.get(),
-                ModBlocks.KEUTI_SAPLING.get()
+                ModBlocks.CLOWD_LOG.get(),
+                ModBlocks.CLOWD_WOOD.get(),
+                ModBlocks.STRIPPED_CLOWD_LOG.get(),
+                ModBlocks.STRIPPED_CLOWD_WOOD.get(),
+                ModBlocks.CLOWD_PLANKS.get(),
+                ModBlocks.CLOWD_STAIR.get(),
+                ModBlocks.CLOWD_SLAB.get(),
+                ModBlocks.CLOWD_FENCE.get(),
+                ModBlocks.CLOWD_FENCE_GATE.get(),
+                ModBlocks.CLOWD_PRESSURE_PLATE.get(),
+                ModBlocks.CLOWD_BUTTON.get(),
+                ModBlocks.CLOWD_DOOR.get(),
+                ModBlocks.CLOWD_TRAP_DOOR.get(),
+                ModBlocks.CLOWD_SIGN.get(),
+                ModBlocks.CLOWD_WALL_SIGN.get(),
+                ModBlocks.CLOWD_CEILING_HANGING_SIGN.get(),
+                ModBlocks.CLOWD_WALL_HANGING_SIGN.get(),
+                ModBlocks.CLOWD_LEAVES.get(),
+                ModBlocks.CLOWD_SAPLING.get()
         );
 
         //紅晶樹

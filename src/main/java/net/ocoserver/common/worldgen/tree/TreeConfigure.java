@@ -23,7 +23,7 @@ public class TreeConfigure {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_SPRUCE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "frozen_spruce_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ICE_LARCH_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "ice_larch_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> KEUTI_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "keuti_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CLOWD_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "clowd_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_CRYSTAL_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "crimson_crystal_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NITROWD_TREE = ModUtils.getResourceKey(Registries.CONFIGURED_FEATURE, "nitrowd_tree");
 
@@ -49,12 +49,12 @@ public class TreeConfigure {
 
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
-        //KEUTI TREE
-        WorldGenUtils.registerConfiguredFeature(context, KEUTI_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.KEUTI_LOG.get()),
+        //CLOWD TREE
+        WorldGenUtils.registerConfiguredFeature(context, CLOWD_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CLOWD_LOG.get()),
                 new StraightTrunkPlacer(5, 3, 2),
 
-                BlockStateProvider.simple(ModBlocks.KEUTI_LEAVES.get()),
+                BlockStateProvider.simple(ModBlocks.CLOWD_LEAVES.get()),
                 new BlobFoliagePlacer(UniformInt.of(2, 3), ConstantInt.of(0), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());

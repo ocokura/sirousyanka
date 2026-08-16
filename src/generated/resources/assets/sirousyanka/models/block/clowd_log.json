@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sirousyanka:block/clowd_log_top",
+    "side": "sirousyanka:block/clowd_log"
+  }
+}

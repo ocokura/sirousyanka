@@ -26,13 +26,13 @@ public class ModItems {
             ITEMS.register("ice_larch_ceiling_hanging_sign",
                     () -> new HangingSignItem(ModBlocks.ICE_LARCH_CEILING_HANGING_SIGN.get(), ModBlocks.ICE_LARCH_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
-    //ケウチ
-    public static final DeferredItem<Item> KEUTI_SIGN = ITEMS.register("keuti_sign",
-            () -> new SignItem(new Item.Properties(), ModBlocks.KEUTI_SIGN.get(), ModBlocks.KEUTI_WALL_SIGN.get()));
+    //クロウド
+    public static final DeferredItem<Item> CLOWD_SIGN = ITEMS.register("clowd_sign",
+            () -> new SignItem(new Item.Properties(), ModBlocks.CLOWD_SIGN.get(), ModBlocks.CLOWD_WALL_SIGN.get()));
 
-    public static final DeferredItem<Item> KEUTI_CEILING_HANGING_SIGN =
-            ITEMS.register("keuti_ceiling_hanging_sign",
-                    () -> new HangingSignItem(ModBlocks.KEUTI_CEILING_HANGING_SIGN.get(), ModBlocks.KEUTI_WALL_HANGING_SIGN.get(), new Item.Properties()));
+    public static final DeferredItem<Item> CLOWD_CEILING_HANGING_SIGN =
+            ITEMS.register("clowd_ceiling_hanging_sign",
+                    () -> new HangingSignItem(ModBlocks.CLOWD_CEILING_HANGING_SIGN.get(), ModBlocks.CLOWD_WALL_HANGING_SIGN.get(), new Item.Properties()));
 
     //紅結晶
     public static final DeferredItem<Item> CRIMSON_CRYSTAL_SIGN = ITEMS.register("crimson_crystal_sign",

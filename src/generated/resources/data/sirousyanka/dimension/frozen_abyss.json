@@ -114,7 +114,7 @@
           }
         },
         {
-          "biome": "sirousyanka:keuti_forest",
+          "biome": "sirousyanka:clowd_forest",
           "parameters": {
             "continentalness": 0.0,
             "depth": 0.0,
@@ -150,7 +150,7 @@
           }
         },
         {
-          "biome": "sirousyanka:keuti_mountain",
+          "biome": "sirousyanka:clowd_mountain",
           "parameters": {
             "continentalness": 0.0,
             "depth": 0.0,

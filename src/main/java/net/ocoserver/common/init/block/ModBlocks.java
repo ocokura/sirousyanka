@@ -273,67 +273,67 @@ public class ModBlocks {
 
 
 
-    //ケウチの木
-    public static final DeferredBlock<RotatedPillarBlock> KEUTI_LOG = registerBlock("keuti_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+    //クロウドの木
+    public static final DeferredBlock<RotatedPillarBlock> CLOWD_LOG = registerBlock("clowd_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<RotatedPillarBlock> KEUTI_WOOD = registerBlock("keuti_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+    public static final DeferredBlock<RotatedPillarBlock> CLOWD_WOOD = registerBlock("clowd_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_KEUTI_LOG = registerBlock("stripped_keuti_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_CLOWD_LOG = registerBlock("stripped_clowd_log", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_KEUTI_WOOD = registerBlock("stripped_keuti_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
+    public static final DeferredBlock<RotatedPillarBlock> STRIPPED_CLOWD_WOOD = registerBlock("stripped_clowd_wood", 2.5f, false, SoundType.WOOD, null, RotatedPillarBlock::new);
 
-    public static final DeferredBlock<Block> KEUTI_PLANKS = registerBlock("keuti_planks", 2.0f, false, SoundType.WOOD, null, Block::new); // 硬さはバニラ基準の2.0fに調整
+    public static final DeferredBlock<Block> CLOWD_PLANKS = registerBlock("clowd_planks", 2.0f, false, SoundType.WOOD, null, Block::new); // 硬さはバニラ基準の2.0fに調整
 
-    public static final DeferredBlock<LeavesBlock> KEUTI_LEAVES = registerBlock("keuti_leaves",
+    public static final DeferredBlock<LeavesBlock> CLOWD_LEAVES = registerBlock("clowd_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()
                     .isValidSpawn((state, level, pos, type) -> false)
                     .isSuffocating((state, level, pos) -> false)
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
-    public static final DeferredBlock<StairBlock> KEUTI_STAIR = registerBlock("keuti_stair", () -> new StairBlock(ModBlocks.KEUTI_PLANKS.get().defaultBlockState(),
+    public static final DeferredBlock<StairBlock> CLOWD_STAIR = registerBlock("clowd_stair", () -> new StairBlock(ModBlocks.CLOWD_PLANKS.get().defaultBlockState(),
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<SlabBlock> KEUTI_SLAB = registerBlock("keuti_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
+    public static final DeferredBlock<SlabBlock> CLOWD_SLAB = registerBlock("clowd_slab", 2.0f, false, SoundType.WOOD, null, SlabBlock::new);
 
-    public static final DeferredBlock<PressurePlateBlock> KEUTI_PRESSURE_PLATE = registerBlock("keuti_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<PressurePlateBlock> CLOWD_PRESSURE_PLATE = registerBlock("clowd_pressure_plate", () -> new PressurePlateBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<ButtonBlock> KEUTI_BUTTON = registerBlock("keuti_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
+    public static final DeferredBlock<ButtonBlock> CLOWD_BUTTON = registerBlock("clowd_button", () -> new ButtonBlock(BlockSetType.ACACIA, 30,
             BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOD).noCollission()
     ));
 
-    public static final DeferredBlock<FenceBlock> KEUTI_FENCE = registerBlock("keuti_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
+    public static final DeferredBlock<FenceBlock> CLOWD_FENCE = registerBlock("clowd_fence", 2.0f, false, SoundType.WOOD, null, FenceBlock::new);
 
-    public static final DeferredBlock<FenceGateBlock> KEUTI_FENCE_GATE = registerBlock("keuti_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
+    public static final DeferredBlock<FenceGateBlock> CLOWD_FENCE_GATE = registerBlock("clowd_fence_gate", () -> new FenceGateBlock(WoodType.ACACIA,
             BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.WOOD)
     ));
 
-    public static final DeferredBlock<DoorBlock> KEUTI_DOOR = registerBlock("keuti_door", () -> new DoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<DoorBlock> CLOWD_DOOR = registerBlock("clowd_door", () -> new DoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<TrapDoorBlock> KEUTI_TRAP_DOOR = registerBlock("keuti_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
+    public static final DeferredBlock<TrapDoorBlock> CLOWD_TRAP_DOOR = registerBlock("clowd_trap_door", () -> new TrapDoorBlock(BlockSetType.ACACIA,
             BlockBehaviour.Properties.of().strength(3.0f).sound(SoundType.WOOD).noOcclusion()
     ));
 
-    public static final DeferredBlock<StandingSignBlock> KEUTI_SIGN = registerBlockWithoutItem("keuti_sign", () -> new StandingSignBlock(ModWoodTypes.KEUTI,
+    public static final DeferredBlock<StandingSignBlock> CLOWD_SIGN = registerBlockWithoutItem("clowd_sign", () -> new StandingSignBlock(ModWoodTypes.CLOWD,
             BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallSignBlock> KEUTI_WALL_SIGN = registerBlockWithoutItem("keuti_wall_sign", () -> new WallSignBlock(ModWoodTypes.KEUTI,
-            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_SIGN)
+    public static final DeferredBlock<WallSignBlock> CLOWD_WALL_SIGN = registerBlockWithoutItem("clowd_wall_sign", () -> new WallSignBlock(ModWoodTypes.CLOWD,
+            BlockBehaviour.Properties.of().noCollission().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CLOWD_SIGN)
     ));
 
-    public static final DeferredBlock<CeilingHangingSignBlock> KEUTI_CEILING_HANGING_SIGN = registerBlockWithoutItem("keuti_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.KEUTI,
+    public static final DeferredBlock<CeilingHangingSignBlock> CLOWD_CEILING_HANGING_SIGN = registerBlockWithoutItem("clowd_ceiling_hanging_sign", () -> new CeilingHangingSignBlock(ModWoodTypes.CLOWD,
             BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion()
     ));
-    public static final DeferredBlock<WallHangingSignBlock> KEUTI_WALL_HANGING_SIGN = registerBlockWithoutItem("keuti_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.KEUTI,
-            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(KEUTI_CEILING_HANGING_SIGN)
+    public static final DeferredBlock<WallHangingSignBlock> CLOWD_WALL_HANGING_SIGN = registerBlockWithoutItem("clowd_wall_hanging_sign", () -> new WallHangingSignBlock(ModWoodTypes.CLOWD,
+            BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.WOOD).noOcclusion().lootFrom(CLOWD_CEILING_HANGING_SIGN)
     ));
 
-    public static final DeferredBlock<SaplingBlock> KEUTI_SAPLING = registerBlock("keuti_sapling", () -> new SaplingBlock(ModTreeGrowers.KEUTI_TREE_GROWER,
+    public static final DeferredBlock<SaplingBlock> CLOWD_SAPLING = registerBlock("clowd_sapling", () -> new SaplingBlock(ModTreeGrowers.CLOWD_TREE_GROWER,
             BlockBehaviour.Properties.of().strength(0f).randomTicks().sound(SoundType.GRASS).noOcclusion().noCollission()
     ));
 

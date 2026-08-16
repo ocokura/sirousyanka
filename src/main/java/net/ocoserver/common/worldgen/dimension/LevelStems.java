@@ -60,7 +60,7 @@ public class LevelStems {
                         biomes.getOrThrow(ModBiomes.ICE_LARCH_FOREST)),
 
                 Pair.of(Climate.parameters(0.2f, 0.4f, 0f, 0.0455f, 0f, 0.0455f, 0),
-                        biomes.getOrThrow(ModBiomes.KEUTI_FOREST)),
+                        biomes.getOrThrow(ModBiomes.CLOWD_FOREST)),
 
                 Pair.of(Climate.parameters(0.2f, 0f, 0f, 0.1321f, 0f, 0.1321f, 0),
                         biomes.getOrThrow(ModBiomes.ICE_MOUNTAIN)),
@@ -69,7 +69,7 @@ public class LevelStems {
                         biomes.getOrThrow(ModBiomes.ICE_LARCH_MOUNTAIN)),
 
                 Pair.of(Climate.parameters(0.0f, 0.16f, 0f, 0.1321f, 0f, 0.1321f, 0),
-                        biomes.getOrThrow(ModBiomes.KEUTI_MOUNTAIN)),
+                        biomes.getOrThrow(ModBiomes.CLOWD_MOUNTAIN)),
 
                 Pair.of(Climate.parameters(0.1f, 0.3f, 0f, 0.0455f, 0f, 0.0455f, 0),
                         biomes.getOrThrow(ModBiomes.CRIMSON_CRYSTAL_FOREST)),

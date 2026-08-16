@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "sirousyanka:block/clowd_planks",
+    "side": "sirousyanka:block/clowd_planks",
+    "top": "sirousyanka:block/clowd_planks"
+  }
+}

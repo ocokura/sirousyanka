@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "sirousyanka:block/keuti_planks",
-    "side": "sirousyanka:block/keuti_planks",
-    "top": "sirousyanka:block/keuti_planks"
-  }
-}

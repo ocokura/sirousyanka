@@ -56,11 +56,11 @@ public class BiomeRegister {
         register(context, ModBiomes.ICE_LARCH_MOUNTAIN,
                 FrozenAbyssBiomes.iceLarchMountain(placedFeatureGetter, carverGetter));
 
-        register(context, ModBiomes.KEUTI_FOREST,
-                FrozenAbyssBiomes.keutiForest(placedFeatureGetter, carverGetter));
+        register(context, ModBiomes.CLOWD_FOREST,
+                FrozenAbyssBiomes.clowdForest(placedFeatureGetter, carverGetter));
 
-        register(context, ModBiomes.KEUTI_MOUNTAIN,
-                FrozenAbyssBiomes.keutiMountain(placedFeatureGetter, carverGetter));
+        register(context, ModBiomes.CLOWD_MOUNTAIN,
+                FrozenAbyssBiomes.clowdMountain(placedFeatureGetter, carverGetter));
 
         register(context, ModBiomes.CRIMSON_CRYSTAL_FOREST,
                 FrozenAbyssBiomes.crimsonCrystalForest(placedFeatureGetter, carverGetter));
